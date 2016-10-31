@@ -180,7 +180,7 @@ section.main
 }
 .slide
 {
-	height:375;
+	height:370;
 	width:100%;
 	background-color:gray;
 	display:block;
@@ -854,3 +854,57 @@ a.i2btn
 		text-decoration:none;
 		padding-top: 2.5px;
 }
+.modelround
+{
+	height: 100px;
+    width: 100px;
+    border: solid;
+    border-radius: 50%;
+    text-align: center;
+	margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+div.carb
+{
+	background-position: 1px -47px;
+	width: 136px;
+	height: 149px;
+	zoom: .5;
+	background-attachment: scroll;
+	background-color: rgba(0,0,0,0);
+	background-image: url(../img/sprites.png);
+	background-repeat: no-repeat;
+	margin:auto;
+}
+div.pizzab
+{
+	background-position: -270px -47px;
+	width: 136px;
+	height: 149px;
+	zoom: .5;
+	background-attachment: scroll;
+	background-color: rgba(0,0,0,0);
+	background-image: url(../img/sprites.png);
+	background-repeat: no-repeat;
+	margin:auto;
+}
+.loghr
+{
+	margin-top: 40px;
+	border-top-width: thin;
+	border-top-style: solid;
+	border-top-color: #999;
+}
+
+.w3-modal input[type=text], .w3-modal input[type=password]
+{
+	color:#666666;
+}
+
+/*@media screen and (max-width: 1170px) {
+    .main
+	{
+		display:none;
+	}
+}*/
