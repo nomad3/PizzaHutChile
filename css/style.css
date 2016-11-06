@@ -901,10 +901,71 @@ div.pizzab
 {
 	color:#666666;
 }
+.mobileview
+{
+	background-image:url(../img/bg.png);
+	background-size:contain;
+	background-repeat:repeat;
+	display:block;
+}
 
-/*@media screen and (max-width: 1170px) {
-    .main
+@media screen and (max-width: 1170px) {
+    .slide
+	{
+		height:auto;
+	}
+	a.en_btn
+	{
+		height: 41px;
+		width: 50%;
+		font-size: 23px;
+	}
+	a.en_btn2
+	{
+		width:50%;
+		height: 41px;
+		font-size: 23px;
+	}
+	
+	.newad3
+	{
+		width:100%;
+		margin:3px;
+	}
+}
+@media screen and (max-width: 768px) {
+	.en_3boxm
+	{
+		float: left;
+    padding-top: 23px;
+    padding-bottom: 23px;
+	    height: 100px;
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#333333+0,9b9b9b+100&0.71+0,0.6+100 */
+background: -moz-linear-gradient(top,  rgba(51,51,51,0.71) 0%, rgba(155,155,155,0.6) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(51,51,51,0.71) 0%,rgba(155,155,155,0.6) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(51,51,51,0.71) 0%,rgba(155,155,155,0.6) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5333333', endColorstr='#999b9b9b',GradientType=0 ); /* IE6-9 */
+	}
+    .mainmenu
+	{
+		min-height:0px;
+	}
+	#mnu, #mnu1
 	{
 		display:none;
 	}
-}*/
+	input[type=text], input[type=password]
+	{
+		width:90%;
+		margin-top:5px;
+	}
+}
+@media screen and (max-width: 576px) {
+   .nav > li:hover > ul
+   {
+	   width:80%;
+	   margin-left:20px;
+   }
+   
+   
+}
