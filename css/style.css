@@ -932,6 +932,12 @@ div.pizzab
 		width:100%;
 		margin:3px;
 	}
+       input[type=text], input[type=password]
+	{
+		width:90%;
+		margin-top:5px;
+	}
+
 }
 @media screen and (max-width: 768px) {
 	.en_3boxm
