@@ -1,0 +1,1776 @@
+/* 
+    Created on : 10/11/2016
+    Client     : Pizza Hut Chile
+    Author     : Deibys Paredes
+    URL        : http://www.socialventis.cl
+*/
+/* Base - Base style, varibles, mixins, etc */
+/* Font face */
+@font-face {
+  font-family: "United Sans SemiCond";
+  src: url(../font/UnitedSansSemiCond-Bold.otf);
+}
+
+@font-face {
+  font-family: "Rblack";
+  src: url(../font/ROBOTO/Roboto-Black.ttf);
+}
+
+@font-face {
+  font-family: "Rblacki";
+  src: url(../font/ROBOTO/Roboto-BlackItalic.ttf);
+}
+
+@font-face {
+  font-family: "Rbold";
+  src: url(../font/ROBOTO/Roboto-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Rboldi";
+  src: url(../font/ROBOTO/Roboto-BoldItalic.ttf);
+}
+
+@font-face {
+  font-family: "Rcondb";
+  src: url(../font/ROBOTO/RobotoCondensed-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Rcondbi";
+  src: url(../font/ROBOTO/RobotoCondensed-BoldItalic.ttf);
+}
+
+@font-face {
+  font-family: "Rcondi";
+  src: url(../font/ROBOTO/RobotoCondensed-Italic.ttf);
+}
+
+@font-face {
+  font-family: "Rcondl";
+  src: url(../font/ROBOTO/RobotoCondensed-Light.ttf);
+}
+
+@font-face {
+  font-family: "Rcondli";
+  src: url(../font/ROBOTO/RobotoCondensed-LightItalic.ttf);
+}
+
+@font-face {
+  font-family: "Rcondr";
+  src: url(../font/ROBOTO/RobotoCondensed-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Ritalc";
+  src: url(../font/ROBOTO/Roboto-Italic.ttf);
+}
+
+@font-face {
+  font-family: "Rlight";
+  src: url(../font/ROBOTO/Roboto-Light.ttf);
+}
+
+@font-face {
+  font-family: "Rlighti";
+  src: url(../font/ROBOTO/Roboto-LightItalic.ttf);
+}
+
+@font-face {
+  font-family: "Rmedium";
+  src: url(../font/ROBOTO/Roboto-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Rmediumi";
+  src: url(../font/ROBOTO/Roboto-MediumItalic.ttf);
+}
+
+@font-face {
+  font-family: "Rregular";
+  src: url(../font/ROBOTO/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Rthin";
+  src: url(../font/ROBOTO/Roboto-Thin.ttf);
+}
+
+@font-face {
+  font-family: "Rthini";
+  src: url(../font/ROBOTO/Roboto-ThinItalic.ttf);
+}
+
+/*uni*/
+@font-face {
+  font-family: "ucondblack";
+  src: url(../font/UNITEDSANS/UnitedSansSemiCond-Black.otf);
+}
+
+@font-face {
+  font-family: "ucondbold";
+  src: url(../font/UNITEDSANS/UnitedSansSemiCond-Bold.otf);
+}
+
+@font-face {
+  font-family: "uconheavy";
+  src: url(../font/UNITEDSANS/UnitedSansSemiCond-Heavy.otf);
+}
+
+@font-face {
+  font-family: "uconlight";
+  src: url(../font/UNITEDSANS/UnitedSansSemiCond-Light.otf);
+}
+
+@font-face {
+  font-family: "uconmedium";
+  src: url(../font/UNITEDSANS/UnitedSansSemiCond-Medium.otf);
+}
+
+/* Font colors */
+/* Background colors */
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+/* line 9, C:/wamp/www/PizzaHutChile/css/scss/base/_normalize.scss */
+html {
+  font-family: "United Sans SemiCond";
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* line 19, C:/wamp/www/PizzaHutChile/css/scss/base/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/* line 33, C:/wamp/www/PizzaHutChile/css/scss/base/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/* line 54, C:/wamp/www/PizzaHutChile/css/scss/base/_normalize.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+/* line 67, C:/wamp/www/PizzaHutChile/css/scss/base/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* line 77, C:/wamp/www/PizzaHutChile/css/scss/base/_normalize.scss */
+[hidden],
+template {
+  display: none;
+}
+
+/* line 89, C:/wamp/www/PizzaHutChile/css/scss/base/_normalize.scss */
+a {
+  background-color: transparent;
+}
+
+/* line 98, C:/wamp/www/PizzaHutChile/css/scss/base/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* line 110, C:/wamp/www/PizzaHutChile/css/scss/base/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 118, C:/wamp/www/PizzaHutChile/css/scss/base/_normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/* line 127, C:/wamp/www/PizzaHutChile/css/scss/base/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/* line 136, C:/wamp/www/PizzaHutChile/css/scss/base/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* line 145, C:/wamp/www/PizzaHutChile/css/scss/base/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/* line 154, C:/wamp/www/PizzaHutChile/css/scss/base/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/* line 162, C:/wamp/www/PizzaHutChile/css/scss/base/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 170, C:/wamp/www/PizzaHutChile/css/scss/base/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 174, C:/wamp/www/PizzaHutChile/css/scss/base/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 185, C:/wamp/www/PizzaHutChile/css/scss/base/_normalize.scss */
+img {
+  border: 0;
+}
+
+/* line 193, C:/wamp/www/PizzaHutChile/css/scss/base/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 204, C:/wamp/www/PizzaHutChile/css/scss/base/_normalize.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/* line 212, C:/wamp/www/PizzaHutChile/css/scss/base/_normalize.scss */
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+/* line 221, C:/wamp/www/PizzaHutChile/css/scss/base/_normalize.scss */
+pre {
+  overflow: auto;
+}
+
+/* line 229, C:/wamp/www/PizzaHutChile/css/scss/base/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* line 252, C:/wamp/www/PizzaHutChile/css/scss/base/_normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+/* line 266, C:/wamp/www/PizzaHutChile/css/scss/base/_normalize.scss */
+button {
+  overflow: visible;
+}
+
+/* line 277, C:/wamp/www/PizzaHutChile/css/scss/base/_normalize.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/* line 290, C:/wamp/www/PizzaHutChile/css/scss/base/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+/* line 302, C:/wamp/www/PizzaHutChile/css/scss/base/_normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/* line 311, C:/wamp/www/PizzaHutChile/css/scss/base/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 322, C:/wamp/www/PizzaHutChile/css/scss/base/_normalize.scss */
+input {
+  line-height: normal;
+}
+
+/* line 334, C:/wamp/www/PizzaHutChile/css/scss/base/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* line 346, C:/wamp/www/PizzaHutChile/css/scss/base/_normalize.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/* line 356, C:/wamp/www/PizzaHutChile/css/scss/base/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box;
+}
+
+/* line 367, C:/wamp/www/PizzaHutChile/css/scss/base/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 376, C:/wamp/www/PizzaHutChile/css/scss/base/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/* line 387, C:/wamp/www/PizzaHutChile/css/scss/base/_normalize.scss */
+legend {
+  border: 0;
+  padding: 0;
+}
+
+/* line 396, C:/wamp/www/PizzaHutChile/css/scss/base/_normalize.scss */
+textarea {
+  overflow: auto;
+}
+
+/* line 405, C:/wamp/www/PizzaHutChile/css/scss/base/_normalize.scss */
+optgroup {
+  font-weight: bold;
+}
+
+/* line 416, C:/wamp/www/PizzaHutChile/css/scss/base/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 421, C:/wamp/www/PizzaHutChile/css/scss/base/_normalize.scss */
+td,
+th {
+  padding: 0;
+}
+
+/* line 1, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+body {
+  background-color: #000;
+  font-family: "United Sans SemiCond";
+}
+
+/* line 5, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.padnul {
+  padding: 0px;
+}
+
+/* line 8, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+section.main {
+  width: 1170px;
+  margin: auto;
+  background-image: url(../img/bg.png);
+  background-size: cover;
+  background-repeat: repeat;
+}
+
+/*bdg*/
+/* line 18, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.btn-default.badge {
+  padding: 1px 9px 2px;
+  font-size: 12.025px;
+  font-weight: bold;
+  white-space: nowrap;
+  color: #ffffff;
+  background-color: #999999;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+}
+
+/* line 29, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.badge:hover {
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* line 34, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.btn-default .badge-error {
+  background-color: #b94a48;
+}
+
+/* line 38, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.badge-error {
+  background-color: #953b39;
+}
+
+/* line 41, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.badge-gray {
+  background-color: gray;
+}
+
+/* line 44, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.badge-graych {
+  background-color: #CCCCCC;
+}
+
+/* line 47, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.btn-default .badge-warning {
+  background-color: #f89406;
+}
+
+/* line 50, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.badge-warning:hover {
+  background-color: #c67605;
+}
+
+/* line 53, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.btn-default .badge-success {
+  background-color: #468847;
+}
+
+/* line 56, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.badge-success:hover {
+  background-color: #356635;
+}
+
+/* line 59, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.btn-default .badge-info {
+  background-color: #3a87ad;
+}
+
+/* line 62, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.badge-info:hover {
+  background-color: #2d6987;
+}
+
+/* line 65, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.btn-default .badge-inverse {
+  background-color: #333333;
+}
+
+/* line 68, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.badge-inverse:hover {
+  background-color: #1a1a1a;
+}
+
+/*bdg*/
+/* line 74, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+#head {
+  height: 97px;
+  color: white;
+  padding: 0px;
+}
+
+/* line 81, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.slide {
+  height: 370;
+  width: 100%;
+  background-color: gray;
+  display: block;
+}
+
+/* line 88, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.ad1 {
+  width: 570px;
+  height: 205px;
+  float: left;
+}
+
+/* line 95, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.ad2 {
+  width: 570px;
+  height: 205px;
+  float: left;
+  margin-left: 30px;
+}
+
+/* line 103, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.article {
+  padding-top: 35px;
+  padding-bottom: 60px;
+}
+
+/* line 112, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.mainmenu a {
+  height: 48px;
+  font-size: 19px;
+  color: #fff;
+  background-color: black;
+  border: 1px solid #979797;
+}
+
+/* line 120, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.mainmenu a.sep {
+  color: #fed750;
+}
+
+/* line 124, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.mainmenu a.com:hover {
+  background-color: #EAE7DF;
+}
+
+/* line 128, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.nav-pills > li > a {
+  border-radius: 0px;
+}
+
+/* line 132, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.nav-pills > li > a:hover, .nav-pills > li.active > a:hover {
+  background-color: #eae7df;
+  color: black;
+  border-color: #979797;
+}
+
+/* line 138, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.nav-pills > li > a {
+  border-radius: 4px;
+}
+
+/* line 142, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.nav-pills > li.active > a {
+  color: white;
+  background-color: black;
+  border-color: #979797;
+}
+
+/* line 149, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.ft {
+  width: 100%;
+  height: 100px;
+}
+
+/* line 154, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+a.cr {
+  color: white;
+  text-decoration: none;
+}
+
+/* line 160, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+a .cart {
+  background-repeat: no-repeat;
+  width: 33px;
+  height: 33px;
+  display: block;
+  padding: 5px;
+  text-align: center;
+  float: left;
+  display: inline;
+}
+
+/* line 171, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+a .amount {
+  color: #fed75f;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+/* line 178, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+a.sign, .sign {
+  color: gray;
+  text-decoration: none;
+}
+
+/* line 183, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+a.sign:hover {
+  color: white;
+}
+
+/* line 187, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.footlist {
+  list-style-type: none;
+  padding: 0px;
+}
+
+/* line 192, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.footlist a, a.icon {
+  color: #999999;
+  text-decoration: none;
+}
+
+/* line 197, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.carousel-indicators {
+  bottom: -10%;
+}
+
+/* line 201, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.carousel-indicators li {
+  background-color: gray;
+}
+
+/* line 205, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.carousel-indicators .active {
+  background-color: #ed1c24;
+}
+
+/* line 209, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+a.com {
+  color: #FFFFFF;
+  background-color: #ed1624;
+  border: 1px solid #979797;
+}
+
+/* line 217, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.nav > li:hover > ul {
+  display: block;
+  visibility: visible;
+  padding: 0px;
+  width: 100%;
+  margin: 0px;
+}
+
+/* line 225, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.dropdown-menu > li > a {
+  height: 48px;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+/* line 231, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.menubarbox {
+  border: 1px solid #979797;
+  background-color: black;
+  width: 100%;
+  height: 48px;
+  margin: 0px;
+  border-radius: 4px;
+}
+
+/* line 240, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.articledetails {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#282627+0,000000+100&0.37+0,0.52+100 */
+  background: -moz-linear-gradient(top, rgba(40, 38, 39, 0.37) 0%, rgba(0, 0, 0, 0.52) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(40, 38, 39, 0.37) 0%, rgba(0, 0, 0, 0.52) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(40, 38, 39, 0.37) 0%, rgba(0, 0, 0, 0.52) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5e282627', endColorstr='#85000000',GradientType=0 );
+  /* IE6-9 */
+  color: white;
+}
+
+/* line 249, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.newad1 {
+  width: 553px;
+  float: left;
+  padding-top: 23px;
+  padding-right: 20px;
+  padding-bottom: 15px;
+  padding-left: 36px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#282627+0,000000+100&0.67+0,0.7+100 */
+  background: rgba(0, 0, 0, 0.7);
+  background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0, 0, 0, 0.7)), color-stop(100%, rgba(0, 0, 0, 0.7)));
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%);
+  background: -o-linear-gradient(left, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%);
+  background: -ms-linear-gradient(left, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=1 );
+}
+
+/* line 267, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.newad2 {
+  width: 553px;
+  float: left;
+  margin-left: 30px;
+  padding-top: 23px;
+  padding-right: 20px;
+  padding-bottom: 15px;
+  padding-left: 36px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#282627+0,000000+100&0.67+0,0.7+100 */
+  background: rgba(0, 0, 0, 0.7);
+  background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0, 0, 0, 0.7)), color-stop(100%, rgba(0, 0, 0, 0.7)));
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%);
+  background: -o-linear-gradient(left, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%);
+  background: -ms-linear-gradient(left, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=1 );
+}
+
+/* line 286, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.newad3 {
+  width: 640px;
+  float: left;
+  /*padding-top: 23px;
+	padding-right: 20px;
+	padding-bottom: 15px;
+	padding-left: 36px;	*/
+}
+
+/* line 298, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.newad4 {
+  width: 475px;
+  float: left;
+  margin-left: 20px;
+  /* padding-top: 23px;
+	padding-right: 20px;
+	padding-bottom: 15px;
+	padding-left: 36px;	
+*/
+}
+
+/* line 310, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.newad5 {
+  width: 475px;
+  float: left;
+  margin-left: 20px;
+  margin-top: 10px;
+  /*padding-top: 23px;
+	padding-right: 20px;
+	padding-bottom: 15px;
+	padding-left: 36px;	
+*/
+}
+
+/* line 323, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.en_ad {
+  width: 100%;
+  /*padding-top: 23px;
+	padding-right: 20px;
+	padding-bottom: 15px;
+	padding-left: 36px;	
+
+}
+.price
+{
+	color: white;
+    font-size: 35px;
+    font-weight: bold;
+}
+h1.arthead
+{
+	font-size:20px;
+	font-weight:bold;
+	color:#d4a26f;
+	margin:0px;
+	/*text-align:center;*/
+}
+
+/* line 346, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+a.button {
+  width: 100%;
+  height: 33px;
+  background-color: red;
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+  margin-top: 49px;
+  text-align: center;
+  border-radius: 4px;
+  font-family: ucondbold;
+  padding-top: 2.5px;
+}
+
+/* line 361, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.dropdown-menu > li > a {
+  color: white;
+  background-color: black;
+}
+
+/* line 366, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.titletext {
+  width: 100%;
+  height: 113px;
+  color: white;
+  text-align: center;
+}
+
+/* line 373, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.titletext2 {
+  width: 100%;
+  height: 88px;
+  color: white;
+  text-align: center;
+  margin-top: 38.5px;
+}
+
+/* line 381, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.imgdiv {
+  height: 582px;
+  width: 508px;
+  margin-left: 33px;
+}
+
+/* line 387, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.amountdeca {
+  width: 100%;
+  height: 91px;
+  text-align: center;
+}
+
+/* line 393, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.dropmhead1 {
+  width: 100%;
+  width: 21px;
+  margin-top: 17.5px;
+  text-align: center;
+}
+
+/* line 400, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.dbad {
+  width: 40px;
+  padding-left: 17px;
+  float: left;
+  display: block;
+  padding-bottom: 28px;
+}
+
+/* line 408, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.dtxt {
+  width: 435px;
+  height: 21px;
+  color: white;
+  padding-bottom: 28px;
+}
+
+/* line 415, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.dropmenudiv {
+  width: 427.5px;
+  /*height:70px;*/
+  margin-left: 21px;
+  margin-bottom: 35px;
+}
+
+/* line 422, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.dropdownmenudiv {
+  width: 427.5px;
+  margin-left: 0px;
+  margin-bottom: 35px;
+}
+
+/* line 430, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.dropmenubtn {
+  width: 100%;
+  height: 70px;
+  padding: 0px;
+  text-align: justify;
+  font-size: 30px;
+}
+
+/* line 438, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.iconalign {
+  margin-left: 0;
+  margin-top: 26px;
+  margin-right: 26px;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+/* line 449, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.formdiv {
+  width: 570px;
+  margin-left: 50px;
+  margin-top: 33px;
+}
+
+/* line 455, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.formtxt {
+  width: 196px;
+  float: left;
+  margin-bottom: 33px;
+}
+
+/* line 461, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.formfeeld {
+  width: 250px;
+  margin-left: 10px;
+  padding-right: 135px;
+  float: left;
+  padding: 5px;
+  margin-bottom: 33px;
+}
+
+/* line 470, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+input[type=text], input[type=password] {
+  height: 33px;
+  width: 250px;
+  font-size: 24px;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+/* line 478, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.textbox {
+  width: 460px;
+  height: 47px;
+  margin-top: 135px;
+  margin-bottom: 76px;
+  margin-right: 135px;
+  display: block;
+  color: white;
+}
+
+/* line 488, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.textbox a {
+  color: #D4A26F;
+}
+
+/* line 492, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.ch {
+  color: #d00f0f;
+  width: 107px;
+  right: -17px;
+  position: absolute;
+  margin-top: -42px;
+}
+
+/* line 500, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.regbtn {
+  width: 250px;
+  height: 40px;
+  margin-left: 155px;
+  margin-bottom: 76px;
+  margin-right: 235px;
+  margin-top: 70px;
+}
+
+/* line 509, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.formsecboxhd {
+  width: 212px;
+  height: 21px;
+  margin-left: 73px;
+  margin-top: 60px;
+}
+
+/* line 517, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.txtcont {
+  width: 290px;
+  margin-top: 37px;
+  margin-left: 73px;
+  color: white;
+  margin-bottom: 80px;
+  float: left;
+}
+
+/* line 526, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.txtco1 {
+  width: 100%;
+  height: 13px;
+}
+
+/* line 531, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.txtco2 {
+  width: 100%;
+  height: 70px;
+}
+
+/* line 537, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.txtco3 {
+  width: 100%;
+  height: 35px;
+}
+
+/* line 542, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.spicon {
+  width: 33px;
+  height: 128px;
+  margin-left: 22px;
+  float: left;
+  color: white;
+  margin-top: 35px;
+}
+
+/* line 551, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+img.s {
+  margin-top: 7px;
+}
+
+/* line 555, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.txta1 {
+  width: 290px;
+  height: 40px;
+  margin-left: 73px;
+  margin-bottom: 28px;
+  color: white;
+}
+
+/* line 563, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.txta2 {
+  width: 290px;
+  height: 32px;
+  margin-left: 73px;
+  color: white;
+  margin-top: 92px;
+  float: left;
+}
+
+/* line 572, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.icodol {
+  width: 33px;
+  height: 33px;
+  margin-left: 22px;
+  float: left;
+  margin-top: 89px;
+}
+
+/* line 580, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.en_title {
+  margin-top: 20px;
+  margin-right: 22.5px;
+  margin-left: 22.5px;
+  padding-top: 35px;
+  /*padding-bottom: 35px;*/
+}
+
+/* line 588, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.en_titlein {
+  height: 107px;
+  width: 1125px;
+  color: #FFF;
+}
+
+/* line 594, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.en_btndiv {
+  width: 500px;
+  margin-right: 335px;
+  margin-bottom: 30px;
+  margin-left: 335px;
+}
+
+/* line 601, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+a.en_btn {
+  display: block;
+  float: left;
+  height: 46px;
+  width: 248px;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  text-align: center;
+  font-size: 33px;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-bottom: 27px;
+  padding-top: 2.5px;
+}
+
+/* line 618, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+a.en_btnsp {
+  display: block;
+  float: left;
+  height: 48px;
+  width: 100px;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 33px;
+  text-decoration: none;
+  float: left;
+  margin-bottom: 27px;
+  background-color: red;
+  padding-top: 2.5px;
+}
+
+/* line 634, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+a.en_btn1 {
+  color: #000;
+  background-color: #FFF;
+  border-top-color: #666;
+  border-right-color: #666;
+  border-bottom-color: #666;
+  border-left-color: #666;
+}
+
+/* line 644, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+a.en_btn2 {
+  color: #FFF;
+  background-color: #000;
+  border-top-color: #CCC;
+  border-right-color: #CCC;
+  border-bottom-color: #CCC;
+  border-left-color: #CCC;
+}
+
+/* line 653, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.en_article {
+  margin-top: 30px;
+  margin-right: 15px;
+  margin-bottom: 60px;
+  margin-left: 15px;
+  padding: 0px;
+  width: 1140px;
+  top: 30px;
+  position: relative;
+}
+
+/* line 664, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.en_artbtndiv {
+  padding: 0px;
+  height: 48px;
+  width: 637px;
+  margin-right: 270px;
+  margin-left: 263px;
+}
+
+/* line 672, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+a.en_btnmar {
+  margin-right: 18.5px;
+}
+
+/* line 676, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.en_leftbox {
+  width: 50%;
+  padding-right: 4.5px;
+  padding-left: 4.5px;
+  float: left;
+}
+
+/* line 683, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.en_rightbox {
+  width: 50%;
+  padding-right: 4.5px;
+  padding-left: 4.5px;
+  float: left;
+}
+
+/* line 690, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.en_1box {
+  width: 525px;
+}
+
+/* line 696, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.en_3box {
+  width: 172px;
+  float: left;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#333333+0,9b9b9b+100&0.71+0,0.6+100 */
+  background: -moz-linear-gradient(top, rgba(51, 51, 51, 0.71) 0%, rgba(155, 155, 155, 0.6) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(51, 51, 51, 0.71) 0%, rgba(155, 155, 155, 0.6) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(51, 51, 51, 0.71) 0%, rgba(155, 155, 155, 0.6) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5333333', endColorstr='#999b9b9b',GradientType=0 );
+  /* IE6-9 */
+}
+
+/* line 709, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.i2_text {
+  color: #FFF;
+  width: 200px;
+}
+
+/* line 716, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.i2_textb {
+  width: 555px;
+}
+
+/* line 720, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+input[type=text].i2bo {
+  width: 370px;
+  height: 34px;
+  border-radius: 4px;
+  margin-right: 10px;
+  float: left;
+}
+
+/* line 728, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+a.i2btn {
+  height: 34px;
+  width: 175px;
+  border-radius: 4px;
+  float: left;
+  background-color: red;
+  font-size: 22px;
+  text-align: center;
+  text-decoration: none;
+  padding-top: 2.5px;
+}
+
+/* line 740, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.modelround {
+  height: 100px;
+  width: 100px;
+  border: solid;
+  border-radius: 50%;
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* line 751, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+div.carb {
+  background-position: 1px -47px;
+  width: 136px;
+  height: 149px;
+  zoom: .5;
+  background-attachment: scroll;
+  background-color: transparent;
+  background-image: url(../img/sprites.png);
+  background-repeat: no-repeat;
+  margin: auto;
+}
+
+/* line 763, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+div.pizzab {
+  background-position: -270px -47px;
+  width: 136px;
+  height: 149px;
+  zoom: .5;
+  background-attachment: scroll;
+  background-color: transparent;
+  background-image: url(../img/sprites.png);
+  background-repeat: no-repeat;
+  margin: auto;
+}
+
+/* line 775, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.loghr {
+  margin-top: 40px;
+  border-top-width: thin;
+  border-top-style: solid;
+  border-top-color: #999;
+}
+
+/* line 783, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.w3-modal input[type=text], .w3-modal input[type=password] {
+  color: #666666;
+}
+
+/* line 787, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.mobileview {
+  background-image: url(../img/bg.png);
+  background-size: contain;
+  background-repeat: repeat;
+  display: block;
+}
+
+@media screen and (max-width: 1170px) {
+  /* line 796, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+  .slide {
+    height: auto;
+  }
+  /* line 800, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+  a.en_btn {
+    height: 41px;
+    width: 50%;
+    font-size: 23px;
+  }
+  /* line 806, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+  a.en_btn2 {
+    width: 50%;
+    height: 41px;
+    font-size: 23px;
+  }
+  /* line 813, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+  .newad3 {
+    width: 100%;
+    margin: 3px;
+  }
+  /* line 818, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+  input[type=text], input[type=password] {
+    width: 90%;
+    margin-top: 5px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* line 826, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+  .en_3boxm {
+    float: left;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    height: 100px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#333333+0,9b9b9b+100&0.71+0,0.6+100 */
+    background: -moz-linear-gradient(top, rgba(51, 51, 51, 0.71) 0%, rgba(155, 155, 155, 0.6) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(51, 51, 51, 0.71) 0%, rgba(155, 155, 155, 0.6) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(51, 51, 51, 0.71) 0%, rgba(155, 155, 155, 0.6) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5333333', endColorstr='#999b9b9b',GradientType=0 );
+    /* IE6-9 */
+  }
+  /* line 838, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+  .mainmenu {
+    min-height: 0px;
+  }
+  /* line 842, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+  #mnu, #mnu1 {
+    display: none;
+  }
+  /* line 846, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+  input[type=text], input[type=password] {
+    width: 90%;
+    margin-top: 5px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  /* line 853, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+  .nav > li:hover > ul {
+    width: 80%;
+    margin-left: 20px;
+  }
+}
+
+/* line 863, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.nav-pills li a {
+  border-radius: 0px !important;
+}
+
+/* line 864, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.container-fluid.padnul.article {
+  border-bottom: solid 1px #666;
+}
+
+/* line 865, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.link_camer_footer, .link_facebook_footer {
+  margin-right: 15px !important;
+}
+
+/* line 866, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.registrado-top {
+  width: 400px;
+  padding-top: 30px;
+}
+
+/* line 867, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.bienvenido-msj, .opciones-cuenta {
+  font-size: 19px !important;
+}
+
+/* line 868, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.opciones-cuenta a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+/* line 869, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+a.en_btn, .en_btnsp {
+  font-size: 16px !important;
+  text-align: center;
+}
+
+/* line 870, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+a.en_btn, .en_btnsp {
+  padding-top: 14px !important;
+}
+
+/* line 871, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.en_3box {
+  background: rgba(51, 51, 51, 0.6) !important;
+}
+
+/* line 872, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.en_1box {
+  border-radius: 15px !important;
+}
+
+/* line 873, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.en_3box .badge {
+  padding: 10px 14px !important;
+  border-radius: 20px;
+}
+
+/* line 874, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.dropmhead1 {
+  text-align: left;
+}
+
+/* line 875, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.dtxt {
+  padding-left: 50px;
+}
+
+/* line 876, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.dbad .badge {
+  padding: 6px 10px;
+  border-radius: 15px;
+}
+
+/* line 877, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.dropdownmenudiv .iconalign {
+  margin-top: -40px;
+}
+
+/* line 878, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+section.main, section.mobileview {
+  background-size: 100%;
+  background-repeat: repeat;
+}
+
+/* line 879, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.mainmenu a.com:hover {
+  background-color: #CD1C24;
+  color: #FFFFFF;
+}
+
+/* line 880, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+a.sign, .sign {
+  color: #FFFFFF;
+  font-size: 19px;
+  line-height: 75px;
+}
+
+/* line 881, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.col-xs-6 .amount {
+  font-size: 28px;
+  line-height: 1.8em;
+}
+
+/* line 882, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.txt-retirar-xs-1 {
+  font-size: 10px;
+  font-weight: normal;
+  line-height: 3em;
+}
+
+/* line 883, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.txt-retirar-xs-2 {
+  font-size: 10px;
+  font-weight: normal;
+  line-height: 0.2em;
+}
+
+/* line 884, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.col-xs-6 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* line 885, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.col-xs-6-txt-right {
+  text-align: right;
+  width: 46%;
+}
+
+/* line 886, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.col-xs-6-txt-left {
+  width: 54%;
+}
+
+/* line 887, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.newad3 {
+  margin: 0px;
+}
+
+/* line 888, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.navbar-inverse {
+  border: none;
+}
+
+/* line 889, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.col-xs-10 {
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
+}
+
+/* line 890, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.clear {
+  clear: both;
+}
+
+/* line 891, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.price {
+  font-size: 28px;
+  color: #FFFFFF;
+}
+
+/* line 892, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.arthead {
+  color: #C5A171;
+  margin-top: 0px;
+  font-size: 21px;
+}
+
+/* line 893, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.txt-pizza-product {
+  font-size: 12px;
+}
+
+/* line 894, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.button.btn-danger {
+  margin-top: 15px;
+}
+
+/* line 895, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.anadir-orden {
+  width: 49% !important;
+  float: left;
+}
+
+/* line 896, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.personalizar-orden {
+  width: 49% !important;
+  float: left;
+  margin-right: 1%;
+  background-color: #C5A171 !important;
+}
+
+/* line 897, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.personalizar-orden:hover {
+  opacity: 0.8;
+}
+
+/* line 898, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.personalizar-tamano {
+  width: 49% !important;
+  float: left;
+  background-color: #FFF !important;
+  color: #000 !important;
+  font-size: 14px !important;
+  height: auto !important;
+}
+
+/* line 899, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.personalizar-masa-tipo {
+  width: 49% !important;
+  float: left;
+  background-color: #FFF !important;
+  color: #000 !important;
+  margin-right: 1%;
+  font-size: 14px !important;
+  height: auto !important;
+}
+
+/* line 900, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.newad2-izq {
+  margin-left: 0px !important;
+}
+
+/* line 902, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.personalizar-orden-xs {
+  background-color: #C5A171 !important;
+}
+
+/* line 903, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.personalizar-orden-xs:hover {
+  opacity: 0.8;
+}
+
+/* line 904, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.personalizar-tamano-xs {
+  background-color: #FFF !important;
+  color: #000 !important;
+  font-size: 14px !important;
+  height: auto !important;
+}
+
+/* line 905, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.personalizar-masa-tipo-xs {
+  background-color: #FFF !important;
+  color: #000 !important;
+  font-size: 14px !important;
+  height: auto !important;
+}
+
+/* line 906, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.menubarbox {
+  border-radius: 0px !important;
+}
+
+/* line 907, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.boton-ingresar-cupon {
+  margin-bottom: 20px !important;
+}
+
+/* line 908, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.registro-background {
+  background: rgba(0, 0, 0, 0.7);
+  background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0, 0, 0, 0.7)), color-stop(100%, rgba(0, 0, 0, 0.7)));
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%);
+  background: -o-linear-gradient(left, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%);
+  background: -ms-linear-gradient(left, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=1 );
+  padding-top: 50px;
+}
+
+/* line 917, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.formfeeld {
+  width: 220px !important;
+}
+
+/* line 918, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.formfeeld input {
+  width: 220px !important;
+}
+
+/* line 919, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.ch {
+  right: 0px !important;
+}
+
+/* line 920, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.col-md-12 .formtxt span {
+  font-size: 18px !important;
+}
+
+/* line 921, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.col-md-12 .formtxt {
+  line-height: 44px !important;
+}
+
+/* line 922, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.recibir-ofertas-txt span {
+  line-height: 24px !important;
+}
+
+/* line 923, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.radio-inline span {
+  font-size: 10px !important;
+}
+
+/* line 924, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.radio-inline {
+  padding: 0px !important;
+}
+
+/* line 925, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.radio-buttom-ofertas {
+  width: 12px !important;
+}
+
+/* line 926, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.radio-inline input[type="radio"] {
+  position: relative !important;
+  margin-left: 0px !important;
+  width: 13px !important;
+  margin-right: 2px;
+}
+
+/* line 927, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.copyright-font-size {
+  font-size: 12px !important;
+}
+
+/* line 928, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.w3-text-white {
+  padding: 5%;
+}
+
+/* line 929, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.texto_cuenta_podras {
+  width: 80% !important;
+  float: right;
+  padding-right: 5%;
+}
+
+/* line 930, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.iconos-cuenta-podras img {
+  margin-bottom: 5px !important;
+}
+
+/* line 931, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.iconos-cuenta-podras {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+/* line 932, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.contenedor-iconos-cuenta {
+  padding-top: 5% !important;
+}
+
+/* line 933, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.col-xs-12 input.radio-botm1 {
+  margin-left: 0px !important;
+  margin-right: 3% !important;
+}
+
+/* line 934, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+.col-xs-12 input.radio-botm {
+  margin-left: 3% !important;
+  margin-right: 3% !important;
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 938, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+  .col-xs-4 p {
+    font-size: 14px !important;
+  }
+  /* line 939, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+  ul.footlist li a {
+    font-size: 14px !important;
+  }
+  /* line 940, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+  .newad3 {
+    float: none !important;
+  }
+  /* line 941, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+  .col-xs-12 {
+    float: none;
+  }
+  /* line 942, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+  .prueba02 {
+    min-height: 40px !important;
+    padding-bottom: 20px;
+  }
+  /* line 943, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+  .padnul {
+    margin-bottom: 0px !important;
+  }
+  /* line 944, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+  .border-left-location {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  /* line 945, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+  .margin-bottom-location {
+    margin-bottom: 15px;
+  }
+  /* line 946, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+  .border-right-location {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  /* line 947, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+  .menubarbox {
+    border-radius: 4px !important;
+  }
+  /* line 948, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
+  .newad3 form input {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
+/* Modules - Individual sites components */
+/* Layouts - Pages layouts styles*/
+
+/*# sourceMappingURL=../ph.app.map */

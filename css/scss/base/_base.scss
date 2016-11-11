@@ -2,9 +2,8 @@ body{
     background-color:$primary-color;
     font-family:$base-font-family;
 }
-
 .padnul{
-	padding:0px;
+    padding:0px;
 }
 section.main
 {
@@ -32,7 +31,6 @@ section.main
   text-decoration: none;
   cursor: pointer;
 }
-
 .btn-default .badge-error {
   background-color:  #b94a48;
 }
@@ -71,6 +69,8 @@ section.main
   background-color: #1a1a1a;
 }
 /*bdg*/
+ 
+
 #head
 {
 	height:97px;
@@ -290,12 +290,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 	/*padding-top: 23px;
 	padding-right: 20px;
 	padding-bottom: 15px;
-	padding-left: 36px;	
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#282627+0,000000+100&0.67+0,0.7+100 */
-background: -moz-linear-gradient(top,  rgba(40,38,39,0.67) 0%, rgba(0,0,0,0.7) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  rgba(40,38,39,0.67) 0%,rgba(0,0,0,0.7) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  rgba(40,38,39,0.67) 0%,rgba(0,0,0,0.7) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ab282627', endColorstr='#b3000000',GradientType=0 ); /* IE6-9 */
+	padding-left: 36px;	*/
+
 
 }
 
@@ -308,11 +304,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ab282627', e
 	padding-right: 20px;
 	padding-bottom: 15px;
 	padding-left: 36px;	
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#282627+0,000000+100&0.67+0,0.7+100 */
-background: -moz-linear-gradient(top,  rgba(40,38,39,0.67) 0%, rgba(0,0,0,0.7) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  rgba(40,38,39,0.67) 0%,rgba(0,0,0,0.7) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  rgba(40,38,39,0.67) 0%,rgba(0,0,0,0.7) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ab282627', endColorstr='#b3000000',GradientType=0 ); /* IE6-9 */
+*/
 	   
 }
 .newad5
@@ -325,11 +317,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ab282627', e
 	padding-right: 20px;
 	padding-bottom: 15px;
 	padding-left: 36px;	
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#282627+0,000000+100&0.67+0,0.7+100 */
-background: -moz-linear-gradient(top,  rgba(40,38,39,0.67) 0%, rgba(0,0,0,0.7) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  rgba(40,38,39,0.67) 0%,rgba(0,0,0,0.7) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  rgba(40,38,39,0.67) 0%,rgba(0,0,0,0.7) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ab282627', endColorstr='#b3000000',GradientType=0 ); /* IE6-9 */
+*/
 
 }
 .en_ad
@@ -339,11 +327,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ab282627', e
 	padding-right: 20px;
 	padding-bottom: 15px;
 	padding-left: 36px;	
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#282627+0,000000+100&0.67+0,0.7+100 */
-background: -moz-linear-gradient(top,  rgba(40,38,39,0.67) 0%, rgba(0,0,0,0.7) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  rgba(40,38,39,0.67) 0%,rgba(0,0,0,0.7) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  rgba(40,38,39,0.67) 0%,rgba(0,0,0,0.7) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ab282627', endColorstr='#b3000000',GradientType=0 ); /* IE6-9 */
 
 }
 .price
@@ -875,4 +858,92 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5333333', e
    
    
 }
- 
+
+
+.nav-pills li a{border-radius:0px !important;}
+.container-fluid.padnul.article{border-bottom:solid 1px #666;}
+.link_camer_footer, .link_facebook_footer{margin-right:15px !important;}
+.registrado-top{width:400px;padding-top:30px;}
+.bienvenido-msj, .opciones-cuenta{font-size:19px !important;}
+.opciones-cuenta a{color:#FFFFFF;text-decoration:none;}
+a.en_btn, .en_btnsp{font-size:16px !important;text-align:center}
+a.en_btn, .en_btnsp{padding-top:14px !important;}
+.en_3box{background:rgba(51,51,51,0.6) !important;}
+.en_1box{border-radius:15px !important;}
+.en_3box .badge{padding:10px 14px !important;border-radius:20px}
+.dropmhead1{text-align:left;}
+.dtxt{padding-left:50px;}
+.dbad .badge{padding:6px 10px;border-radius:15px}
+.dropdownmenudiv .iconalign{margin-top:-40px}
+section.main, section.mobileview{background-size:100%;background-repeat:repeat;}
+.mainmenu a.com:hover{background-color:#CD1C24;color:#FFFFFF;}
+a.sign, .sign{color:#FFFFFF;font-size:19px;line-height:75px;}
+.col-xs-6 .amount{font-size:28px;line-height:1.8em}
+.txt-retirar-xs-1{font-size:10px;font-weight:normal;line-height:3em}
+.txt-retirar-xs-2{font-size:10px;font-weight:normal;line-height:0.2em}
+.col-xs-6{padding-left:10px;padding-right:10px}
+.col-xs-6-txt-right{text-align:right;width:46%}
+.col-xs-6-txt-left{width:54%}
+.newad3{margin:0px;}
+.navbar-inverse{border:none;}
+.col-xs-10{margin-left:auto;margin-right:auto;float:none;}
+.clear{clear:both;}
+.price{font-size:28px;color:#FFFFFF;}
+.arthead{color:#C5A171;margin-top:0px;font-size:21px}
+.txt-pizza-product{font-size:12px}
+.button.btn-danger{margin-top:15px}
+.anadir-orden{width:49% !important;float:left;}
+.personalizar-orden{width:49% !important;float:left;margin-right:1%;background-color:#C5A171 !important;}
+.personalizar-orden:hover{opacity:0.8}
+.personalizar-tamano{width:49% !important;float:left;background-color:#FFF !important;color:#000 !important;font-size:14px !important;height:auto !important}
+.personalizar-masa-tipo{width:49% !important;float:left;background-color:#FFF !important;color:#000 !important;margin-right:1%;font-size:14px !important;height:auto !important;}
+.newad2-izq{margin-left:0px !important}
+
+.personalizar-orden-xs{background-color:#C5A171 !important;}
+.personalizar-orden-xs:hover{opacity:0.8}
+.personalizar-tamano-xs{background-color:#FFF !important;color:#000 !important;font-size:14px !important;height:auto !important}
+.personalizar-masa-tipo-xs{background-color:#FFF !important;color:#000 !important;font-size:14px !important;height:auto !important}
+.menubarbox{border-radius:0px !important;}
+.boton-ingresar-cupon{margin-bottom:20px !important;}
+.registro-background{background: rgba(0,0,0,0.7);
+background: -moz-linear-gradient(left, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.7) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0,0,0,0.7)), color-stop(100%, rgba(0,0,0,0.7)));
+background: -webkit-linear-gradient(left, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.7) 100%);
+background: -o-linear-gradient(left, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.7) 100%);
+background: -ms-linear-gradient(left, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.7) 100%);
+background: linear-gradient(to right, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.7) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=1 );
+padding-top:50px;}
+.formfeeld{width:220px !important;}
+.formfeeld input{width:220px !important;}
+.ch{right:0px !important;}
+.col-md-12 .formtxt span{font-size:18px !important;}
+.col-md-12 .formtxt{line-height:44px !important;}
+.recibir-ofertas-txt span{line-height:24px !important;}
+.radio-inline span{font-size:10px !important;}
+.radio-inline{padding:0px !important;}
+.radio-buttom-ofertas{width:12px !important;}
+.radio-inline input[type="radio"]{position:relative !important;margin-left:0px !important;width:13px !important;margin-right:2px;}
+.copyright-font-size{font-size:12px !important;}
+.w3-text-white{padding:5%}
+.texto_cuenta_podras{width:80% !important;float:right;padding-right:5%}
+.iconos-cuenta-podras img{margin-bottom:5px !important;}
+.iconos-cuenta-podras{padding-left:0px !important;padding-right:0px !important;}
+.contenedor-iconos-cuenta{padding-top:5% !important}
+.col-xs-12 input.radio-botm1{margin-left:0px !important;margin-right:3% !important}
+.col-xs-12 input.radio-botm{margin-left:3% !important;margin-right:3% !important;}
+
+@media only screen and (max-width: 768px){
+	
+.col-xs-4 p{font-size:14px !important;}
+ul.footlist li a{font-size:14px !important;}
+.newad3{float:none !important;}
+.col-xs-12{float:none;}
+.prueba02{min-height:40px !important;padding-bottom:20px;}
+.padnul{margin-bottom:0px !important;}
+.border-left-location{border-top-left-radius:5px;border-bottom-left-radius:5px}
+.margin-bottom-location{margin-bottom:15px}
+.border-right-location{border-top-right-radius:5px;border-bottom-right-radius:5px}
+.menubarbox{border-radius:4px !important;}
+.newad3 form input{margin-left:5%;margin-right:5%;}
+}
