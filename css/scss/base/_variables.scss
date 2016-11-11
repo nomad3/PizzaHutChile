@@ -1,0 +1,106 @@
+/* Font face */
+@font-face{
+	font-family:"United Sans SemiCond";
+	src:url(../font/UnitedSansSemiCond-Bold.otf);
+}
+@font-face{
+	font-family:"Rblack";
+	src:url(../font/ROBOTO/Roboto-Black.ttf);
+}
+@font-face{
+	font-family:"Rblacki";
+	src:url(../font/ROBOTO/Roboto-BlackItalic.ttf);
+}
+@font-face{
+	font-family:"Rbold";
+	src:url(../font/ROBOTO/Roboto-Bold.ttf);
+}
+@font-face{
+	font-family:"Rboldi";
+	src:url(../font/ROBOTO/Roboto-BoldItalic.ttf);
+}
+@font-face{
+	font-family:"Rcondb";
+	src:url(../font/ROBOTO/RobotoCondensed-Bold.ttf);
+}
+@font-face{
+	font-family:"Rcondbi";
+	src:url(../font/ROBOTO/RobotoCondensed-BoldItalic.ttf);
+}
+@font-face{
+	font-family:"Rcondi";
+	src:url(../font/ROBOTO/RobotoCondensed-Italic.ttf);
+}
+@font-face{
+	font-family:"Rcondl";
+	src:url(../font/ROBOTO/RobotoCondensed-Light.ttf);
+}
+@font-face{
+	font-family:"Rcondli";
+	src:url(../font/ROBOTO/RobotoCondensed-LightItalic.ttf);
+}
+@font-face{
+	font-family:"Rcondr";
+	src:url(../font/ROBOTO/RobotoCondensed-Regular.ttf);
+}
+@font-face{
+	font-family:"Ritalc";
+	src:url(../font/ROBOTO/Roboto-Italic.ttf);
+}
+@font-face{
+	font-family:"Rlight";
+	src:url(../font/ROBOTO/Roboto-Light.ttf);
+}
+@font-face{
+	font-family:"Rlighti";
+	src:url(../font/ROBOTO/Roboto-LightItalic.ttf);
+}
+@font-face{
+	font-family:"Rmedium";
+	src:url(../font/ROBOTO/Roboto-Medium.ttf);
+}
+@font-face{
+	font-family:"Rmediumi";
+	src:url(../font/ROBOTO/Roboto-MediumItalic.ttf);
+}
+@font-face{
+	font-family:"Rregular";
+	src:url(../font/ROBOTO/Roboto-Regular.ttf);
+}
+@font-face{
+	font-family:"Rthin";
+	src:url(../font/ROBOTO/Roboto-Thin.ttf);
+}
+@font-face{
+	font-family:"Rthini";
+	src:url(../font/ROBOTO/Roboto-ThinItalic.ttf);
+}
+/*uni*/
+@font-face{
+	font-family:"ucondblack";
+	src:url(../font/UNITEDSANS/UnitedSansSemiCond-Black.otf);
+}
+@font-face{
+	font-family:"ucondbold";
+	src:url(../font/UNITEDSANS/UnitedSansSemiCond-Bold.otf);
+}
+@font-face{
+	font-family:"uconheavy";
+	src:url(../font/UNITEDSANS/UnitedSansSemiCond-Heavy.otf);
+}
+@font-face{
+	font-family:"uconlight";
+	src:url(../font/UNITEDSANS/UnitedSansSemiCond-Light.otf);
+}
+@font-face{
+	font-family:"uconmedium";
+	src:url(../font/UNITEDSANS/UnitedSansSemiCond-Medium.otf)
+}
+
+/* Font colors */
+$base-font-family: "United Sans SemiCond";
+$base-font-color: #fff;
+
+/* Background colors */
+$primary-color: #000;
+$secundary-color: #ed1624;
