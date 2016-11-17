@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Ingresar</title>
+<style>
+body{margin:0px;padding:0px;border:0px;}
+#contedor_login{text-align:center;margin-left:auto;margin-right:auto;padding:3%;}
+.clear{clear:both;}
+#elemento_formulario{padding-bottom:10px}
+#elemento_formulario_izq{width:30%;float:left;text-align:right;padding-right:3%;padding-top:6px}
+#elemento_formulario_izq label{color:#fed750;}
+#elemento_formulario_der label{color:#FFFFFF;}
+#elemento_formulario_der{width:70%;float:left;text-align:left}
+h3{color:#fed750;}
+#button{padding:10px 30px; background-color:#ed1624;margin-top:10px;border-radius:5px;color:#FFF;border:0px;font-weight:bold;font-size:16px;}
+#button:hover{background-color:#fed750}
+</style>
+</head>
+
+<body>
+<div id="contedor_login">
+	<h3>INGRESA TU CUENTA</h3>
+	<form id="form1" name="form1" method="post" action="">
+	  <div id="elemento_formulario">
+      	<div id="elemento_formulario_izq"><label>EMAIL</label></div>
+		<div id="elemento_formulario_der"><input type="text" name="email" id="email" /></div>
+        <div class="clear"></div>
+	  </div>
+      <div id="elemento_formulario">
+      	<div id="elemento_formulario_izq"><label>CONTRASEÑA</label></div>
+	    <div id="elemento_formulario_der"><input type="text" name="contrasena" id="contrasena" /></div>
+        <div class="clear"></div>
+		</div>
+    <a href="#">¿Olvidaste tu contraseña?</a><br />
+    <label><input type="checkbox" name="recordarme" id="recordarme" /> Recordarme</label><BR />
+    <a href="#">CREAR CUENTA</a><br />
+    <label>
+      <input type="submit" name="button" id="button" value="INGRESAR" />
+    </label>
+
+  </form>
+</div>
+</body>
+</html>

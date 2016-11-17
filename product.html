@@ -13,7 +13,35 @@
 
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/ph.app.css" type="text/css">
-    
+    <!-- SCRIPTS LIGHTBOXS (POPUPS) -->
+
+    <link rel="stylesheet" href="css/colorbox.css" />
+		<script src="js/lightbox/jquery.colorbox.js"></script>
+		<script>
+			$(document).ready(function(){
+				$(".ajax").colorbox();
+				$("#click").click(function(){ 
+					$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("none.");
+					return false;
+				});
+			});
+			$(document).ready(function(){
+				$(".ajax2").colorbox({"width":"700"});
+				$("#click").click(function(){ 
+					$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("none.");
+					return false;
+				});
+			});
+			$(document).ready(function(){
+				$(".ajax3").colorbox({"width":"320"});
+				$("#click").click(function(){ 
+					$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("none.");
+					return false;
+				});
+			});
+		</script>
+        
+<!-- FIN SCRIPTS LIGHTBOXS (POPUPS) -->  
     </head>  
 <body>
 <section class="main hidden-sm hidden-xs">
@@ -23,7 +51,7 @@
         	<div class="" style="width:234px; height:58px; margin-left:150px; float:left;">
            	<a href="index.html"><img src="img/logo.png" width="234" height="58"></a> </div>
             <div class="text-center" style="width:234px; height:58px; position:absolute; right:100px;">
-            <a href="index2.html" class="sign">INGRESAR</a> - <a href="reg.html" class="sign">REGISTRARSE</a>
+            <a href="lightbox/ingresar.html" class="sign ajax">INGRESAR</a> - <a href="reg.html" class="sign">REGISTRARSE</a>
             	
             </div>
         </div>    	
@@ -44,7 +72,7 @@
               
               </li>
               <li><a href="#" class="sep">OFERTAS</a></li>
-              <li><a href="#" class="com">COMENZAR ORDEN</a></li>
+              <li><a href="lightbox/comenzar-orden.html" class="com ajax">COMENZAR ORDEN</a></li>
             </ul>
        	 </div>
     </div>
@@ -113,7 +141,7 @@
                    		</div>
                     </div>
                     <div style="width:340px;  padding:0px; margin-left: 150px; ">
-                    	<h1 class="arthead"  style="font-family:ucondbold;">PIZZA SUPREMA</h1>
+                    	<h1 class="arthead"  style="font-family:ucondbold;">PIZZA SUPREMA <span class="ver-mas-pizza"><a href="lightbox/detalle-pizza.html" class="ajax2">ver más</a></span></h1>
                         <div class="txt-pizza-product" style=" width:340px; color:white; font-family:Rregular;">
                         	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<br> 
                             <a href="#"  class="button btn-danger personalizar-masa-tipo">PERSONALIZAR</a><!-- menu emergente-->
@@ -133,7 +161,7 @@
                    		</div>
                     </div>
                     <div style="width:340px;  padding:0px; margin-left: 150px; ">
-                    	<h1 class="arthead"  style="font-family:ucondbold;">PIZZA SUPREMA</h1>
+                    	<h1 class="arthead"  style="font-family:ucondbold;">PIZZA SUPREMA <span class="ver-mas-pizza"><a href="lightbox/detalle-pizza.html" class="ajax2">ver más</a></span></h1>
                         <div class="txt-pizza-product" style=" width:340px; color:white; font-family:Rregular;">
                         	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<br> 
                             <a href="#"  class="button btn-danger personalizar-masa-tipo">PERSONALIZAR</a><!-- menu emergente-->
@@ -283,7 +311,7 @@
            <div class="price" style="width:100%; height:33px; margin-top:12px; margin-bottom:12px; text-align: center;">
                         $ 7.990
                    		</div> 
-            <h1 class="arthead text-center" style="font-family:ucondbold;">PIZZA SUPRREME</h1>  
+            <h1 class="arthead text-center" style="font-family:ucondbold;">PIZZA SUPRREME <span class="ver-mas-pizza"><a href="lightbox/detalle-pizza.html" class="ajax3">ver más</a></span></h1>  
             <div style=" width:100%; height:auto; color:white; font-family:Rregular; margin-bottom:20px;">
                         	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<br> 
                             <a href="#" class="button btn-danger personalizar-masa-tipo-xs">TIPO MASA</a>
@@ -298,7 +326,7 @@
            <div class="price" style="width:100%; height:33px; margin-top:12px; margin-bottom:12px; text-align: center;">
                         $ 7.990
                    		</div> 
-          <h1 class="arthead text-center" style="font-family:ucondbold;">PIZZA SUPRREME</h1> 
+          <h1 class="arthead text-center" style="font-family:ucondbold;">PIZZA SUPRREME <span class="ver-mas-pizza"><a href="lightbox/detalle-pizza.html" class="ajax3">ver más</a></span></h1> 
           <div style=" width:100%; height:auto; color:white; font-family:Rregular; margin-bottom:20px;">
                         	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<br> 
                             <a href="#" class="button btn-danger personalizar-masa-tipo-xs">TIPO MASA</a>

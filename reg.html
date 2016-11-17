@@ -13,6 +13,28 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/ph.app.css" type="text/css">
+    <!-- SCRIPTS LIGHTBOXS (POPUPS) -->
+
+    <link rel="stylesheet" href="css/colorbox.css" />
+		<script src="js/lightbox/jquery.colorbox.js"></script>
+		<script>
+			$(document).ready(function(){
+				$(".ajax").colorbox();
+				$("#click").click(function(){ 
+					$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("none.");
+					return false;
+				});
+			});
+			$(document).ready(function(){
+				$(".ajax3").colorbox({"width":"320"});
+				$("#click").click(function(){ 
+					$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("none.");
+					return false;
+				});
+			});
+		</script>
+        
+<!-- FIN SCRIPTS LIGHTBOXS (POPUPS) -->     
 </head>  
 <body>
 <section class="main hidden-sm hidden-xs">
@@ -22,7 +44,7 @@
         	<div class="" style="width:234px; height:58px; margin-left:150px; float:left;">
            	<a href="index.html"><img src="img/logo.png" width="234" height="58"></a> </div>
             <div class="text-center" style="width:234px; height:58px; position:absolute; right:100px;">
-            <a href="index2.html" class="sign">INGRESAR</a> - <a href="reg.html" class="sign">REGISTRARSE</a>
+            <a href="lightbox/ingresar.html" class="sign ajax">INGRESAR</a> - <a href="reg.html" class="sign">REGISTRARSE</a>
             	
             </div>
         </div>    	
@@ -43,7 +65,7 @@
               
               </li>
               <li><a href="#" class="sep">OFERTAS</a></li>
-              <li><a href="#" class="com">COMENZAR ORDEN</a></li>
+              <li><a href="lightbox/comenzar-orden.html" class="ajax">COMENZAR ORDEN</a></li>
             </ul>
        	 </div>
     </div>
@@ -199,12 +221,13 @@
            	<center><a href="index.html">
             <img src="img/logo.png" width="234" height="58"></a></center> </div>
             <div class=" col-sm-3 col-xs-12 text-center pull-right">
-            <a href="index2.html" class="sign">INGRESAR</a> - <a href="reg.html" class="sign">REGISTRARSE</a>
+            <a href="lightbox/ingresar.html" class="sign ajax3">INGRESAR</a> - <a href="reg.html" class="sign">REGISTRARSE</a>
             	<a href="#" class="cr"><p><!--<span class="cart"></span><!--0-->
                 
                 <span class="amount">$0.00</span></p></a>
                 
             </div>
+            <div class="clear"></div>
              <div class="col-xs-12 hidden-sm text-center" style="color:white;">
             <a href="#mnu" id="bar" style="color:white;" data-toggle="collapse"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
             
@@ -231,7 +254,7 @@
               
               </li>
               <li><a href="#" class="sep">OFERTAS</a></li>
-              <li><a href="#" class="com">COMENZAR ORDEN</a></li>
+              <li><a href="lightbox/comenzar-orden.html" class="com ajax3">COMENZAR ORDEN</a></li>
             </ul>
        	 </div>
     </div>

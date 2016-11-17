@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Comenzar Orden</title>
+<style>
+body{margin:0px;padding:0px;border:0px;}
+#contedor_login{text-align:left;margin-left:auto;margin-right:auto;padding:3%;}
+#contedor_login h3{color:#FFF;font-size:32px}
+.clear{clear:both;}
+#imagen-pizza{text-align:center;width:30%;float:left;}
+#descripcion-pizza{text-align:left;width:66%;margin-left:4%;float:left;}
+#descripcion-pizza h3{color:#fed750 !important}
+#descripcion-pizza p{color:#CCC !important;}
+#ingredientes_pizza{}
+#ingredientes_pizza .ingrediente{width:80px;padding-top:10px;float:left;text-align:center;color:#FFF;}
+#ingredientes_pizza .ingrediente img{margin-bottom:10px;}
+
+@media only screen and (max-width: 768px) {
+	#imagen-pizza{width:100%;float:none;}
+	#descripcion-pizza{width:100%;float:none;margin-left:0px;}
+	#ingredientes_pizza .ingrediente img{margin-bottom:5px;width:25px;}
+	
+}
+
+
+</style>
+<script>
+$('#delivery').click(function(){
+    $('#span_delivery').toggleClass('checkeado')
+	$('#span_delivery2').toggleClass('checkeado2')
+	$('#contenido_extra').toggleClass('ocultar')
+})
+$('#delivery2').click(function(){
+    $('#span_delivery2').toggleClass('checkeado2')
+	$('#span_delivery').toggleClass('checkeado')
+	$('#contenido_extra').toggleClass('ocultar')
+})
+</script>
+</head>
+
+<body>
+<div id="contedor_login">
+	
+	<div id="contenedor_descripcion_pizza">
+    	<div id="imagen-pizza"><img src="img/fullpiza.png" /><br /><h3>#9.990</h3></div>
+        <div id="descripcion-pizza">
+        	<h3>NOMBRE PIZZA</h3>
+	        <p>Descripción de la pizza</p>
+    	    <div id="ingredientes_pizza">
+        		<div class="ingrediente"><img src="img/img_ingrediente01.jpg" /><br />Ingrediente 1</div>
+        		<div class="ingrediente"><img src="img/img_ingrediente01.jpg" /><br />Ingrediente 2</div>
+        		<div class="ingrediente"><img src="img/img_ingrediente01.jpg" /><br />Ingrediente 3</div>
+        		<div class="ingrediente"><img src="img/img_ingrediente01.jpg" /><br />Ingrediente 4</div>
+        		<div class="ingrediente"><img src="img/img_ingrediente01.jpg" /><br />Ingrediente 5</div>                                                                
+                <div class="clear"></div>
+        	</div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+</body>
+</html>
