@@ -541,7 +541,7 @@ section.main {
 
 /* line 124, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
 .mainmenu a.com:hover {
-  background-color: #EAE7DF;
+  background-color: #CD1C24;
 }
 
 /* line 128, C:/wamp/www/PizzaHutChile/css/scss/base/_base.scss */
@@ -1774,3 +1774,5 @@ a.sign, .sign {
 /* Layouts - Pages layouts styles*/
 
 /*# sourceMappingURL=../ph.app.map */
+
+.ver-mas-pizza a{font-size:12px;color:#FFF;}

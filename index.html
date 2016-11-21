@@ -1,106 +1,115 @@
-<html>
+<!DOCTYPE html>
+<html ng-app="phApp">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <link rel="icon" href="./img/icon.png" type="image/x-icon" />
-    <title>PIZZAHUT</title>
-    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-   <script>
-   </script>
-    <!-- Latest compiled and minified CSS -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">      
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <title>Pizza Hut</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/ph.app.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css"/>    
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
-<!-- SCRIPTS LIGHTBOXS (POPUPS) -->
+</head>
 
-    <link rel="stylesheet" href="css/colorbox.css" />
-		<script src="js/lightbox/jquery.colorbox.js"></script>
-		<script>
-			$(document).ready(function(){
-				$(".ajax").colorbox();
-				$("#click").click(function(){ 
-					$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("none.");
-					return false;
-				});
-			});
-			$(document).ready(function(){
-				$(".ajax3").colorbox({"width":"320"});
-				$("#click").click(function(){ 
-					$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("none.");
-					return false;
-				});
-			});
-		</script>
-        
-<!-- FIN SCRIPTS LIGHTBOXS (POPUPS) -->        
-</head>  
-<body>
-<section class="main hidden-sm hidden-xs" >
-<!--head-->
-    <div class="container-fluid padnul" id="head" >
-    	<div class="col-md-12 padnul" style=" margin-top: 13px;">
-        	<div class="" style="width:234px; height:58px; margin-left:150px; float:left;">
-           	<a href="index.html"><img src="img/logo.png" width="234" height="58"></a> </div>
-            <div class="text-center" style="width:234px; height:58px; position:absolute; right:100px;">
-            <a href="lightbox/ingresar.html" class="sign ajax" title="Ingresar">INGRESAR</a> - <a href="reg.html" class="sign">REGISTRARSE</a>
-            	
+<body class="container">
+<div class="row header-top"> 
+    <!-- TOP SIN INGRESAR -->
+    <div class="col-lg-6"><a href="index.html"><img src="img/logo.png" title="Pizza Hut" alt="Pizza Hut" /></a></div> 
+    <div class="col-lg-6 ingreso-top"><a href="#Modal-Ingreso" data-toggle="modal">INGRESAR</a> - <a href="reg.html">REGISTRARSE</a></div>
+    <!-- TOP INGRESADO -->
+    <!--
+    <div class="col-lg-6"><a href="index.html"><img src="img/logo.png" title="Pizza Hut" alt="Pizza Hut" /></a></div> 
+    <div class="col-lg-6 ingreso-top cliente-ingresado-top">Bienvenido NOMBRE DEL CLIENTE<a href="#" class="link-salir">SALIR</a> - <a href="#">MI CUENTA</a></div>
+    -->
+</div>
+<div class="navbar navbar-inverse contenedor-menu-web"> 
+    <ul class="nav navbar-nav menu-web"> 
+        <li class="active"><a href="#">PIZZAS</a></li> 
+        <li class="dropdown"> 
+    		<a class="dropdown-toggle" href="#" data-toggle="dropdown" >MÁS <b class="caret"></b></a> 
+    		<ul class="dropdown-menu"> 
+        		<li><a href="productos.html?tipo=pasta">PASTA</a></li> 
+        		<li><a href="productos.html?tipo=palitos">PALITOS</a></li> 
+        		<li><a href="productos.html?tipo=bebidas">BEBIDAS</a></li>
+                <li><a href="productos.html?tipo=pollo">POLLO</a></li>
+                <li><a href="productos.html?tipo=postres">POSTRES</a></li> 
+    		</ul> 
+		</li>
+        <li class="opt-menu-destacado"><a href="#">OFERTAS</a></li>
+        <!-- BOTÓN COMENZAR ORDEN SIN INGRESAR -->
+        <li class="order-menu"><a data-toggle="modal" href="#Modal-Orden">COMENZAR ORDEN</a></li> 
+        <!-- BOTÓN MENÚ SUPERIOR DATOS ORDEN -->
+        <!--
+        <li class="contenedor-boton-orden-ingresado">
+        	<div class="row boton-orden-ingresado">
+            	<div class="col-lg-2 icono-menu-retiro"><img src="img/pizza_hut_37.png" /></div>
+                <div class="col-lg-4 direccion-retiro-menu01">Retirar Desde<br /><span class="direccion-retiro-menu02">Santiago 123, Santiago</span></div>
+                <div class="col-lg-2 icono-menu-retiro"><img src="img/carrito_37.png" /></div>
+                <div class="col-lg-4 precio-menu-superior">$88.888</div>
             </div>
-        </div>    	
+        </li>       
+        -->
+    </ul> 
+</div>
+<div class="row hamburger-menu">    
+    <div class="col-lg-12">
+	    <a href="#mnu" id="bar" style="color:white;" data-toggle="collapse"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
     </div>
-    <!--menu-->
-	<div class="container-fluid padnul" >
-    	<div class="col-md-12 padnul navbar navbar-inverse mainmenu" style="margin: 0px;">
-        	<ul class="nav nav-pills nav-justified padnul">
-              <li class="active"><a href="#">PIZZAS</a></li>
-              <li><a href="#">MÁS <i class="fa fa-sort-desc right" aria-hidden="true"></i></a>
-              	<ul class="dropdown-menu">
-                    <li><a href="#">PASTA</a></li>
-                    <li><a href="#">PALITOS</a></li>
-                    <li><a href="#">BEBIDAS</a></li>
-                    <li><a href="#">POLLO</a></li>
-                    <li><a href="#">POSTRES</a></li>
-                  </ul>
-              
-              </li>
-              <li><a href="#" class="sep">OFERTAS</a></li>
-              <li><a href="lightbox/comenzar-orden.html" class="com ajax">COMENZAR ORDEN</a></li>
-            </ul>
-       	 </div>
-    </div>
-	<!--slide-->
-		<div class="container-fluid padnul">
-        	<div class="col-md-12 padnul  slide">
-            	<div id="myCarousel" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <!--ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-   
-  </ol-->
-
-  <!-- Wrapper for slides -->
+</div>
+<!-- MENÚ MOVIL-->
+    <ul class="nav navbar-nav menu-mobil"  id="mnu"> 
+        <li class="active"><a href="#">PIZZAS</a></li> 
+        <li class="dropdown"> 
+    		<a class="dropdown-toggle" href="#" data-toggle="dropdown" >MÁS <b class="caret"></b></a> 
+    		<ul class="dropdown-menu"> 
+        		<li><a href="productos.html?tipo=pasta">PASTA</a></li> 
+        		<li><a href="productos.html?tipo=palitos">PALITOS</a></li> 
+        		<li><a href="productos.html?tipo=bebidas">BEBIDAS</a></li>
+                <li><a href="productos.html?tipo=pollo">POLLO</a></li>
+                <li><a href="productos.html?tipo=postres">POSTRES</a></li> 
+    		</ul> 
+		</li>
+        <li class="opt-menu-destacado"><a href="#">OFERTAS</a></li>
+        <!-- BOTÓN MENU SUPERIOR MOVIL COMENZAR ORDEN -->
+        <li class="order-menu ajax"><a data-toggle="modal" href="#Modal-Orden">COMENZAR ORDEN</a></li>
+        <!-- BOTÓN MENÚ SUPERIOR MOVIL DATOS ORDEN -->
+        <!--
+        <li class="contenedor-boton-orden-ingresado">
+        	<div class="row boton-orden-ingresado">
+            	<div class="col-lg-2 icono-menu-retiro"><img src="img/pizza_hut_37.png" /></div>
+                <div class="col-lg-4 direccion-retiro-menu01">Retirar Desde<br /><span class="direccion-retiro-menu02">Santiago 123, Santiago</span></div>
+                <div class="col-lg-2 icono-menu-retiro"><img src="img/carrito_37.png" /></div>
+                <div class="col-lg-4 precio-menu-superior">$88.888</div>
+            </div>
+        </li>
+        -->
+       
+    </ul> 
+<!-- FIN MENU MOVIL -->    
+<!-- SLIDER -->
+<div class="container-fluid padnul" ></div>
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner" role="listbox">
     <div class="item active">
       <a href="#"><img src="img/sli1.jpg" ></a>
     </div>
-
-    <div class="item">
+	<div class="item">
       <a href="#"><img src="img/sli2.jpg" ></a>
     </div>
-
-    <div class="item">
+	<div class="item">
       <a href="#"><img src="img/sli3.jpg" ></a>
     </div>
-
-    
   </div>
-
-  <!-- Left and right controls -->
+<!-- controles sliders -->
   <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
@@ -110,179 +119,121 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
-            </div>
-        </div> 
-        <!--article-->
-        <div class="container-fluid padnul article">
-        	<div class="col-md-12 padnul">
-            	<div class="ad1">
-               	 	<a href="product.html"><img src="img/pizz.jpg" width="570" height="205"> </a>
-                    
-                 </div>
-                <div class="ad2">
-               		<a href="product.html"><img src="img/pizz2.jpg" width="570" height="205"></a>
-                     
-                </div>
-            </div>
-        </div>
-        <!--footer-->
-        <div class="container-fluid padnul" style="background-color:black; color:white; padding-top:5px;">
-    		<div class="col-md-12 ft">
-            	<div class="col-md-3">
-                    <p>MENU</p>
-                    <ul class="footlist">
-                    	<li><a href="#">Pizzas</a></li>
-                          <li><a href="#">Mas</a></li>
-                          <li><a href="#">Ofertas</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                	<p>NOSOTROS</p>
-                    <ul class="footlist">
-                    	<li><a href="#">Historia</a></li>
-                          <li><a href="#">Carrera</a></li>
-                          <li><a href="#">Conviertete en una franquicia</a></li>
-                    </ul>                
-                </div>
-                <div class="col-md-3">
-                <p>POLIZAS</p>
-                    <ul class="footlist">
-                    	<li><a href="#">Politica de privacidad</a></li>
-                          <li><a href="#">Condiciones de uso</a></li>
-                          <li><a href="#">Registro</a></li>
-                    </ul> 
-                </div>
-                <div class="col-md-3" style="padding-top:10px;">
-                	 <a class="link_camer_footer" href="#"><img src="img/camer.png" ></a>
-                     <a class="link_facebook_footer" href="#"><img src="img/facebook.png" ></a>
-                     <a class="link_twitter_footer" href="#"><img src="img/twiter.png" ></a>
-                </div>
-            </div>
-         </div>
-</section>  
-<section class="visible-sm visible-xs mobileview">
-<!--head-->
-	<div class="container-fluid">
-    	<div class="col-md-12 " >
-        	<div class="col-sm-3 col-xs-12" >
-           	<center><a href="index.html">
-            <img src="img/logo.png" width="234" height="58"></a></center> </div>
-            <div class=" col-sm-3 col-xs-12 text-center pull-right">
-            <a href="lightbox/ingresar.html" class="sign ajax3">INGRESAR</a> - <a href="reg.html" class="sign">REGISTRARSE</a>
-            	<a href="#" class="cr"><p><!--<span class="cart"></span><!--0-->
-                
-                <span class="amount">$0.00</span></p></a>
-                
-            </div>
-            <div class="clear"></div>
-             <div class="col-xs-12 hidden-sm text-center" style="color:white;">
-            <a href="#mnu" id="bar" style="color:white;" data-toggle="collapse"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
-            
-         </div>
-        </div> 
-          	
+<!-- fotos promociones -->
+<div class="row productos-promocion-home"> 
+    <div class="col-lg-6"><a href="product.html"><img src="img/pizz.jpg" width="100%"/> </a></div> 
+    <div class="col-lg-6"><a href="product.html"><img src="img/pizz2.jpg" width="100%"/></a></div> 
+</div>
+<!-- PIE DE PÁGINA -->
+<div class="row pie-pagina"> 
+    <div class="col-lg-3 pie-col-1">
+    	<p>MENÚ</p>
+        <ul class="footlist">
+        	<li><a href="#">Pizzas</a></li>
+            <li><a href="#">Mas</a></li>
+            <li><a href="#">Ofertas</a></li>
+        </ul>
+    </div> 
+    <div class="col-lg-3 pie-col-2">
+    	<p>NOSOTROS</p>
+        <ul class="footlist">
+        	<li><a href="#">Historia</a></li>
+        	<li><a href="#">Carrera</a></li>
+        	<li><a href="#">Conviertete en una franquicia</a></li>
+        </ul>
     </div>
-<!--/head-->
-<!--menu-->
-	<div class="container-fluid padnul" >
-    	
-    	<div class="col-md-12 padnul navbar navbar-inverse mainmenu " style="margin: 0px;">
-        
-        	<ul class="nav nav-pills nav-justified padnul" id="mnu">
-              <li class="active"><a href="#">PIZZAS</a></li>
-              <li><a href="#">MÁS <i class="fa fa-sort-desc pull-right" aria-hidden="true"></i></a>
-              	<ul class="dropdown-menu">
-                    <li><a href="#">PASTA</a></li>
-                    <li><a href="#">PALITOS</a></li>
-                    <li><a href="#">BEBIDAS</a></li>
-                    <li><a href="#">POLLO</a></li>
-                    <li><a href="#">POSTRES</a></li>
-                  </ul>
-              
-              </li>
-              <li><a href="#" class="sep">OFERTAS</a></li>
-              <li><a href="lightbox/comenzar-orden.html" class="com ajax3">COMENZAR ORDEN</a></li>
-            </ul>
-       	 </div>
+    <div class="col-lg-3 pie-col-3">
+    	<p>POLIZAS</p>
+        	<ul class="footlist">
+            	<li><a href="#">Politica de privacidad</a></li>
+                <li><a href="#">Condiciones de uso</a></li>
+                <li><a href="#">Registro</a></li>
+            </ul> 
     </div>
-<!--/menu-->
-<!--slide-->
-<div class="container-fluid padnul">
-        	<div class="col-md-12 padnul  slide">
-            	<div id="myCarousel" class="carousel slide" data-ride="carousel">
-                
-                <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <a href="#"><img src="img/sli1.jpg" ></a>
-    </div>
+    <div class="col-lg-3 pie-col-4">
+    	<a class="link_camer_footer" href="#"><img src="img/camer.png" ></a>
+        <a class="link_facebook_footer" href="#"><img src="img/facebook.png" ></a>
+        <a class="link_twitter_footer" href="#"><img src="img/twiter.png" ></a>
+    </div> 
+</div>
 
-    <div class="item">
-      <a href="#"><img src="img/sli2.jpg" ></a>
-    </div>
+<!-- MODALS (POPUPS) -->
 
-    <div class="item">
-      <a href="#"><img src="img/sli3.jpg" ></a>
-    </div>
-
-    
-  </div>
-
-  <!-- Left and right controls -->
-  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
+<!-- MODAL COMENZAR PEDIDO -->
+<div id="Modal-Orden" class="modal fade">
+	<div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+				<h3>COMENZAR PEDIDO</h3>
             </div>
-        </div>
-<!--/slide--> 
-<!--article-->
-<div class="col-xs-10 col-xs-offset-1 padnul" >
-            <a href="product.html"><img src="img/pizz.jpg" class="img-responsive" style="width:100%; margin-top:10px;"> </a>                    
+          	 <div class="modal-body">
+				<div class="row">
+                	<div class="col-lg-6 modal-delivery-left">
+                		<input type="radio" name="checkbox01" id="delivery" value="delivery" class="radio01" />
+	          			<label class="span_delivery" for="delivery">DELIVERY</label>
+                	</div>
+                    <div class="col-lg-6 modal-delivery-right">
+        				<input type="radio" name="checkbox01" id="delivery2" value="delivery2" class="radio01" />
+         				<label class="span_delivery2" for="delivery2">RETIRO</label>
+                	</div>
+                </div>
+        		<h2>¿A DONDE QUIERES REALIZAR EL REPARTO?</h2>
+	 			<label>
+	   				<select name="direccionreparto" id="direccionreparto">
+	      				<option value="0">direccion ejemplo 1</option>
+	      				<option value="0">direccion ejemplo 2</option>
+        			</select>
+      			</label><br />
+      			<a class="cambiar-ubicacion">CAMBIAR UBICACIÓN</a><BR />
+				<input type="submit" name="button_modal_delivery" id="button_modal_delivery" value="ENVIAR" />
+			</div>
+		</div>
+	</div>
 </div>
-<div class="col-xs-10 col-xs-offset-1 padnul">
-            <a href="product.html"><img src="img/pizz2.jpg" class="img-responsive" style="width:100%;  margin-top:10px;"> </a>                    
+<!-- MODAL LOGIN -->
+<div id="Modal-Ingreso" class="modal fade">
+	<div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+				<h3>INGRESA TU CUENTA</h3>
+            </div>
+          	 <div class="modal-body">
+				<div class="row textboxs-ingreso">
+                	 <div class="col-lg-3 modal-ingresar-left">
+                     	EMAIL
+                     </div>
+                     <div class="col-lg-9 modal-ingresar-right">
+                     	<input type="text" name="email" id="email" />
+                     </div>
+                </div>  
+                <div class="row textboxs-ingreso">
+                	 <div class="col-lg-3 modal-ingresar-left">
+                     	CONTRASEÑA
+                     </div>
+                     <div class="col-lg-9 modal-ingresar-right">
+                     	<input type="password" name="email" id="email" />
+                     </div>
+                </div>              
+      			<a class="cambiar-ubicacion">¿Olvidaste tu contraseña?</a><BR />
+                <label><input type="checkbox" name="recordarme" id="recordarme" /> Recordarme</label><br />
+                <a class="cambiar-ubicacion">CREAR CUENTA</a><BR />
+				<input type="submit" name="button_modal_delivery" id="button_modal_delivery" value="INGRESAR" />
+			</div>
+		</div>
+	</div>
 </div>
-<!--/article-->
-<!--footer-->
-<div class="col-xs-12 padnul" style="margin:10px;">
-<div class="col-xs-4">
-                    <p>MENU</p>
-                    <ul class="footlist">
-                    	<li><a href="#">Pizzas</a></li>
-                          <li><a href="#">Mas</a></li>
-                          <li><a href="#">Ofertas</a></li>
-                    </ul>
-</div>
-<div class="col-xs-4">
-                	<p>NOSOTROS</p>
-                    <ul class="footlist">
-                    	<li><a href="#">Historia</a></li>
-                          <li><a href="#">Carrera</a></li>
-                          <li><a href="#">Converttte en una franquicia</a></li>
-                    </ul>                
-</div>
-<div class="col-xs-4">
-                <p>POLIZAS</p>
-                    <ul class="footlist">
-                    	<li><a href="#">Politica de privacidad</a></li>
-                          <li><a href="#">Condiciones de uso</a></li>
-                          <li><a href="#">Registro</a></li>
-                    </ul> 
-  </div>
-  <div class="col-xs-12 text-center">
-<a class="link_camer_footer" href="#"><img src="img/camer.png" ></a>
-                     <a class="link_facebook_footer" href="#"><img src="img/facebook.png" ></a>
-                     <a class="link_twitter_footer" href="#"><img src="img/twiter.png" ></a>
-  </div>
-                
-</div>
-<!--/footer-->
-</section>
+<!-- END MODALS -->
+<!-- SCRIPTS -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-resource.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="js/app.js"></script>
+
+
 <script>
 $(document).ready(function(){
     $("#bar").click(function(){
@@ -290,7 +241,6 @@ $(document).ready(function(){
     });
 });
 </script>
-
-
+<!-- END SCRIPTS -->
 </body>
 </html>

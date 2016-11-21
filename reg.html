@@ -1,367 +1,293 @@
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <link rel="icon" href="./img/icon.png" type="image/x-icon" />
-    <title>PIZZAHUT</title>
-    
-<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-    <!-- Latest compiled and minified CSS -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <title>Pizza Hut</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css"/>
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/ph.app.css" type="text/css">
-    <!-- SCRIPTS LIGHTBOXS (POPUPS) -->
+</head>
 
-    <link rel="stylesheet" href="css/colorbox.css" />
-		<script src="js/lightbox/jquery.colorbox.js"></script>
-		<script>
-			$(document).ready(function(){
-				$(".ajax").colorbox();
-				$("#click").click(function(){ 
-					$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("none.");
-					return false;
-				});
-			});
-			$(document).ready(function(){
-				$(".ajax3").colorbox({"width":"320"});
-				$("#click").click(function(){ 
-					$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("none.");
-					return false;
-				});
-			});
-		</script>
-        
-<!-- FIN SCRIPTS LIGHTBOXS (POPUPS) -->     
-</head>  
-<body>
-<section class="main hidden-sm hidden-xs">
-<!--head-->
-    <div class="container-fluid padnul" id="head" >
-    	<div class="col-md-12 padnul" style=" margin-top: 13px;">
-        	<div class="" style="width:234px; height:58px; margin-left:150px; float:left;">
-           	<a href="index.html"><img src="img/logo.png" width="234" height="58"></a> </div>
-            <div class="text-center" style="width:234px; height:58px; position:absolute; right:100px;">
-            <a href="lightbox/ingresar.html" class="sign ajax">INGRESAR</a> - <a href="reg.html" class="sign">REGISTRARSE</a>
-            	
+<body class="container">
+<div class="row header-top"> 
+    <!-- TOP SIN INGRESAR -->
+    <div class="col-lg-6"><a href="index.html"><img src="img/logo.png" title="Pizza Hut" alt="Pizza Hut" /></a></div> 
+    <div class="col-lg-6 ingreso-top"><a href="#Modal-Ingreso" data-toggle="modal">INGRESAR</a> - <a href="reg.html">REGISTRARSE</a></div>
+    <!-- TOP INGRESADO -->
+    <!--
+    <div class="col-lg-6"><a href="index.html"><img src="img/logo.png" title="Pizza Hut" alt="Pizza Hut" /></a></div> 
+    <div class="col-lg-6 ingreso-top cliente-ingresado-top">Bienvenido NOMBRE DEL CLIENTE<a href="#" class="link-salir">SALIR</a> - <a href="#">MI CUENTA</a></div>
+    -->
+</div>
+<div class="navbar navbar-inverse contenedor-menu-web"> 
+    <ul class="nav navbar-nav menu-web"> 
+        <li class="active"><a href="#">PIZZAS</a></li> 
+        <li class="dropdown"> 
+    		<a class="dropdown-toggle" href="#" data-toggle="dropdown" >MÁS <b class="caret"></b></a> 
+    		<ul class="dropdown-menu"> 
+        		<li><a href="productos.html?tipo=pasta">PASTA</a></li> 
+        		<li><a href="productos.html?tipo=palitos">PALITOS</a></li> 
+        		<li><a href="productos.html?tipo=bebidas">BEBIDAS</a></li>
+                <li><a href="productos.html?tipo=pollo">POLLO</a></li>
+                <li><a href="productos.html?tipo=postres">POSTRES</a></li> 
+    		</ul> 
+		</li>
+        <li class="opt-menu-destacado"><a href="#">OFERTAS</a></li>
+        <!-- BOTÓN COMENZAR ORDEN SIN INGRESAR -->
+        <li class="order-menu"><a data-toggle="modal" href="#Modal-Orden">COMENZAR ORDEN</a></li> 
+        <!-- BOTÓN MENÚ SUPERIOR DATOS ORDEN -->
+        <!--
+        <li class="contenedor-boton-orden-ingresado">
+        	<div class="row boton-orden-ingresado">
+            	<div class="col-lg-2 icono-menu-retiro"><img src="img/pizza_hut_37.png" /></div>
+                <div class="col-lg-4 direccion-retiro-menu01">Retirar Desde<br /><span class="direccion-retiro-menu02">Santiago 123, Santiago</span></div>
+                <div class="col-lg-2 icono-menu-retiro"><img src="img/carrito_37.png" /></div>
+                <div class="col-lg-4 precio-menu-superior">$88.888</div>
             </div>
-        </div>    	
+        </li>       
+        -->
+    </ul> 
     </div>
-<!--menu-->
-	<div class="container-fluid padnul" >
-    	<div class="col-md-12 padnul navbar navbar-inverse mainmenu">
-        	<ul class="nav nav-pills nav-justified padnul">
-              <li class="active"><a href="#">PIZZAS</a></li>
-              <li><a href="#">MÁS <i class="fa fa-sort-desc right" aria-hidden="true"></i></a>
-              	<ul class="dropdown-menu">
-                    <li><a href="#">PASTA</a></li>
-                    <li><a href="#">PALITOS</a></li>
-                    <li><a href="#">BEBIDAS</a></li>
-                    <li><a href="#">POLLO</a></li>
-                    <li><a href="#">POSTRES</a></li>
-                  </ul>
-              
-              </li>
-              <li><a href="#" class="sep">OFERTAS</a></li>
-              <li><a href="lightbox/comenzar-orden.html" class="ajax">COMENZAR ORDEN</a></li>
-            </ul>
-       	 </div>
+<div class="row hamburger-menu">    
+    <div class="col-lg-12">
+	    <a href="#mnu" id="bar" style="color:white;" data-toggle="collapse"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
     </div>
-    
-        <!--article-->
-        <div class="container-fluid padnul" style="padding-bottom:60px;">
-        	<div class="col-md-12" style="padding:0px;">
-            	<div class="titletext" style="margin-left: 23px;">
-            		<h1 class="text-center" style="font-family:uconheavy;">CREA TU CUENTA DE PIZZA HUT</h1>
-                </div>
-            	<div class="newad3 registro-background" style="margin-left: 23px;">
-               	 	<!--1-->
-                    <div class="formdiv" >
-                    	<form>
-                        <div class="col-md-12">
-                        	<div class="formtxt" style="color:white;"><span style="font-size: 24px;">NOMBRE <sup>*</sup></span></div>
-                            <div class="formfeeld"><input type="text"></input></div>                            
-                        </div>
-                        <div class="col-md-12">
-                        	<div class="formtxt" style="color:white;"><span style="font-size: 24px;">APELLIDO <sup>*</sup></span></div>
-                            <div class="formfeeld"><input type="text"></input></div> 
-                         </div> 
-                         
-                         <div class="col-md-12">
-                        	<div class="formtxt" style="color:white;"><span style="font-size: 24px;">N DE TELEFONO <sup>*</sup></span></div>
-                            <div class="formfeeld"><input type="text"></input></div> 
-                         </div>
-                         <div class="col-md-12">
-                        	<div class="formtxt" style="color:white;"><span style="font-size: 24px;">E-MAIL <sup>*</sup></span></div>
-                            <div class="formfeeld"><input type="text"></input></div> 
-                         </div>
-                         <div class="col-md-12">
-                        	<div class="formtxt" style="color:white;"><span style="font-size: 24px;">CONFIRMAR E-MAIL <sup>*</sup></span></div>
-                            <div class="formfeeld"><input type="text"></input></div> 
-                         </div>
-                         <div class="col-md-12">
-                        	<div class="formtxt" style="color:white;"><span style="font-size: 24px;">CONTTRASEÑA <sup>*</sup></span></div>
-                            <div class="formfeeld"><input type="password"></input>
-                            <div class="ch">La contrasena debe tenser como minimo 6 caracteres</div>
-                            </div> 
-                         </div>
-                         <div class="col-md-12">
-                        	<div class="formtxt" style="color:white;"><span style="font-size: 24px;">CONFIRMAR CONTTRASEÑA <sup>*</sup></span></div>
-                            <div class="formfeeld"><input type="password"></input></div> 
-                         </div>
-                         <div class="col-md-12">
-                        	<div class="formtxt recibir-ofertas-txt" style="color:#D4A26F;"><span style="font-size: 24px;">INSCRIBIRME EN HUT LOVERS<span style="font-size:10px !important;font-family:Tahoma, Geneva, sans-serif;">©</span> Y RECIBIR OFERTAS</span></div>
-                            <div class="formfeeld">
-                            	<label class="radio-inline">
-                                  <input type="radio" name="optradio" class="radio-buttom-ofertas"><span style="color:white;">Solo per email</span>
-                                </label>
-                                <label class="radio-inline">
-                                  <input type="radio" name="optradio" class="radio-buttom-ofertas"><span style="color:white;">Email y sms</span>
-                                </label>
-                                <label class="radio-inline">
-                                  <input type="radio" name="optradio" class="radio-buttom-ofertas"><span style="color:white;">No, gracias</span>
-                                </label>
-                            </div> 
-                            
-                             <div class="textbox"><p>Estoy de acuredo con las condiciones de uso y entiendo que mi infomacion se usara segun lo establecido en las <a href="#">bases de prevacidad</a> </p>
-                             <p> Certifico que soy mayor de 13 anos</p>
-                            </div>
-                             <div class="regbtn">
-                           		<a href="#" class="button">CREAR CUENTA</a>
-                           </div>  
-                            
-                         </div>
-                                              
-                        </form>
-                    </div>
-                    </div>
-                    <div class="newad4 registro-background" style="height:600px;">
-                	<!--2-->
-                        <div class="formsecboxhd">
-                        
-                        	<span class="badge" style="background-color:#D4A26F; margin-top: -2px;  margin-right: 10px;" >1</span>
-                           
-                            
-                            <span style="color:#d4a26f; font-size:20px; text-align:center;">CON TU CUENTA PODRAS:</span>
-                        </div>
-                   		<div class="txtcont">
-                        	<div class="txtco1" style="font-family:Rregular;">* Ver el historical de ordenes realizadas
-                            </div>
-                            <div class="txtco2">
-                            </div>
-                            <div class="txtco3" style="font-family:Rregular;">
-                            * Acelerar el proceso de pago al guardar sus direcciones e informacion de pago
-                            </div>
-                        </div>
-                        <div class="spicon">
-                   		    <img src="img/i1.png" class="s">
-                            <img src="img/i2.png"  class="s">
-                            <img src="img/i3.png"  class="s"> 
-                        </div> 
-                        <div class="formsecboxhd">
-                        <span class="badge" style="background-color:#D4A26F; margin-top: -8px;  margin-right: 10px;">2</span>
-                        <span style="color:#d4a26f; font-size:20px; display: block; float: left; margin-top: -25px; margin-left: 30px; padding-bottom:28px;">CON UNA MEMBRESIA DE HUT LOVERS PODRAS:
-                        </span>
-                        </div>
-                        
-                        <div class="txta2">
-                        <p style="font-family:Rregular;">Recibir ofertas exclusivas para miembros en su casilla de entrada</p>
-                        </div>
-                        <div class="icodol">
-                       	<img src="img/i4.png"> 
-                        </div>
-                    </div>
-                                   
-                </div>
-                <!--ad-->
+</div>
+<!-- MENÚ MOVIL-->
+    <ul class="nav navbar-nav menu-mobil"  id="mnu"> 
+        <li class="active"><a href="#">PIZZAS</a></li> 
+        <li class="dropdown"> 
+    		<a class="dropdown-toggle" href="#" data-toggle="dropdown" >MÁS <b class="caret"></b></a> 
+    		<ul class="dropdown-menu"> 
+        		<li><a href="productos.html?tipo=pasta">PASTA</a></li> 
+        		<li><a href="productos.html?tipo=palitos">PALITOS</a></li> 
+        		<li><a href="productos.html?tipo=bebidas">BEBIDAS</a></li>
+                <li><a href="productos.html?tipo=pollo">POLLO</a></li>
+                <li><a href="productos.html?tipo=postres">POSTRES</a></li> 
+    		</ul> 
+		</li>
+        <li class="opt-menu-destacado"><a href="#">OFERTAS</a></li>
+        <!-- BOTÓN MENU SUPERIOR MOVIL COMENZAR ORDEN -->
+        <li class="order-menu ajax"><a data-toggle="modal" href="#Modal-Orden">COMENZAR ORDEN</a></li>
+        <!-- BOTÓN MENÚ SUPERIOR MOVIL DATOS ORDEN -->
+        <!--
+        <li class="contenedor-boton-orden-ingresado">
+        	<div class="row boton-orden-ingresado">
+            	<div class="col-lg-2 icono-menu-retiro"><img src="img/pizza_hut_37.png" /></div>
+                <div class="col-lg-4 direccion-retiro-menu01">Retirar Desde<br /><span class="direccion-retiro-menu02">Santiago 123, Santiago</span></div>
+                <div class="col-lg-2 icono-menu-retiro"><img src="img/carrito_37.png" /></div>
+                <div class="col-lg-4 precio-menu-superior">$88.888</div>
+            </div>
+        </li>
+        -->
+       
+    </ul> 
+<!-- FIN MENU MOVIL -->    
+<!-- REGISTRO -->
+<h1 class="titulo">CREA TU CUENTA EN PIZZA-HUT</h1>
+<div class="row contenedor-registro">
+	<div class="col-lg-6 single-producto-izq">
+    	<div class="row campos-form-reg">
+        	<div class="col-lg-4">
+            	NOMBRE*
+            </div>
+            <div class="col-lg-8">
+                <input type="text" name="campo-formulario-reg-1" id="campo-formulario-reg-1" class="campo-text-form-reg"/>
             </div>
         </div>
-        <!--footer-->
-        <div class="container-fluid padnul" style="background-color:black; color:white; padding-top:5px;">
-    		<div class="col-md-12 ft">
-            	<div class="col-md-3">
-                    <p>MENU</p>
-                    <ul class="footlist">
-                    	<li><a href="#">Pizzas</a></li>
-                          <li><a href="#">Mas</a></li>
-                          <li><a href="#">Ofertas</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                	<p>NOSOTROS</p>
-                    <ul class="footlist">
-                    	<li><a href="#">Historia</a></li>
-                          <li><a href="#">Carrera</a></li>
-                          <li><a href="#">Conviertete en una franquicia</a></li>
-                    </ul>                
-                </div>
-                <div class="col-md-3">
-                <p>POLIZAS</p>
-                    <ul class="footlist">
-                    	<li><a href="#">Politica de privacidad</a></li>
-                          <li><a href="#">Condiciones de uso</a></li>
-                          <li><a href="#">Registro</a></li>
-                    </ul> 
-                </div>
-                <div class="col-md-3" style="padding-top:10px;">
-<a class="link_camer_footer" href="#"><img src="img/camer.png" ></a>
-                     <a class="link_facebook_footer" href="#"><img src="img/facebook.png" ></a>
-                     <a class="link_twitter_footer" href="#"><img src="img/twiter.png" ></a>
-                                     </div>
+        <div class="row campos-form-reg">
+        	<div class="col-lg-4">
+            	APELLIDO*
             </div>
-         </div>
-</section>  
-<section class="visible-sm visible-xs mobileview">
-<!--head-->
-	<div class="container-fluid">
-    	<div class="col-md-12 " >
-        	<div class="col-sm-3 col-xs-12" >
-           	<center><a href="index.html">
-            <img src="img/logo.png" width="234" height="58"></a></center> </div>
-            <div class=" col-sm-3 col-xs-12 text-center pull-right">
-            <a href="lightbox/ingresar.html" class="sign ajax3">INGRESAR</a> - <a href="reg.html" class="sign">REGISTRARSE</a>
-            	<a href="#" class="cr"><p><!--<span class="cart"></span><!--0-->
-                
-                <span class="amount">$0.00</span></p></a>
+            <div class="col-lg-8">
+                <input type="text" name="campo-formulario-reg-2" id="campo-formulario-reg-2" class="campo-text-form-reg"/>
+            </div>
+        </div>
+        <div class="row campos-form-reg">
+        	<div class="col-lg-4">
+            	N° DE TELÉFONO*
+            </div>
+            <div class="col-lg-8">
+                <input type="text" name="campo-formulario-reg-3" id="campo-formulario-reg-3" class="campo-text-form-reg"/>
+            </div>
+        </div>
+        <div class="row campos-form-reg">
+        	<div class="col-lg-4">
+            	EMAIL*
+            </div>
+            <div class="col-lg-8">
+                <input type="text" name="campo-formulario-reg-4" id="campo-formulario-reg-4" class="campo-text-form-reg"/>
+            </div>
+        </div>
+        <div class="row campos-form-reg">
+        	<div class="col-lg-4">
+            	CONFIRMAR EMAIL*
+            </div>
+            <div class="col-lg-8">
+                <input type="text" name="campo-formulario-reg-5" id="campo-formulario-reg-5" class="campo-text-form-reg"/>
+            </div>
+        </div>
+        <div class="row campos-form-reg">
+        	<div class="col-lg-4">
+            	CONTRASEÑA*
+            </div>
+            <div class="col-lg-8">
+                <input type="password" name="campo-formulario-reg-6" id="campo-formulario-reg-6" class="campo-text-form-reg"/>
+            </div>
+        </div>
+        <div class="row campos-form-reg">
+        	<div class="col-lg-4">
+            	CONFIRMAR CONTRASEÑA*
+            </div>
+            <div class="col-lg-8">
+                <input type="password" name="campo-formulario-reg-7" id="campo-formulario-reg-7" class="campo-text-form-reg"/>
+            </div>
+        </div>
+        <div class="row campos-form-reg">
+        	<div class="col-lg-4 campo-form-especial">
+            	INSCRIBIRME EN HUT LOVERS© Y RECIBIR OFERTAS
+            </div>
+            <div class="col-lg-8 opciones-inscripcion">
+                <label>
+                    <input type="radio" name="opciones-incripcion" id="inscripcion-botons" value="solo-mail" />
+                    Solo por Email
+                </label>
+                <label>
+                    <input type="radio" name="opciones-incripcion" id="inscripcion-botons2" value="mail-y-sms" />
+                    Email y SMS
+                </label>
+                <label>
+                    <input type="radio" name="opciones-incripcion" id="inscripcion-botons3" value="no-inscribirme" />
+                    No, gracias
+                </label>
                 
             </div>
-            <div class="clear"></div>
-             <div class="col-xs-12 hidden-sm text-center" style="color:white;">
-            <a href="#mnu" id="bar" style="color:white;" data-toggle="collapse"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
-            
-         </div>
-        </div> 
-          	
-    </div>
-<!--/head-->
-<!--menu-->
-	<div class="container-fluid padnul" >
-    	
-    	<div class="col-md-12 padnul navbar navbar-inverse mainmenu " style="margin: 0px;">
-        
-        	<ul class="nav nav-pills nav-justified padnul" id="mnu">
-              <li class="active"><a href="#">PIZZAS</a></li>
-              <li><a href="#">MÁS <i class="fa fa-sort-desc pull-right" aria-hidden="true"></i></a>
-              	<ul class="dropdown-menu">
-                    <li><a href="#">PASTA</a></li>
-                    <li><a href="#">PALITOS</a></li>
-                    <li><a href="#">BEBIDAS</a></li>
-                    <li><a href="#">POLLO</a></li>
-                    <li><a href="#">POSTRES</a></li>
-                  </ul>
-              
-              </li>
-              <li><a href="#" class="sep">OFERTAS</a></li>
-              <li><a href="lightbox/comenzar-orden.html" class="com ajax3">COMENZAR ORDEN</a></li>
-            </ul>
-       	 </div>
-    </div>
-<!--/menu-->
-
-<!--article-->
-<h1 class="text-center" style="font-family:uconheavy; color:white;">CREA TU CUENTA DE PIZZA HUT</h1>
-<div class="newad3">
-    <form>
-        <input type="text" placeholder="NOMBRE *"></input>
-        <input type="text" placeholder="APELLIDO *"></input>
-        <input type="text" placeholder="N DE TELEFOND *"></input>
-        <input type="text" placeholder="E-MAIL *"></input>
-        <input type="text" placeholder="CONFIRMAR E-MAIL *"></input>
-        <input type="text" placeholder="CONTTRASENA *"></input>
-        <input type="text" placeholder="CONFIRMAR CONTTRASENA *"></input>
-        <div style="font-size: 24px; color:#D4A26F;margin-left:5%">
-        INSCRIBIRME HUT LOVER Y RECIBIR OFERTAS
-        </div>
-        <div class="col-xs-12" style="color:white;">
-        <input type="radio" class="radio-botm1"></input> Solo per email
-        <input type="radio" class="radio-botm"></input> Per email y sms
-        <input type="radio" class="radio-botm"></input> No, gracias</div>
-        <p class="w3-text-white">Estoy de acuerdo con las condiciones de uso y entiendo que mi infomacion se usara segun lo establecido en las  <a href="#" style="color: #D4A26F;">bases de prevacidad</a></p>
-    </form>
-    <a href="#" class="button" style="width:100%; margin-bottom:10px;">CREAR CUENTA</a>
-</div>
-<div class="newad3">
-	<div class="col-xs-2">
-    	<span class="badge" style="background-color:#D4A26F; margin-top: 5px;  margin-right: 10px;">1
-        </span>
-    </div>
-    <div  class="col-xs-10">
-    	<span style="color:#d4a26f; font-size:20px; text-align:center;">
-        CON TU CUENTA PODRAS:
-        </span>
-    </div>
-    <div class="col-xs-10 w3-text-white texto_cuenta_podras" style="font-family:Rregular;">
-    * Ver el historical de ordenes realizadas <br><br><br><br>
-    * Acelerar el proceso de pago al guardar sus direcciones e informacion de pago                             
-    </div>
-    <div class="col-xs-2 contenedor-iconos-cuenta">
-        <div class="col-xs-12 iconos-cuenta-podras">
-        	<img src="img/i1.png" ><br><img src="img/i2.png" ><br>
-
-<img src="img/i3.png" >
-        </div>
-    </div>
-    
-    <div class="co-xs-12" style="margin-top: 144px;">
-   		<div class="col-xs-2">
-    	<span class="badge" style="background-color:#D4A26F; margin-top: 14px;  margin-right: 10px;">2
-        </span>
-    </div>
-    <div  class="col-xs-10">
-    	<span style="color:#d4a26f; font-size:20px; text-align:center;">
-        CON UNA MEMBRESIA DE HUT LOVERS PODRAS:
-        </span>
-    </div>
-    <div class="col-xs-10 w3-text-white texto_cuenta_podras" style="font-family:Rregular;">
-    * Recibir ofertas exclusivas para miembros en su casilla de entrada                           
-    </div>
-    <div class="col-xs-2  contenedor-iconos-cuenta">
-        <div class="col-xs-12  iconos-cuenta-podras">
-        	<img src="img/i4.png" >
         </div>
         
+    <p class="text-acuerdo-inscripcion">Estoy de acuerdo con las condiciones de uso y entiendo que mi infomación se usara según lo establecido en las <a href="" class="link-bases-privacidad">bases de privacidad.</a></p>
+	<p class="text-acuerdo-inscripcion">Certifico que soy mayor de 13 anos</p>
+    <p class="contenedor-bottom-registro"><input type="submit" name="button_crear_cuenta" id="button_crear_cuenta" value="CREAR CUENTA" />
+    </div>    
+	<div class="col-lg-6 beneficios-cuenta">
+    	<h3><span class="numeracion-tu-cuenta">1</span> CON TU CUENTA PODRAS:</h3>
+        <div class="row beneficios-cuenta-detalles-1">
+        	<div class="col-lg-9">* Ver el historical de ordenes realizadas.</div>
+            <div class="col-lg-3 iconos-cuenta-beneficios"><img srC="img/i1.png" /><br /><img src="img/i2.png" /></div>
+        </div>
+        <div class="row beneficios-cuenta-detalles-1">
+        	<div class="col-lg-9">* Acelerar el proceso de pago al guardar sus direcciones e informacion de pago.</div>
+            <div class="col-lg-3 iconos-cuenta-beneficios"><img srC="img/i3.png" /></div>
+        </div>
+        <h3 class="segundo-titulo-beneficios"><span class="numeracion-tu-cuenta">2</span>  CON UNA MEMBRESIA DE HUT LOVERS PODRAS:</h3>
+        <div class="row beneficios-cuenta-detalles-1">
+        	<div class="col-lg-9">* Recibir ofertas exclusivas para miembros en su casilla de entrada.</div>
+            <div class="col-lg-3 iconos-cuenta-beneficios"><img srC="img/i4.png" /></div>
+        </div>
     </div>
-    <div class="clear"></div>
+</div>
+<!-- PIE DE PÁGINA -->
+<div class="row pie-pagina"> 
+    <div class="col-lg-3 pie-col-1">
+    	<p>MENÚ</p>
+        <ul class="footlist">
+        	<li><a href="#">Pizzas</a></li>
+            <li><a href="#">Mas</a></li>
+            <li><a href="#">Ofertas</a></li>
+        </ul>
+    </div> 
+    <div class="col-lg-3 pie-col-2">
+    	<p>NOSOTROS</p>
+        <ul class="footlist">
+        	<li><a href="#">Historia</a></li>
+        	<li><a href="#">Carrera</a></li>
+        	<li><a href="#">Conviertete en una franquicia</a></li>
+        </ul>
     </div>
+    <div class="col-lg-3 pie-col-3">
+    	<p>POLIZAS</p>
+        	<ul class="footlist">
+            	<li><a href="#">Politica de privacidad</a></li>
+                <li><a href="#">Condiciones de uso</a></li>
+                <li><a href="#">Registro</a></li>
+            </ul> 
+    </div>
+    <div class="col-lg-3 pie-col-4">
+    	<a class="link_camer_footer" href="#"><img src="img/camer.png" ></a>
+        <a class="link_facebook_footer" href="#"><img src="img/facebook.png" ></a>
+        <a class="link_twitter_footer" href="#"><img src="img/twiter.png" ></a>
+    </div> 
 </div>
-<!--/article-->
-<!--footer-->
-<div class="col-xs-12 padnul" style="margin:10px;">
-<div class="col-xs-4">
-                    <p>MENU</p>
-                    <ul class="footlist">
-                    	<li><a href="#">Pizzas</a></li>
-                          <li><a href="#">Mas</a></li>
-                          <li><a href="#">Ofertas</a></li>
-                    </ul>
+
+<!-- MODALS (POPUPS) -->
+
+<!-- MODAL COMENZAR PEDIDO -->
+<div id="Modal-Orden" class="modal fade">
+	<div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+				<h3>COMENZAR PEDIDO</h3>
+            </div>
+          	 <div class="modal-body">
+				<div class="row">
+                	<div class="col-lg-6 modal-delivery-left">
+                		<input type="radio" name="checkbox01" id="delivery" value="delivery" class="radio01" />
+	          			<label class="span_delivery" for="delivery">DELIVERY</label>
+                	</div>
+                    <div class="col-lg-6 modal-delivery-right">
+        				<input type="radio" name="checkbox01" id="delivery2" value="delivery2" class="radio01" />
+         				<label class="span_delivery2" for="delivery2">RETIRO</label>
+                	</div>
+                </div>
+        		<h2>¿A DONDE QUIERES REALIZAR EL REPARTO?</h2>
+	 			<label>
+	   				<select name="direccionreparto" id="direccionreparto">
+	      				<option value="0">direccion ejemplo 1</option>
+	      				<option value="0">direccion ejemplo 2</option>
+        			</select>
+      			</label><br />
+      			<a class="cambiar-ubicacion">CAMBIAR UBICACIÓN</a><BR />
+				<input type="submit" name="button_modal_delivery" id="button_modal_delivery" value="ENVIAR" />
+			</div>
+		</div>
+	</div>
 </div>
-<div class="col-xs-4">
-                	<p>NOSOTROS</p>
-                    <ul class="footlist">
-                    	<li><a href="#">Hestora</a></li>
-                          <li><a href="#">Carrera</a></li>
-                          <li><a href="#">Convitate en una franquicia</a></li>
-                    </ul>                
+<!-- MODAL LOGIN -->
+<div id="Modal-Ingreso" class="modal fade">
+	<div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+				<h3>INGRESA TU CUENTA</h3>
+            </div>
+          	 <div class="modal-body">
+				<div class="row textboxs-ingreso">
+                	 <div class="col-lg-3 modal-ingresar-left">
+                     	EMAIL
+                     </div>
+                     <div class="col-lg-9 modal-ingresar-right">
+                     	<input type="text" name="email" id="email" />
+                     </div>
+                </div>  
+                <div class="row textboxs-ingreso">
+                	 <div class="col-lg-3 modal-ingresar-left">
+                     	CONTRASEÑA
+                     </div>
+                     <div class="col-lg-9 modal-ingresar-right">
+                     	<input type="password" name="email" id="email" />
+                     </div>
+                </div>              
+      			<a class="cambiar-ubicacion">¿Olvidaste tu contraseña?</a><BR />
+                <label><input type="checkbox" name="recordarme" id="recordarme" /> Recordarme</label><br />
+                <a class="cambiar-ubicacion">CREAR CUENTA</a><BR />
+				<input type="submit" name="button_modal_delivery" id="button_modal_delivery" value="INGRESAR" />
+			</div>
+		</div>
+	</div>
 </div>
-<div class="col-xs-4">
-                <p>POLIZAS</p>
-                    <ul class="footlist">
-                    	<li><a href="#">Politica de privacidad</a></li>
-                          <li><a href="#">Condiciones de uso</a></li>
-                          <li><a href="#">Registro</a></li>
-                    </ul> 
-  </div>
-  <div class="col-xs-12 text-center prueba02">
-<a class="link_camer_footer" href="#"><img src="img/camer.png" ></a>
-                     <a class="link_facebook_footer" href="#"><img src="img/facebook.png" ></a>
-                     <a class="link_twitter_footer" href="#"><img src="img/twiter.png" ></a>
-  </div>
-                
-</div>
-<!--/footer-->
-</section>
+<!-- END MODALS -->
+<!-- SCRIPTS -->
 <script>
 $(document).ready(function(){
     $("#bar").click(function(){
@@ -369,5 +295,6 @@ $(document).ready(function(){
     });
 });
 </script>
+<!-- END SCRIPTS -->
 </body>
 </html>

@@ -1,0 +1,385 @@
+
+/* Font face */
+@font-face {
+  font-family: "United Sans SemiCond";
+  src: url(../font/UnitedSansSemiCond-Bold.otf);
+}
+
+@font-face {
+  font-family: "Rblack";
+  src: url(../font/ROBOTO/Roboto-Black.ttf);
+}
+
+@font-face {
+  font-family: "Rblacki";
+  src: url(../font/ROBOTO/Roboto-BlackItalic.ttf);
+}
+
+@font-face {
+  font-family: "Rbold";
+  src: url(../font/ROBOTO/Roboto-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Rboldi";
+  src: url(../font/ROBOTO/Roboto-BoldItalic.ttf);
+}
+
+@font-face {
+  font-family: "Rcondb";
+  src: url(../font/ROBOTO/RobotoCondensed-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Rcondbi";
+  src: url(../font/ROBOTO/RobotoCondensed-BoldItalic.ttf);
+}
+
+@font-face {
+  font-family: "Rcondi";
+  src: url(../font/ROBOTO/RobotoCondensed-Italic.ttf);
+}
+
+@font-face {
+  font-family: "Rcondl";
+  src: url(../font/ROBOTO/RobotoCondensed-Light.ttf);
+}
+
+@font-face {
+  font-family: "Rcondli";
+  src: url(../font/ROBOTO/RobotoCondensed-LightItalic.ttf);
+}
+
+@font-face {
+  font-family: "Rcondr";
+  src: url(../font/ROBOTO/RobotoCondensed-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Ritalc";
+  src: url(../font/ROBOTO/Roboto-Italic.ttf);
+}
+
+@font-face {
+  font-family: "Rlight";
+  src: url(../font/ROBOTO/Roboto-Light.ttf);
+}
+
+@font-face {
+  font-family: "Rlighti";
+  src: url(../font/ROBOTO/Roboto-LightItalic.ttf);
+}
+
+@font-face {
+  font-family: "Rmedium";
+  src: url(../font/ROBOTO/Roboto-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Rmediumi";
+  src: url(../font/ROBOTO/Roboto-MediumItalic.ttf);
+}
+
+@font-face {
+  font-family: "Rregular";
+  src: url(../font/ROBOTO/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Rthin";
+  src: url(../font/ROBOTO/Roboto-Thin.ttf);
+}
+
+@font-face {
+  font-family: "Rthini";
+  src: url(../font/ROBOTO/Roboto-ThinItalic.ttf);
+}
+
+/*uni*/
+@font-face {
+  font-family: "ucondblack";
+  src: url(../font/UNITEDSANS/UnitedSansSemiCond-Black.otf);
+}
+
+@font-face {
+  font-family: "ucondbold";
+  src: url(../font/UNITEDSANS/UnitedSansSemiCond-Bold.otf);
+}
+
+@font-face {
+  font-family: "uconheavy";
+  src: url(../font/UNITEDSANS/UnitedSansSemiCond-Heavy.otf);
+}
+
+@font-face {
+  font-family: "uconlight";
+  src: url(../font/UNITEDSANS/UnitedSansSemiCond-Light.otf);
+}
+
+@font-face {
+  font-family: "uconmedium";
+  src: url(../font/UNITEDSANS/UnitedSansSemiCond-Medium.otf);
+}
+
+/*general*/
+a{text-decoration:none !important;}
+a:hover{text-decoration:none !important;}
+img{border:0px;image-rendering:optimizeQuality !important;}
+.clear{clear:both;}
+body{font-size:16px}
+
+html{background:rgb(0,0,0);font-family: "United Sans SemiCond";
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;}
+.container{background-image:url(../img/bg.jpg);background-size:100%;font-family: "United Sans SemiCond";padding-left:0px;padding-right:0px;background-repeat:repeat;}
+/*top*/
+.header-top{padding:30px}
+.ingreso-top{padding-top:20px;text-align:right;color:#979797}
+.ingreso-top a{color:#FFF;font-size:1.4em}
+.ingreso-top a:hover{color:#706F6F;}
+.modal-open{padding-right:0px !important;}
+.link-salir{margin-left:30px;}
+.cliente-ingresado-top{font-size:1.3em;color:#FFF;}
+
+/* HOME */
+
+/* menu */
+
+.navbar.navbar-inverse{width:100%;margin-bottom:0px !important;background:transparent;}
+.nav.navbar-nav{width:100%;}
+.nav.navbar-nav li{width:25%;text-align:center;border:1px solid #CCC !important;}
+.nav.navbar-nav li a{background-color:#000;color:#FFF;font-size:1.4em}
+.nav.navbar-nav li a:hover{background-color:#CCC !important;color:#000 !important;}
+.nav.navbar-nav li.opt-menu-destacado a{color:#D4A26F !important;}
+.nav.navbar-nav li.opt-menu-destacado a:hover{background-color:#CCC !important;color:#000 !important;}
+.dropdown-menu{width:100%;padding:0px;border:2px solid #CCC !important}
+.dropdown-menu li{width:100% !important;}
+.dropdown-menu li a{padding-top:13px;padding-bottom:13px}
+.dropdown:hover .dropdown-menu {display: block;margin-top: 0;}
+.nav.navbar-nav li.order-menu a{background-color:#ED1624 !important}
+.nav.navbar-nav li.order-menu a:hover{background-color:#CD1624 !important;color:#FFF !important;}
+.menu-mobil{display:none;}
+.hamburger-menu{display:none;}
+.icono-menu-retiro{text-align:center;vertical-align:middle !important;padding-top:10px;padding-left:20px !important;padding-bottom:8px;}
+.boton-orden-ingresado div{padding-left:4px;padding-right:4px;}
+.direccion-retiro-menu01{font-size:1em;color:#FFF !important;line-height:0.9em;padding-top:13px;text-align:left;}
+.direccion-retiro-menu02{font-size:0.7em;color:#979797;}
+.precio-menu-superior{color:#FED750;font-size:1.6em;text-align:left;padding-top:0.4em}
+.contenedor-boton-orden-ingresado{background-color:#000 !important;}
+/* slider grande */
+
+/* fotos promociones home */
+
+.row.productos-promocion-home{padding-top:35px;}
+.row.productos-promocion-home .col-lg-6{margin-bottom:60px}
+
+/* footer */
+
+.row.pie-pagina {background-color:#000;padding-top:20px;padding-bottom:10px;}
+.row.pie-pagina .col-lg-3{padding-left:50px;}
+.row.pie-pagina .col-lg-3 ul li{text-decoration:none;
+list-style:none;}
+.footlist{padding:0px;}
+.row.pie-pagina .col-lg-3 ul li a{color:#979797 !important;;}
+.row.pie-pagina .col-lg-3 ul li a:hover{color:#706F6F !important;}
+.row.pie-pagina .col-lg-3 p{color:#FFF;}
+.row.pie-pagina .pie-col-4 a{margin-right:10px;}
+
+/* CSS HOME RESPONSIVE */
+
+@media only screen and (max-width: 768px) {
+	.menu-web, .contenedor-menu-web{display:none;}
+	.row.header-top .col-lg-6{text-align:center;}
+	.row.header-top .col-lg-6{text-align:center;}
+	.hamburger-menu{display:inline;text-align:center;margin:0px;}
+	.nav.navbar-nav li{width:100%;text-align:center;border:1px solid #CCC !important;}
+	.nav.navbar-nav{margin:0px;}
+	.hamburger-menu .col-lg-12{padding-bottom:10px !important;}
+	.row.productos-promocion-home .col-lg-6{margin-bottom:20px}
+	.row.productos-promocion-home{padding-bottom:20px}
+	.pie-col-4{text-align:center;padding-bottom:10px;}
+	.icono-menu-retiro{padding-left:0px !important;}
+	.precio-menu-superior, .direccion-retiro-menu01{text-align:center;padding-top:0px;}
+}
+
+/* FIN HOME */
+
+/* MODALS */
+
+
+.modal-content{background-image:url(../img/bg.jpg);background-size:100%;border-radius:15px;text-align:center !important;}
+.modal-header{border:0px;}
+.modal-header h3{color:#D4A26F;font-size:2em;}
+.modal-dialog{margin:12% auto !important;}
+.modal-body h2{color:#FFF !important;font-size:1.5em;}
+.modal-body{color:#979797;}
+.modal-body #direccionreparto{padding:3% 30%;border:0px;border-radius:15px;width:100% !important}
+.modal-body #direccionreparto option{text-align:center !important;border:0px !important;}
+.modal-body .cambiar-ubicacion{color:#FED750;}
+.modal-body .cambiar-ubicacion:hover{color:#979797;}
+.span_delivery{background-image:url(../img/pizza_hut_pop_up.png);width:200px;height:100px;padding-right:100px;background-position:right;background-repeat:no-repeat;padding-top:40px}
+.modal-delivery-left input[type=radio]:checked + label{background-image:url(../img/pizza_hut_pop_up2.png);color:#FED750}
+#delivery, #delivery2{visibility:hidden;}
+.span_delivery2{background-image:url(../img/delivery_pop_up.png);width:200px;height:100px;padding-left:100px;background-position:left;background-repeat:no-repeat;padding-top:40px}
+.modal-delivery-right input[type=radio]:checked + label{background-image:url(../img/delivery_pop_up2.png);color:#FED750}
+#button_modal_delivery{padding:10px 50px; background-color:#ed1624;margin-top:10px;border-radius:15px;color:#FFF;border:0px;font-weight:bold;font-size:1.5em;}
+#button_modal_delivery:hover{background-color:#fed750}
+.modal-ingresar-left{text-align:right;font-size:1.4em;color:#FED750;padding-top:0.3em;}
+.modal-ingresar-right{text-align:left;}
+.modal-ingresar-right input{padding:10px;width:90%;border-radius:15px;border:0px;color:#706F6F}
+.textboxs-ingreso{padding-bottom:15px;}
+.modal-producto-left{text-align:center;}
+.modal-producto-left h3{text-align:center;}
+.modal-producto{text-align:left;}
+.row.ingredientes-modal-producto .col-lg-2{padding:0px 2px;font-size:0.7em !important;text-align:center;}
+.row.ingredientes-modal-producto .col-lg-2 img{margin-bottom:5px;}
+.ingrediente-first-modal{padding-left:15px !important;}
+.modal-producto-left h3{color:#FED750}
+
+/* MODAL RESPONSIVE */
+
+@media only screen and (max-width: 768px) {
+.span_delivery2{padding-right:100px;background-position:right;padding-left:0px}
+.modal-delivery-right{padding-top:20px;}
+.modal-ingresar-left, .modal-ingresar-right{text-align:center;}
+}
+
+/* CSS ENCUENTRA TU PIZZA HUT */
+.titulo{color:#FFF;text-align:center;}
+.titulo01{margin-top:60px;margin-bottom:60px;}
+.row.botones-retiro{margin:0px auto;width:50%;}
+.boton-retirarlocal{padding:15px;border-radius:5px;text-align:center;display:block;}
+.botones-retiro-izq .boton-retirarlocal{color:#000;background-color:#FFF;}
+.botones-retiro-der .boton-retirarlocal{color:#FFF;background-color:#000;}
+.botones-retiro-izq{text-align:right;}
+.botones-retiro-der{text-align:left;}
+#boton-encontrar-pizza{padding:11% 50px; background-color:#ed1624;border-radius:5px;color:#FFF;border:0px;font-weight:bold;font-size:1.5em;}
+.seleccionar-ubicacion-pizza{width:75%;margin:0px auto;}
+.seleccion-pizza-cercano{text-align:center;display:block;padding:5% 35%;border-radius:5px;border:0px;}
+.ubicaciones-mapa{margin-top:40px;padding-bottom:60px;}
+.locales .col-lg-1{text-align:center;padding:0px;padding-top:1.5%;}
+.numeracion-local{background-color:#CD1624 !important;border-radius:20px;padding:4px 11px;text-align:center;color:#FFF;font-size:1.2em;}
+.locales{background:rgba(0,0,0,0.4);border-radius:10px;margin-left:15px;padding-top:15px;padding-bottom:15px;vertical-align:middle;margin-bottom:15px;}
+.direccion-local-1, .horario-local-1, .telefono-local-1, .horario-local-2, .telefono-local-2{color:#FFF;font-family:Rregular;font-size:0.8em}
+.direccion-local-2, .horario-local-2, .telefono-local-2{color:#FED750}
+.siguientes .col-lg-2{text-align:right;}
+.link-siguentes-ubicacion{color:#FED750;}
+.link-siguentes-ubicacion:hover{color:#979797;}
+
+/* CSS ENCUENTRA TU PIZZA HUT RESPONSIVE */
+@media only screen and (max-width: 768px) {
+.row.botones-retiro{width:100%;}
+.botones-retiro-izq{margin-bottom:15px;}
+.titulo01{margin-top:20px;margin-bottom:20px;}
+.row.seleccionar-ubicacion-pizza, .seleccion-pizza-cercano{width:100%;}
+.seleccion-pizza-cercano{margin-bottom:15px;}
+#boton-encontrar-pizza{width:100%;padding:10px;}
+.row.siguientes .col-lg-10{display:none;}
+.row.siguientes .col-lg-2{text-align:left;margin-left:15px;margin-bottom:15px;}
+}
+/* FIN CSS ENCUENTRA TU PIZZA HUT RESPONSIVE */
+
+/* CSS ARMA TU PROPIA PIZZA */
+.creatupizza-izq{text-align:center;}
+.creatupizza-main{padding-bottom:60px;}
+.creatupizza-der h4{color:#FFF;}
+.creatupizza-der h4 .numero-paso-armar{background-color:#706F6F;padding:3px 10px;border-radius:20px;}
+.pasos-armar-pizza{border-radius:10px;width:97%;overflow:hidden;margin-bottom:30px;}
+.pasos-armar-pizza .col-lg-3{margin:0px;padding-left:10px;padding-right:10px;background-color:#000;padding-top:5px;padding-bottom:5px;border:#000}
+.pasos-armar-pizza .col-lg-9{margin:0px;background-color:#FFF;padding:0px;overflow:hidden;}
+.precio-pizza-arma{color:#FED750;}
+.col-lg-9 #tamano-pizza{padding-right:10px;width:100%;padding-left:10px;padding-top:9%;padding-bottom:10%;}
+.borde-top-selecciones{border-bottom-left-radius:0px !important;border-bottom-right-radius:0px;}
+.borde-top-selecciones2{border-radius:0px !important;}
+.seleccionar-tipo-maza{margin-bottom:0px;}
+.borde-top-selecciones3{border-top-left-radius:0px !important;border-top-right-radius:0px;margin-bottom:30px;}
+.tipo-maza-radio-button{width:30px !important;;height:30px !important;}
+.tipo-maza-label{width:100%;background-image:url(../img/seleccion-opcion-pizza-1.png);background-repeat:no-repeat;background-position:right center;padding-top:4%;padding-bottom:6.5%;}
+.tipo-maza-pizza.col-lg-9{margin:0px;background-color:#FFF;padding:0px;overflow:hidden;padding-right:10px;padding-left:10px;}
+.radio02{visibility:hidden;}
+.tipo-maza-pizza input[type=radio]:checked + label{background-image:url(../img/seleccion-opcion-pizza-2.png);color:#FED750}
+.contenedor-bottom-siguiente{text-align:center;}
+
+/* CSS ARMA TU PIZZA RESPONSIVE */
+
+@media only screen and (max-width: 768px) {
+
+.col-lg-8.creatupizza-izq img{width:100%;}
+.pasos-armar-pizza{margin-left:15px;margin-right:0px;width:92%}
+.pasos-armar-pizza .col-lg-3 img{max-height:50px;width:auto;text-align:center;}
+.pasos-armar-pizza .col-lg-3{text-align:center;}
+.creatupizza-der h4{padding-left:15px}
+}
+
+
+/* CSS PRODUCTOS PIZZAS */
+.listado-productos{padding:30px;}
+.menu-web-pizzas li{width:20% !important;}
+.single-product{background:rgba(0,0,0,0.5);padding:15px;border-radius:15px;width:49%;}
+.single-producto-izq{margin-right:2%;}
+.imagen-producto{text-align:center;}
+.imagen-producto h3{color:#FFF;margin-bottom:0px;}
+h3.nombre-single-producto{margin-top:0px;color:#D4A26F}
+.vermas-producto{color:#fff;font-size:0.6em;}
+p.descripcion-single-producto{color:#FFF;font-family:Rregular;font-size:0.7em;}
+.ingreso-cupones-productos{padding-left:30px;margin-top:60px;}
+.ingreso-cupones-productos h3{color:#FFF;}
+.ingreso-cupones-productos input#codigo-cupon{border:0px;border-radius:10px;padding:5px 10px;width:30%}
+.ingreso-cupones-productos input#button-ingreso-cupon{background-color:#ED1624;color:#FFF;padding:5px 20px;border:0px;border-radius:10px;margin-left:15px;}
+.ingreso-cupones-productos input#button-ingreso-cupon:hover{background-color:#CD1624;}
+.single-producto-personalizar .col-lg-6 select{width:100% !important;text-align:center;padding:5px;border:0px;border-radius:10px;}
+.boton-personalizar-single-product{display:block;border-radius:10px;background-color:#D4A26F;color:#FFF;text-align:center;padding:5px;}
+.boton-personalizar-single-product:hover{background-color:#FED750;color:#FFF;}
+.boton-anadir-single-product{display:block;border-radius:10px;background-color:#ED1624;color:#FFF;text-align:center;padding:5px;}
+.boton-anadir-single-product:hover{background-color:#CD1624;color:#FFF;}
+.add-margin-bottom-1{margin-bottom:10px;}
+
+/* CSS PRODUCTOS PIZZA RESPONSIVE */
+@media only screen and (max-width: 768px) {
+
+.single-product{width:100%;}
+.ingreso-cupones-productos input#codigo-cupon{width:90%;margin-bottom:15px;}
+.ingreso-cupones-productos input#button-ingreso-cupon{margin-left:0px;width:90% !important;display:block;}
+.add-margin-bottom-2{margin-bottom:10px;}
+.single-product{margin-bottom:20px;}
+.menu-responsive-2 .col-lg-12{margin-top:10px;}
+.row.ingreso-cupones-productos{margin-top:0px;}
+.ingredientes-modal-producto .col-lg-2{width:33.3%;float:left;}
+.ingrediente-first-modal{padding-left:0px !important;}
+}
+
+/* CSS REGISTRAR CUENTA */
+.contenedor-registro{padding-top:60px;padding-bottom:60px;}
+.contenedor-registro .single-producto-izq{margin-left:30px;margin-right:1%}
+.contenedor-registro .col-lg-6{background:rgba(0,0,0,0.5);padding:15px;border-radius:15px;width:47%;}
+.campos-form-reg{margin-bottom:25px;margin-top:25px;}
+.campos-form-reg .col-lg-4{color:#FFF;padding:5px;padding-left:25px;}
+.campo-text-form-reg{border:0px;border-radius:10px;width:80%;padding:5px;}
+.campo-form-especial{font-size:0.9em;color:#D4A26F !important}
+.opciones-inscripcion{font-size:0.7em;color:#FFF;}
+.opciones-inscripcion label{margin-right:15px;}
+p.text-acuerdo-inscripcion{font-size:0.9em;color:#FFF;}
+a.link-bases-privacidad{color:#FED750;}
+a.link-bases-privacidad:hover{color:#979797}
+.contenedor-bottom-registro{text-align:center;}
+.contenedor-bottom-registro input{border-radius:10px;background-color:#ED1624;color:#FFF;text-align:center;padding:5px;border:0px;padding:10px 30px;}
+.contenedor-bottom-registro input:hover{background-color:#CD1624;color:#FFF;}
+.beneficios-cuenta h3{color:#D4A26F !important;margin-bottom:40px;}
+.beneficios-cuenta h3 span{background-color:#D4A26F;padding:2px 10px;color:#FFF !important;border-radius:20px;}
+.beneficios-cuenta{color:#FFF;padding-left:30px !important;}
+.beneficios-cuenta-detalles-1{margin-bottom:15px;}
+.segundo-titulo-beneficios{margin-top:100px;}
+
+/* CSS REGISTRAR CUENTA RESPONSIVE */
+
+@media only screen and (max-width: 768px) {
+
+.contenedor-registro .col-lg-6{width:83%;margin-left:9%;}
+.campos-form-reg .col-lg-8 input{width:100%;}
+.col-lg-6.beneficios-cuenta{width:83%;margin-left:9%;margin-top:30px;}
+.iconos-cuenta-beneficios{text-align:center;}
+.iconos-cuenta-beneficios br{display:none;}
+.iconos-cuenta-beneficios img{margin:5px 15px;}
+.beneficios-cuenta-detalles-1 .col-lg-9{text-align:center;}
+
+}

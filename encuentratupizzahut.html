@@ -1,0 +1,250 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <title>Pizza Hut</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+</head>
+
+<body class="container">
+<div class="row header-top"> 
+    <!-- TOP SIN INGRESAR -->
+    <div class="col-lg-6"><a href="index.html"><img src="img/logo.png" title="Pizza Hut" alt="Pizza Hut" /></a></div> 
+    <div class="col-lg-6 ingreso-top"><a href="#Modal-Ingreso" data-toggle="modal">INGRESAR</a> - <a href="reg.html">REGISTRARSE</a></div>
+    <!-- TOP INGRESADO -->
+    <!--
+    <div class="col-lg-6"><a href="index.html"><img src="img/logo.png" title="Pizza Hut" alt="Pizza Hut" /></a></div> 
+    <div class="col-lg-6 ingreso-top cliente-ingresado-top">Bienvenido NOMBRE DEL CLIENTE<a href="#" class="link-salir">SALIR</a> - <a href="#">MI CUENTA</a></div>
+    -->
+</div>
+<div class="navbar navbar-inverse contenedor-menu-web"> 
+    <ul class="nav navbar-nav menu-web"> 
+        <li class="active"><a href="#">PIZZAS</a></li> 
+        <li class="dropdown"> 
+    		<a class="dropdown-toggle" href="#" data-toggle="dropdown" >MÁS <b class="caret"></b></a> 
+    		<ul class="dropdown-menu"> 
+        		<li><a href="productos.html?tipo=pasta">PASTA</a></li> 
+        		<li><a href="productos.html?tipo=palitos">PALITOS</a></li> 
+        		<li><a href="productos.html?tipo=bebidas">BEBIDAS</a></li>
+                <li><a href="productos.html?tipo=pollo">POLLO</a></li>
+                <li><a href="productos.html?tipo=postres">POSTRES</a></li> 
+    		</ul> 
+		</li>
+        <li class="opt-menu-destacado"><a href="#">OFERTAS</a></li>
+        <!-- BOTÓN COMENZAR ORDEN SIN INGRESAR -->
+        <li class="order-menu"><a data-toggle="modal" href="#Modal-Orden">COMENZAR ORDEN</a></li> 
+        <!-- BOTÓN MENÚ SUPERIOR DATOS ORDEN -->
+        <!--
+        <li class="contenedor-boton-orden-ingresado">
+        	<div class="row boton-orden-ingresado">
+            	<div class="col-lg-2 icono-menu-retiro"><img src="img/pizza_hut_37.png" /></div>
+                <div class="col-lg-4 direccion-retiro-menu01">Retirar Desde<br /><span class="direccion-retiro-menu02">Santiago 123, Santiago</span></div>
+                <div class="col-lg-2 icono-menu-retiro"><img src="img/carrito_37.png" /></div>
+                <div class="col-lg-4 precio-menu-superior">$88.888</div>
+            </div>
+        </li>       
+        -->
+    </ul> 
+    </div>
+<div class="row hamburger-menu">    
+    <div class="col-lg-12">
+	    <a href="#mnu" id="bar" style="color:white;" data-toggle="collapse"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
+    </div>
+</div>
+<!-- MENÚ MOVIL-->
+    <ul class="nav navbar-nav menu-mobil"  id="mnu"> 
+        <li class="active"><a href="#">PIZZAS</a></li> 
+        <li class="dropdown"> 
+    		<a class="dropdown-toggle" href="#" data-toggle="dropdown" >MÁS <b class="caret"></b></a> 
+    		<ul class="dropdown-menu"> 
+        		<li><a href="productos.html?tipo=pasta">PASTA</a></li> 
+        		<li><a href="productos.html?tipo=palitos">PALITOS</a></li> 
+        		<li><a href="productos.html?tipo=bebidas">BEBIDAS</a></li>
+                <li><a href="productos.html?tipo=pollo">POLLO</a></li>
+                <li><a href="productos.html?tipo=postres">POSTRES</a></li> 
+    		</ul> 
+		</li>
+        <li class="opt-menu-destacado"><a href="#">OFERTAS</a></li>
+        <!-- BOTÓN MENU SUPERIOR MOVIL COMENZAR ORDEN -->
+        <li class="order-menu ajax"><a data-toggle="modal" href="#Modal-Orden">COMENZAR ORDEN</a></li>
+        <!-- BOTÓN MENÚ SUPERIOR MOVIL DATOS ORDEN -->
+        <!--
+        <li class="contenedor-boton-orden-ingresado">
+        	<div class="row boton-orden-ingresado">
+            	<div class="col-lg-2 icono-menu-retiro"><img src="img/pizza_hut_37.png" /></div>
+                <div class="col-lg-4 direccion-retiro-menu01">Retirar Desde<br /><span class="direccion-retiro-menu02">Santiago 123, Santiago</span></div>
+                <div class="col-lg-2 icono-menu-retiro"><img src="img/carrito_37.png" /></div>
+                <div class="col-lg-4 precio-menu-superior">$88.888</div>
+            </div>
+        </li>
+        -->
+       
+    </ul> 
+<!-- FIN MENU MOVIL -->    
+
+<h2 class="titulo titulo01">ENCUENTRA TU PIZZA-HUT MÁS CERCANO</h2>
+<div class="row botones-retiro">
+	<div class="col-lg-6 botones-retiro-izq"><a href="#" class="boton-retirarlocal">RETIRAR EL LOCAL</a></div>
+    <div class="col-lg-6 botones-retiro-der"><a href="#" class="boton-retirarlocal">DELIVERY</a></div>
+</div>
+<h2 class="titulo titulo01">SELECCIONA TU UBICACION PARA ENCONTARA UN PIZZA-HUT CERCANO</h2>
+<div class="row seleccionar-ubicacion-pizza">
+	<div class="col-lg-4">
+    	<select name="region-pizza-cercano" id="region-pizza-cercano" class="seleccion-pizza-cercano">
+      		<option value="0">REGIÓN</option>
+		      <option value="0">REGIÓN 1</option>
+		      <option value="0">REGIÓN 2</option>
+	    </select>
+	</div>
+  <div class="col-lg-4">
+   	<select name="comuna-pizza-cercano" id="comuna-pizza-cercano" class="seleccion-pizza-cercano">
+      		<option value="0">COMUNA</option>
+		      <option value="0">COMUNA 1</option>
+		      <option value="0">COMUNA 2</option>
+      </select>
+    	
+    </div>
+    <div class="col-lg-1">
+    	<input type="submit" name="button" id="boton-encontrar-pizza" value="Enviar" /></label>
+    </div>    
+</div>
+<div class="row ubicaciones-mapa">
+	<div class="col-lg-6">
+    	<div class="row locales">
+        	<div class="col-lg-1"><span class="numeracion-local">1</span></div>
+            <div class="col-lg-5"><span class="direccion-local-1">Santiago 123, Santiago<span><br/><span class="direccion-local-2">SANTIAGO</span></div>
+            <div class="col-lg-3"><span class="horario-local-1">10:00 21:00</span><br /><span class="horario-local-2">ABIERTO</span></div>
+            <div class="col-lg-3"><span class="telefono-local-1">TELÉFONO</span><br /><span class="telefono-local-2">+569876543211</span></div>
+    	</div>
+        <!-- OTRA UBICACIÓN -->
+	   	<div class="row locales">
+        	<div class="col-lg-1"><span class="numeracion-local">2</span></div>
+            <div class="col-lg-5"><span class="direccion-local-1">Santiago 123, Santiago<span><br/><span class="direccion-local-2">SANTIAGO</span></div>
+            <div class="col-lg-3"><span class="horario-local-1">10:00 21:00</span><br /><span class="horario-local-2">ABIERTO</span></div>
+            <div class="col-lg-3"><span class="telefono-local-1">TELÉFONO</span><br /><span class="telefono-local-2">+569876543211</span></div>
+    	</div>
+        <div class="row siguientes">
+        	<div class="col-lg-10"></div>
+            <div class="col-lg-2"><a href="" class="link-siguentes-ubicacion">Siguiente &gt;</a></div>
+        </div>
+<!-- FIN OTRA UBICACIÓN -->
+    </div>	
+	<div class="col-lg-6"><img src="img/map.jpg" /></div>    
+</div>
+
+
+<!-- PIE DE PÁGINA -->
+<div class="row pie-pagina"> 
+    <div class="col-lg-3 pie-col-1">
+    	<p>MENÚ</p>
+        <ul class="footlist">
+        	<li><a href="#">Pizzas</a></li>
+            <li><a href="#">Mas</a></li>
+            <li><a href="#">Ofertas</a></li>
+        </ul>
+    </div> 
+    <div class="col-lg-3 pie-col-2">
+    	<p>NOSOTROS</p>
+        <ul class="footlist">
+        	<li><a href="#">Historia</a></li>
+        	<li><a href="#">Carrera</a></li>
+        	<li><a href="#">Conviertete en una franquicia</a></li>
+        </ul>
+    </div>
+    <div class="col-lg-3 pie-col-3">
+    	<p>POLIZAS</p>
+        	<ul class="footlist">
+            	<li><a href="#">Politica de privacidad</a></li>
+                <li><a href="#">Condiciones de uso</a></li>
+                <li><a href="#">Registro</a></li>
+            </ul> 
+    </div>
+    <div class="col-lg-3 pie-col-4">
+    	<a class="link_camer_footer" href="#"><img src="img/camer.png" ></a>
+        <a class="link_facebook_footer" href="#"><img src="img/facebook.png" ></a>
+        <a class="link_twitter_footer" href="#"><img src="img/twiter.png" ></a>
+    </div> 
+</div>
+
+<!-- MODALS (POPUPS) -->
+
+<!-- MODAL COMENZAR PEDIDO -->
+<div id="Modal-Orden" class="modal fade">
+	<div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+				<h3>COMENZAR PEDIDO</h3>
+            </div>
+          	 <div class="modal-body">
+				<div class="row">
+                	<div class="col-lg-6 modal-delivery-left">
+                		<input type="radio" name="checkbox01" id="delivery" value="delivery" class="radio01" />
+	          			<label class="span_delivery" for="delivery">DELIVERY</label>
+                	</div>
+                    <div class="col-lg-6 modal-delivery-right">
+        				<input type="radio" name="checkbox01" id="delivery2" value="delivery2" class="radio01" />
+         				<label class="span_delivery2" for="delivery2">RETIRO</label>
+                	</div>
+                </div>
+        		<h2>¿A DONDE QUIERES REALIZAR EL REPARTO?</h2>
+	 			<label>
+	   				<select name="direccionreparto" id="direccionreparto">
+	      				<option value="0">direccion ejemplo 1</option>
+	      				<option value="0">direccion ejemplo 2</option>
+        			</select>
+      			</label><br />
+      			<a class="cambiar-ubicacion">CAMBIAR UBICACIÓN</a><BR />
+				<input type="submit" name="button_modal_delivery" id="button_modal_delivery" value="ENVIAR" />
+			</div>
+		</div>
+	</div>
+</div>
+<!-- MODAL LOGIN -->
+<div id="Modal-Ingreso" class="modal fade">
+	<div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+				<h3>INGRESA TU CUENTA</h3>
+            </div>
+          	 <div class="modal-body">
+				<div class="row textboxs-ingreso">
+                	 <div class="col-lg-3 modal-ingresar-left">
+                     	EMAIL
+                     </div>
+                     <div class="col-lg-9 modal-ingresar-right">
+                     	<input type="text" name="email" id="email" />
+                     </div>
+                </div>  
+                <div class="row textboxs-ingreso">
+                	 <div class="col-lg-3 modal-ingresar-left">
+                     	CONTRASEÑA
+                     </div>
+                     <div class="col-lg-9 modal-ingresar-right">
+                     	<input type="password" name="email" id="email" />
+                     </div>
+                </div>              
+      			<a class="cambiar-ubicacion">¿Olvidaste tu contraseña?</a><BR />
+                <label><input type="checkbox" name="recordarme" id="recordarme" /> Recordarme</label><br />
+                <a class="cambiar-ubicacion">CREAR CUENTA</a><BR />
+				<input type="submit" name="button_modal_delivery" id="button_modal_delivery" value="INGRESAR" />
+			</div>
+		</div>
+	</div>
+</div>
+<!-- END MODALS -->
+<!-- SCRIPTS -->
+<script>
+$(document).ready(function(){
+    $("#bar").click(function(){
+        $("#mnu").slideToggle("slow");
+    });
+});
+</script>
+<!-- END SCRIPTS -->
+</body>
+</html>
