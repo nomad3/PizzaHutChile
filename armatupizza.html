@@ -22,7 +22,13 @@
     <div class="col-lg-6 ingreso-top cliente-ingresado-top">Bienvenido NOMBRE DEL CLIENTE<a href="#" class="link-salir">SALIR</a> - <a href="#">MI CUENTA</a></div>
     -->
 </div>
-<div class="navbar navbar-inverse contenedor-menu-web"> 
+<!-- MENÚ -->
+<div class="row hamburger-menu">    
+    <div class="col-lg-12">
+	    <a href="#mnu" id="bar" data-toggle="collapse"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
+    </div>
+</div>
+<div class="navbar navbar-inverse contenedor-menu-web" id="mnu"> 
     <ul class="nav navbar-nav menu-web"> 
         <li class="active"><a href="#">PIZZAS</a></li> 
         <li class="dropdown"> 
@@ -51,41 +57,7 @@
         -->
     </ul> 
     </div>
-<div class="row hamburger-menu">    
-    <div class="col-lg-12">
-	    <a href="#mnu" id="bar" style="color:white;" data-toggle="collapse"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
-    </div>
-</div>
-<!-- MENÚ MOVIL-->
-    <ul class="nav navbar-nav menu-mobil"  id="mnu"> 
-        <li class="active"><a href="#">PIZZAS</a></li> 
-        <li class="dropdown"> 
-    		<a class="dropdown-toggle" href="#" data-toggle="dropdown" >MÁS <b class="caret"></b></a> 
-    		<ul class="dropdown-menu"> 
-        		<li><a href="productos.html?tipo=pasta">PASTA</a></li> 
-        		<li><a href="productos.html?tipo=palitos">PALITOS</a></li> 
-        		<li><a href="productos.html?tipo=bebidas">BEBIDAS</a></li>
-                <li><a href="productos.html?tipo=pollo">POLLO</a></li>
-                <li><a href="productos.html?tipo=postres">POSTRES</a></li> 
-    		</ul> 
-		</li>
-        <li class="opt-menu-destacado"><a href="#">OFERTAS</a></li>
-        <!-- BOTÓN MENU SUPERIOR MOVIL COMENZAR ORDEN -->
-        <li class="order-menu ajax"><a data-toggle="modal" href="#Modal-Orden">COMENZAR ORDEN</a></li>
-        <!-- BOTÓN MENÚ SUPERIOR MOVIL DATOS ORDEN -->
-        <!--
-        <li class="contenedor-boton-orden-ingresado">
-        	<div class="row boton-orden-ingresado">
-            	<div class="col-lg-2 icono-menu-retiro"><img src="img/pizza_hut_37.png" /></div>
-                <div class="col-lg-4 direccion-retiro-menu01">Retirar Desde<br /><span class="direccion-retiro-menu02">Santiago 123, Santiago</span></div>
-                <div class="col-lg-2 icono-menu-retiro"><img src="img/carrito_37.png" /></div>
-                <div class="col-lg-4 precio-menu-superior">$88.888</div>
-            </div>
-        </li>
-        -->
-       
-    </ul> 
-<!-- FIN MENU MOVIL -->    
+<!-- FIN MENÚ -->      
 
 <h2 class="titulo titulo01">CREA TU PROPIA PIZZA</h2>
 <div class="row creatupizza-main">
@@ -176,10 +148,11 @@
                 <label class="tipo-maza-label" for="carne-3">CARNE 3 <span class="tipo-maza-radio-button"></span></label>
           </div>
        </div>
-              
+       
+     
+       
   </div>
-	<div class="contenedor-bottom-siguiente"><input type="submit" name="button_modal_delivery" id="button_modal_delivery" value="SIGUIENTE" />
-  </div>
+	<div class="contenedor-bottom-siguiente"><input type="submit" name="button_modal_delivery" id="button_modal_delivery" value="SIGUIENTE" /></div>
     
 </div>
 

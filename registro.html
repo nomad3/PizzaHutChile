@@ -58,113 +58,108 @@
     </ul> 
     </div>
 <!-- FIN MENÚ -->     
-<!-- SLIDER -->
-<div class="container-fluid padnul" ></div>
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <a href="#"><img src="img/sli1.jpg" ></a>
-    </div>
-	<div class="item">
-      <a href="#"><img src="img/sli2.jpg" ></a>
-    </div>
-	<div class="item">
-      <a href="#"><img src="img/sli3.jpg" ></a>
-    </div>
-  </div>
-<!-- controles sliders -->
-  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-<!-- SUB MENU PIZZAS/PRODUCTOS -->
-<div class="row hamburger-menu menu-responsive-2">    
-    <div class="col-lg-12">
-	    <a href="#mnu2" id="bar2" style="color:white;" data-toggle="collapse"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
-    </div>
-</div>
-<ul class="nav navbar-nav menu-web menu-web-pizzas" id="mnu2"> 
-        <li><a href="#">PIZZAS 1</a></li> 
-        <li><a href="#">PIZZAS 2</a></li>
-        <li><a href="#">PIZZAS 3</a></li>
-        <li><a href="#">PIZZAS 4</a></li>
-        <li><a href="#">PIZZAS 5</a></li> 
-</ul> 
-<!-- FIN MENU PIZZA/PRODUCTOS-->
-
-<div class="row ingreso-cupones-productos">
-	<h3>CÓDIGO DE CUPÓN</h3>
-	<input type="text" name="codigo-cupon" id="codigo-cupon" />
-	<input type="submit" name="button-ingreso-cupon" id="button-ingreso-cupon" value="Enviar" />
-</div>
-
-<div class="row listado-productos">
-	<div class="col-lg-6 single-product single-producto-izq">
-    	<div class="row">
-        	<div class="col-lg-4 imagen-producto"><img src="img/fullpiza.png" /><br /><h3>$88.888</h3></div>
+<!-- REGISTRO -->
+<h1 class="titulo">CREA TU CUENTA EN PIZZA-HUT</h1>
+<div class="row contenedor-registro">
+	<div class="col-lg-6 single-producto-izq">
+    	<div class="row campos-form-reg">
+        	<div class="col-lg-4">
+            	NOMBRE*
+            </div>
             <div class="col-lg-8">
-            	<h3 class="nombre-single-producto">NOMBRE PIZZA <a data-toggle="modal" href="#Modal-Producto" class="vermas-producto">ver más</a></h3>
-                <p class="descripcion-single-producto">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                </p>
-			<div class="row single-producto-personalizar">
-            	<div class="col-lg-6 add-margin-bottom-1">
-    	       	    <select name="single-product-masa" id="single-product-masa">
-    	       	      <option value="0">TIPO MASA 1</option>
-    	       	      <option value="0">TIPO MASA 2</option>
-    	       	      <option value="0">TIPO MASA 3</option>
-	         	    </select>
-            	</div>
-                <div class="col-lg-6 add-margin-bottom-1">
-                	<select name="single-product-tamano" id="single-product-tamano">
-    	       	      <option value="0">TAMAÑO 1</option>
-    	       	      <option value="0">TAMAÑO 2</option>
-    	       	      <option value="0">TAMAÑO 3</option>
-	         	    </select>
-                </div>
-                <div class="col-lg-6 add-margin-bottom-2"><a href="" class="boton-personalizar-single-product">PERSONALIZAR</a></div>
-                <div class="col-lg-6"><a href="" class="boton-anadir-single-product">AÑADIR ORDEN</a></div>
-			</div>
+                <input type="text" name="campo-formulario-reg-1" id="campo-formulario-reg-1" class="campo-text-form-reg"/>
             </div>
         </div>
-    </div>
-    
-<!-- otro producto -->
-<div class="col-lg-6 single-product">
-    	<div class="row">
-        	<div class="col-lg-4 imagen-producto"><img src="img/fullpiza.png" /><br /><h3>$88.888</h3></div>
+        <div class="row campos-form-reg">
+        	<div class="col-lg-4">
+            	APELLIDO*
+            </div>
             <div class="col-lg-8">
-            	<h3 class="nombre-single-producto">NOMBRE PIZZA <a data-toggle="modal" href="#Modal-Producto" class="vermas-producto">ver más</a></h3>
-                <p class="descripcion-single-producto">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                </p>
-			<div class="row single-producto-personalizar">
-            	<div class="col-lg-6 add-margin-bottom-1">
-    	       	    <select name="single-product-masa" id="single-product-masa">
-    	       	      <option value="0">TIPO MASA 1</option>
-    	       	      <option value="0">TIPO MASA 2</option>
-    	       	      <option value="0">TIPO MASA 3</option>
-	         	    </select>
-            	</div>
-                <div class="col-lg-6 add-margin-bottom-1">
-                	<select name="single-product-tamano" id="single-product-tamano">
-    	       	      <option value="0">TAMAÑO 1</option>
-    	       	      <option value="0">TAMAÑO 2</option>
-    	       	      <option value="0">TAMAÑO 3</option>
-	         	    </select>
-                </div>
-                <div class="col-lg-6 add-margin-bottom-2"><a href="" class="boton-personalizar-single-product">PERSONALIZAR</a></div>
-                <div class="col-lg-6"><a href="" class="boton-anadir-single-product">AÑADIR ORDEN</a></div>
-			</div>
+                <input type="text" name="campo-formulario-reg-2" id="campo-formulario-reg-2" class="campo-text-form-reg"/>
             </div>
         </div>
+        <div class="row campos-form-reg">
+        	<div class="col-lg-4">
+            	N° DE TELÉFONO*
+            </div>
+            <div class="col-lg-8">
+                <input type="text" name="campo-formulario-reg-3" id="campo-formulario-reg-3" class="campo-text-form-reg"/>
+            </div>
+        </div>
+        <div class="row campos-form-reg">
+        	<div class="col-lg-4">
+            	EMAIL*
+            </div>
+            <div class="col-lg-8">
+                <input type="text" name="campo-formulario-reg-4" id="campo-formulario-reg-4" class="campo-text-form-reg"/>
+            </div>
+        </div>
+        <div class="row campos-form-reg">
+        	<div class="col-lg-4">
+            	CONFIRMAR EMAIL*
+            </div>
+            <div class="col-lg-8">
+                <input type="text" name="campo-formulario-reg-5" id="campo-formulario-reg-5" class="campo-text-form-reg"/>
+            </div>
+        </div>
+        <div class="row campos-form-reg">
+        	<div class="col-lg-4">
+            	CONTRASEÑA*
+            </div>
+            <div class="col-lg-8">
+                <input type="password" name="campo-formulario-reg-6" id="campo-formulario-reg-6" class="campo-text-form-reg"/>
+            </div>
+        </div>
+        <div class="row campos-form-reg">
+        	<div class="col-lg-4">
+            	CONFIRMAR CONTRASEÑA*
+            </div>
+            <div class="col-lg-8">
+                <input type="password" name="campo-formulario-reg-7" id="campo-formulario-reg-7" class="campo-text-form-reg"/>
+            </div>
+        </div>
+        <div class="row campos-form-reg">
+        	<div class="col-lg-4 campo-form-especial">
+            	INSCRIBIRME EN HUT LOVERS© Y RECIBIR OFERTAS
+            </div>
+            <div class="col-lg-8 opciones-inscripcion">
+                <label>
+                    <input type="radio" name="opciones-incripcion" id="inscripcion-botons" value="solo-mail" />
+                    Solo por Email
+                </label>
+                <label>
+                    <input type="radio" name="opciones-incripcion" id="inscripcion-botons2" value="mail-y-sms" />
+                    Email y SMS
+                </label>
+                <label>
+                    <input type="radio" name="opciones-incripcion" id="inscripcion-botons3" value="no-inscribirme" />
+                    No, gracias
+                </label>
+                
+            </div>
+        </div>
+        
+    <p class="text-acuerdo-inscripcion">Estoy de acuerdo con las condiciones de uso y entiendo que mi infomación se usara según lo establecido en las <a href="" class="link-bases-privacidad">bases de privacidad.</a></p>
+	<p class="text-acuerdo-inscripcion">Certifico que soy mayor de 13 anos</p>
+    <p class="contenedor-bottom-registro"><input type="submit" name="button_crear_cuenta" id="button_crear_cuenta" value="CREAR CUENTA" />
     </div>    
-    
+	<div class="col-lg-6 beneficios-cuenta">
+    	<h3><span class="numeracion-tu-cuenta">1</span> CON TU CUENTA PODRAS:</h3>
+        <div class="row beneficios-cuenta-detalles-1">
+        	<div class="col-lg-9">* Ver el historical de ordenes realizadas.</div>
+            <div class="col-lg-3 iconos-cuenta-beneficios"><img srC="img/i1.png" /><br /><img src="img/i2.png" /></div>
+        </div>
+        <div class="row beneficios-cuenta-detalles-1">
+        	<div class="col-lg-9">* Acelerar el proceso de pago al guardar sus direcciones e informacion de pago.</div>
+            <div class="col-lg-3 iconos-cuenta-beneficios"><img srC="img/i3.png" /></div>
+        </div>
+        <h3 class="segundo-titulo-beneficios"><span class="numeracion-tu-cuenta">2</span>  CON UNA MEMBRESIA DE HUT LOVERS PODRAS:</h3>
+        <div class="row beneficios-cuenta-detalles-1">
+        	<div class="col-lg-9">* Recibir ofertas exclusivas para miembros en su casilla de entrada.</div>
+            <div class="col-lg-3 iconos-cuenta-beneficios"><img srC="img/i4.png" /></div>
+        </div>
+    </div>
 </div>
-
 <!-- PIE DE PÁGINA -->
 <div class="row pie-pagina"> 
     <div class="col-lg-3 pie-col-1">
@@ -263,45 +258,12 @@
 		</div>
 	</div>
 </div>
-
-<!-- MODAL PRODUCTO -->
-<div id="Modal-Producto" class="modal fade">
-	<div class="modal-dialog">
-        <div class="modal-content">
-           	 <div class="modal-body">
-				<div class="row modal-producto">
-                	 <div class="col-lg-4 modal-producto-left">
-                     		<img src="img/fullpiza.png" /><br /><h3>$88.888</h3>
-                     </div>
-                     <div class="col-lg-8 modal-producto-right">
-                     	<h3 class="nombre-single-producto">NOMBRE PIZZA</h3>
-                		<p class="descripcion-single-producto">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                		</p>
-                     	<div class="row ingredientes-modal-producto">
-                        	<div class="col-lg-2 ingrediente-first-modal"><img src="img/img_ingrediente01.jpg" /><br />Ingrediente 1</div>
-                            <div class="col-lg-2"><img src="img/img_ingrediente01.jpg" /><br />Ingrediente 2</div>
-                            <div class="col-lg-2"><img src="img/img_ingrediente01.jpg" /><br />Ingrediente 3</div>
-                            <div class="col-lg-2"><img src="img/img_ingrediente01.jpg" /><br />Ingrediente 4</div>
-                            <div class="col-lg-2"><img src="img/img_ingrediente01.jpg" /><br />Ingrediente 5</div>
-                            <div class="col-lg-2"><img src="img/img_ingrediente01.jpg" /><br />Ingrediente 6</div>
-                        </div>
-                     </div>
-                </div>  
-                
-			</div>
-		</div>
-	</div>
-</div>
-
 <!-- END MODALS -->
 <!-- SCRIPTS -->
 <script>
 $(document).ready(function(){
     $("#bar").click(function(){
         $("#mnu").slideToggle("slow");
-    });
-	$("#bar2").click(function(){
-        $("#mnu2").slideToggle("slow");
     });
 });
 </script>

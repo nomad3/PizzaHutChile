@@ -140,6 +140,7 @@ html{background:rgb(0,0,0);font-family: "United Sans SemiCond";
 .modal-open{padding-right:0px !important;}
 .link-salir{margin-left:30px;}
 .cliente-ingresado-top{font-size:1.3em;color:#FFF;}
+.slow .contenedor-menu-web { transition: down 0.7s; -webkit-transition: down 0.7s; }
 
 /* HOME */
 
@@ -185,11 +186,10 @@ list-style:none;}
 .row.pie-pagina .col-lg-3 p{color:#FFF;}
 .row.pie-pagina .pie-col-4 a{margin-right:10px;}
 
-/* CSS HOME RESPONSIVE */
+/* CSS HOME / MENÚ RESPONSIVE */
 
 @media only screen and (max-width: 768px) {
-	.menu-web, .contenedor-menu-web{display:none;}
-	.row.header-top .col-lg-6{text-align:center;}
+	.contenedor-menu-web{display:none;}
 	.row.header-top .col-lg-6{text-align:center;}
 	.hamburger-menu{display:inline;text-align:center;margin:0px;}
 	.nav.navbar-nav li{width:100%;text-align:center;border:1px solid #CCC !important;}
@@ -200,6 +200,12 @@ list-style:none;}
 	.pie-col-4{text-align:center;padding-bottom:10px;}
 	.icono-menu-retiro{padding-left:0px !important;}
 	.precio-menu-superior, .direccion-retiro-menu01{text-align:center;padding-top:0px;}
+	#bar{color:#FFF;}
+}
+
+@media only screen and (min-width:769px) and (max-width: 1024px) {
+	.row.header-top{text-align:center;}
+	.col-lg-6.ingreso-top{text-align:center;}
 }
 
 /* FIN HOME */
@@ -219,7 +225,7 @@ list-style:none;}
 .modal-body .cambiar-ubicacion:hover{color:#979797;}
 .span_delivery{background-image:url(../img/pizza_hut_pop_up.png);width:200px;height:100px;padding-right:100px;background-position:right;background-repeat:no-repeat;padding-top:40px}
 .modal-delivery-left input[type=radio]:checked + label{background-image:url(../img/pizza_hut_pop_up2.png);color:#FED750}
-#delivery, #delivery2{visibility:hidden;}
+#delivery, #delivery2{display:none}
 .span_delivery2{background-image:url(../img/delivery_pop_up.png);width:200px;height:100px;padding-left:100px;background-position:left;background-repeat:no-repeat;padding-top:40px}
 .modal-delivery-right input[type=radio]:checked + label{background-image:url(../img/delivery_pop_up2.png);color:#FED750}
 #button_modal_delivery{padding:10px 50px; background-color:#ed1624;margin-top:10px;border-radius:15px;color:#FFF;border:0px;font-weight:bold;font-size:1.5em;}
@@ -296,7 +302,7 @@ list-style:none;}
 .tipo-maza-radio-button{width:30px !important;;height:30px !important;}
 .tipo-maza-label{width:100%;background-image:url(../img/seleccion-opcion-pizza-1.png);background-repeat:no-repeat;background-position:right center;padding-top:4%;padding-bottom:6.5%;}
 .tipo-maza-pizza.col-lg-9{margin:0px;background-color:#FFF;padding:0px;overflow:hidden;padding-right:10px;padding-left:10px;}
-.radio02{visibility:hidden;}
+.radio02{visibility:hidden;display:none}
 .tipo-maza-pizza input[type=radio]:checked + label{background-image:url(../img/seleccion-opcion-pizza-2.png);color:#FED750}
 .contenedor-bottom-siguiente{text-align:center;}
 
@@ -311,11 +317,23 @@ list-style:none;}
 .creatupizza-der h4{padding-left:15px}
 }
 
+@media only screen and (min-width:769px) and (max-width: 1024px) {
+.pasos-armar-pizza .col-lg-3 img{max-height:50px;width:auto;text-align:center;}
+.pasos-armar-pizza .col-lg-3{text-align:center;}
+.pasos-armar-pizza{margin-left:15px;margin-right:0px;width:92%}
+.col-lg-9 #tamano-pizza{padding-right:10px;width:100%;padding-left:10px;padding-top:4%;padding-bottom:3%;}
+.tipo-maza-label{width:100%;background-image:url(../img/seleccion-opcion-pizza-1.png);background-repeat:no-repeat;background-position:right center;padding-top:2%;padding-bottom:2%;}
+.modal-delivery-left, .modal-delivery-right{width:50% !important;float:left;}
+.modal-ingresar-left, .modal-ingresar-right{text-align:center;}
+.boton-personalizar-single-product{margin-bottom:9px;}
+.row.ingredientes-modal-producto .col-lg-2{width:33.3%;float:left;}
+.ingrediente-first-modal{padding:0px !important;}
+}
 
 /* CSS PRODUCTOS PIZZAS */
 .listado-productos{padding:30px;}
 .menu-web-pizzas li{width:20% !important;}
-.single-product{background:rgba(0,0,0,0.5);padding:15px;border-radius:15px;width:49%;}
+.single-product{background:rgba(0,0,0,0.5);padding:15px;border-radius:15px;width:49%;margin-bottom:15px;}
 .single-producto-izq{margin-right:2%;}
 .imagen-producto{text-align:center;}
 .imagen-producto h3{color:#FFF;margin-bottom:0px;}
@@ -346,6 +364,13 @@ p.descripcion-single-producto{color:#FFF;font-family:Rregular;font-size:0.7em;}
 .row.ingreso-cupones-productos{margin-top:0px;}
 .ingredientes-modal-producto .col-lg-2{width:33.3%;float:left;}
 .ingrediente-first-modal{padding-left:0px !important;}
+.menu-web-pizzas{display:none;}
+.menu-web-pizzas li{width:100% !important;}
+}
+
+@media only screen and (min-width:769px) and (max-width: 1024px) {
+	.single-product, .single-producto-izq, .beneficios-cuenta{float:left;}
+	.beneficios-cuenta{width:44% !important;}
 }
 
 /* CSS REGISTRAR CUENTA */
