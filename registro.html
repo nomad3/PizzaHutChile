@@ -3,12 +3,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
  <title>Pizza Hut</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
 	<link rel="stylesheet" type="text/css" href="css/estilo.css"/>
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" />
 </head>
 
 <body class="container">
@@ -67,7 +67,7 @@
             	NOMBRE*
             </div>
             <div class="col-lg-8">
-                <input type="text" name="campo-formulario-reg-1" id="campo-formulario-reg-1" class="campo-text-form-reg"/>
+                <input type="text" name="firstName" id="campo-formulario-reg-1" class="campo-text-form-reg form-control ng-pristine ng-invalid ng-invalid-required ng-valid-pattern" maxlength="60" data-ng-model="credentials.firstname" placeholder="Nombre" update-model-on="blur" data-ng-pattern="namePattern2" required="" autocomplete="off"></input>
             </div>
         </div>
         <div class="row campos-form-reg">
@@ -75,7 +75,7 @@
             	APELLIDO*
             </div>
             <div class="col-lg-8">
-                <input type="text" name="campo-formulario-reg-2" id="campo-formulario-reg-2" class="campo-text-form-reg"/>
+            <input name="lastName" maxlength="60" class="form-control ng-pristine ng-invalid ng-invalid-required ng-valid-pattern campo-text-form-reg" data-ng-model="credentials.lastname" placeholder="Apellido" data-ng-pattern="namePattern2" required="" autocomplete="off" id="campo-formulario-reg-2" ></input>
             </div>
         </div>
         <div class="row campos-form-reg">
@@ -83,7 +83,7 @@
             	N° DE TELÉFONO*
             </div>
             <div class="col-lg-8">
-                <input type="text" name="campo-formulario-reg-3" id="campo-formulario-reg-3" class="campo-text-form-reg"/>
+            	<input class="form-control ng-pristine ng-invalid ng-invalid-required ng-valid-pattern campo-text-form-reg" placeholder="(XXX) XXX-XXXX" name="phoneNumber" data-ng-model="credentials.phone" minlength="3" maxlength="28" ui-mask="(999) 999-9999" data-ng-pattern="/[0-9]/" required="" autocomplete="off" type="tel" id="campo-formulario-reg-3"></input>
             </div>
         </div>
         <div class="row campos-form-reg">
@@ -91,15 +91,15 @@
             	EMAIL*
             </div>
             <div class="col-lg-8">
-                <input type="text" name="campo-formulario-reg-4" id="campo-formulario-reg-4" class="campo-text-form-reg"/>
-            </div>
+            	<input name="eMailAddress" class="form-control ng-pristine ng-invalid ng-invalid-required ng-valid-email ng-valid-pattern campo-text-form-reg" data-ng-model="credentials.email" data-ng-pattern="emailPattern" placeholder="tumail@ejemplo.com" required="" autocomplete="off" type="email" id="campo-formulario-reg-4"></input>
+              </div>
         </div>
         <div class="row campos-form-reg">
         	<div class="col-lg-4">
             	CONFIRMAR EMAIL*
             </div>
             <div class="col-lg-8">
-                <input type="text" name="campo-formulario-reg-5" id="campo-formulario-reg-5" class="campo-text-form-reg"/>
+            <input name="confirmEmail" class="form-control ng-pristine ng-invalid ng-invalid-required ng-valid-email ng-valid-pattern ng-valid-validator campo-text-form-reg" ui-validate=" '$value==credentials.email' " data-ng-pattern="emailPattern" ui-validate-watch=" 'credentials.email' " data-ng-model="credentials.reemail" placeholder="you@example.com" required="" autocomplete="off" type="email" id="campo-formulario-reg-5" ></input>
             </div>
         </div>
         <div class="row campos-form-reg">
@@ -107,7 +107,7 @@
             	CONTRASEÑA*
             </div>
             <div class="col-lg-8">
-                <input type="password" name="campo-formulario-reg-6" id="campo-formulario-reg-6" class="campo-text-form-reg"/>
+            	<input class="form-control ng-pristine ng-invalid ng-invalid-required campo-text-form-reg" id="campo-formulario-reg-6" name="password" data-ng-model="credentials.password" placeholder="Password" required="" autocomplete="off" type="password"></input>
             </div>
         </div>
         <div class="row campos-form-reg">
@@ -115,7 +115,7 @@
             	CONFIRMAR CONTRASEÑA*
             </div>
             <div class="col-lg-8">
-                <input type="password" name="campo-formulario-reg-7" id="campo-formulario-reg-7" class="campo-text-form-reg"/>
+            	<input name="confirmPassword" class="form-control ng-pristine ng-valid campo-text-form-reg" data-ng-model="credentials.repassword" placeholder="Confirm Password" autocomplete="off" type="password"  id="campo-formulario-reg-7"></input>
             </div>
         </div>
         <div class="row campos-form-reg">
@@ -124,15 +124,15 @@
             </div>
             <div class="col-lg-8 opciones-inscripcion">
                 <label>
-                    <input type="radio" name="opciones-incripcion" id="inscripcion-botons" value="solo-mail" />
+                	<input id="carryout-details-asap" name="emailOnly" data-ng-model="credentials.getDealBy" value="email" class="ng-pristine ng-valid" type="radio"></input>
                     Solo por Email
                 </label>
                 <label>
-                    <input type="radio" name="opciones-incripcion" id="inscripcion-botons2" value="mail-y-sms" />
+                    <input id="carryout-details-future" name="emailandTextMessage" data-ng-model="credentials.getDealBy" value="emailText" class="ng-pristine ng-valid" type="radio" ></input>
                     Email y SMS
                 </label>
                 <label>
-                    <input type="radio" name="opciones-incripcion" id="inscripcion-botons3" value="no-inscribirme" />
+                    <input name="noThanks" data-ng-model="credentials.getDealBy" value="noThanks" class="ng-pristine ng-valid" type="radio"></input>
                     No, gracias
                 </label>
                 
@@ -141,22 +141,22 @@
         
     <p class="text-acuerdo-inscripcion">Estoy de acuerdo con las condiciones de uso y entiendo que mi infomación se usara según lo establecido en las <a href="" class="link-bases-privacidad">bases de privacidad.</a></p>
 	<p class="text-acuerdo-inscripcion">Certifico que soy mayor de 13 anos</p>
-    <p class="contenedor-bottom-registro"><input type="submit" name="button_crear_cuenta" id="button_crear_cuenta" value="CREAR CUENTA" />
+    <p class="contenedor-bottom-registro"><button class="btn btn-primary" data-ng-click="register(credentials)" id="button_crear_cuenta">Create Account</button></p>
     </div>    
 	<div class="col-lg-6 beneficios-cuenta">
     	<h3><span class="numeracion-tu-cuenta">1</span> CON TU CUENTA PODRAS:</h3>
         <div class="row beneficios-cuenta-detalles-1">
         	<div class="col-lg-9">* Ver el historical de ordenes realizadas.</div>
-            <div class="col-lg-3 iconos-cuenta-beneficios"><img srC="img/i1.png" /><br /><img src="img/i2.png" /></div>
+            <div class="col-lg-3 iconos-cuenta-beneficios"><img src="img/i1.png" /><br /><img src="img/i2.png" /></div>
         </div>
         <div class="row beneficios-cuenta-detalles-1">
         	<div class="col-lg-9">* Acelerar el proceso de pago al guardar sus direcciones e informacion de pago.</div>
-            <div class="col-lg-3 iconos-cuenta-beneficios"><img srC="img/i3.png" /></div>
+            <div class="col-lg-3 iconos-cuenta-beneficios"><img src="img/i3.png" /></div>
         </div>
         <h3 class="segundo-titulo-beneficios"><span class="numeracion-tu-cuenta">2</span>  CON UNA MEMBRESIA DE HUT LOVERS PODRAS:</h3>
         <div class="row beneficios-cuenta-detalles-1">
         	<div class="col-lg-9">* Recibir ofertas exclusivas para miembros en su casilla de entrada.</div>
-            <div class="col-lg-3 iconos-cuenta-beneficios"><img srC="img/i4.png" /></div>
+            <div class="col-lg-3 iconos-cuenta-beneficios"><img src="img/i4.png" /></div>
         </div>
     </div>
 </div>
@@ -179,23 +179,20 @@
         </ul>
     </div>
     <div class="col-lg-3 pie-col-3">
-    	<p>POLIZAS</p>
+    	<p>ADICIONALES</p>
         	<ul class="footlist">
             	<li><a href="#">Politica de privacidad</a></li>
                 <li><a href="#">Condiciones de uso</a></li>
-                <li><a href="#">Registro</a></li>
+<li><a href="#">Información de Alérgenos</a></li>
             </ul> 
     </div>
     <div class="col-lg-3 pie-col-4">
-    	<a class="link_camer_footer" href="#"><img src="img/camer.png" ></a>
-        <a class="link_facebook_footer" href="#"><img src="img/facebook.png" ></a>
-        <a class="link_twitter_footer" href="#"><img src="img/twiter.png" ></a>
+    	<a class="link_camer_footer" href="#"><img src="img/camer.png" /></a>
+        <a class="link_facebook_footer" href="#"><img src="img/facebook.png" /></a>
+        <a class="link_twitter_footer" href="#"><img src="img/twiter.png" /></a>
     </div> 
 </div>
 
-<!-- MODALS (POPUPS) -->
-
-<!-- MODAL COMENZAR PEDIDO -->
 <div id="Modal-Orden" class="modal fade">
 	<div class="modal-dialog">
         <div class="modal-content">
@@ -205,23 +202,22 @@
           	 <div class="modal-body">
 				<div class="row">
                 	<div class="col-lg-6 modal-delivery-left">
-                		<input type="radio" name="checkbox01" id="delivery" value="delivery" class="radio01" />
-	          			<label class="span_delivery" for="delivery">DELIVERY</label>
+                		<input id="occasion-delivery" name="occasion-group" data-ng-click="changeState(states.INITIAL,'D');" data-ng-model="localize.occasion" value="D" class="ng-pristine ng-valid radio01" type="radio">
+	          			<label class="span_delivery" for="occasion-delivery">DELIVERY</label>
                 	</div>
                     <div class="col-lg-6 modal-delivery-right">
-        				<input type="radio" name="checkbox01" id="delivery2" value="delivery2" class="radio01" />
-         				<label class="span_delivery2" for="delivery2">RETIRO</label>
+        				<input id="occasion-carryout" name="occasion-group" data-ng-click="changeState(states.INITIAL, 'C');autoLocalize();" data-ng-model="localize.occasion" value="C" class="ng-pristine ng-valid radio01" type="radio">
+
+         				<label class="span_delivery2" for="occasion-carryout">RETIRO</label>
                 	</div>
                 </div>
         		<h2>¿A DONDE QUIERES REALIZAR EL REPARTO?</h2>
 	 			<label>
-	   				<select name="direccionreparto" id="direccionreparto">
-	      				<option value="0">direccion ejemplo 1</option>
-	      				<option value="0">direccion ejemplo 2</option>
-        			</select>
+	   		                    <select id="direccionreparto" class="form-control ph-overflow ng-pristine ng-valid" data-ng-model="selectedAddress.index" data-ng-init="selectedAddress.index='saved_location'" data-ng-change="handleStoredAddressClick();"><option value="saved_location">Seleccionar una dirección guardada</option><!-- DO NOT add anything between the MP translate tags unless Spanish translation needs to be skipped --><!-- ngRepeat: savedLocation in modifySavedLocations --><!-- ngRepeat: savedLocation in modifySavedLocations --><!-- ngIf: localize.occasion=='C' --><!-- ngIf: localize.occasion=='D' --><option data-ng-if="localize.occasion=='D'" value="add_new_address" class="ng-scope">Usar una dirección diferente</option><!-- end ngIf: localize.occasion=='D' --></select>
       			</label><br />
-      			<a class="cambiar-ubicacion">CAMBIAR UBICACIÓN</a><BR />
-				<input type="submit" name="button_modal_delivery" id="button_modal_delivery" value="ENVIAR" />
+      			<a class="cambiar-ubicacion robot-fuente" >CAMBIAR UBICACIÓN</a><BR />
+				
+                <a class="btn btn-primary btn-block ph-find-store" data-ng-click="localizeByAddressOrZip()" id="button_modal_delivery" marked="1">Encontrar Pizza Hut</a>
 			</div>
 		</div>
 	</div>
@@ -239,7 +235,7 @@
                      	EMAIL
                      </div>
                      <div class="col-lg-9 modal-ingresar-right">
-                     	<input type="text" name="email" id="email" />
+                     	<input type="text" name="email_signIn" id="email_signIn" class="form-control ng-pristine ng-valid" data-ng-model="credentials.username" placeholder="Email" autocomplete="off" />
                      </div>
                 </div>  
                 <div class="row textboxs-ingreso">
@@ -247,13 +243,31 @@
                      	CONTRASEÑA
                      </div>
                      <div class="col-lg-9 modal-ingresar-right">
-                     	<input type="password" name="email" id="email" />
+                     	<input type="password" name="password_signIn" id="password_signIn" class="form-control ng-pristine ng-valid" data-ng-model="credentials.password" placeholder="Password" autocomplete="off"/>
                      </div>
                 </div>              
-      			<a class="cambiar-ubicacion">¿Olvidaste tu contraseña?</a><BR />
-                <label><input type="checkbox" name="recordarme" id="recordarme" /> Recordarme</label><br />
+      			<a class="cambiar-ubicacion" data-dismiss="modal"  data-toggle="modal" href="#Modal-Restablecer">¿Olvidaste tu contraseña?</a><BR />
+                <label><input type="checkbox" name="recordarme" id="recordarme" class="ng-pristine ng-valid" data-ng-model="credentials.remember"/> Recordarme</label><br />
                 <a class="cambiar-ubicacion">CREAR CUENTA</a><BR />
 				<input type="submit" name="button_modal_delivery" id="button_modal_delivery" value="INGRESAR" />
+			</div>
+		</div>
+	</div>
+</div>
+<!-- MODAL RECUPERAR CONTRASEÑA -->
+<div id="Modal-Restablecer" class="modal fade">
+	<div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+				<h3>RESTABLECER CONTRASEÑA</h3>
+            </div>
+          	 <div class="modal-body">
+				<div class="row textboxs-ingreso textbox-restablecer">
+					<input class="form-control ph-margin-top-10 ng-pristine ng-valid ng-valid-email campo-restablecer" data-ng-model="credentials.email" placeholder="usted@ejemplo.com" autocomplete="off" type="email">
+                    
+                   
+                </div>       
+				<input type="submit" name="button_modal_delivery" id="button_modal_delivery" value="RESTABLECER" />
 			</div>
 		</div>
 	</div>

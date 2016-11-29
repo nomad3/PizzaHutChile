@@ -178,11 +178,11 @@
         </ul>
     </div>
     <div class="col-lg-3 pie-col-3">
-    	<p>POLIZAS</p>
+    	<p>ADICIONALES</p>
         	<ul class="footlist">
             	<li><a href="#">Politica de privacidad</a></li>
                 <li><a href="#">Condiciones de uso</a></li>
-                <li><a href="#">Registro</a></li>
+<li><a href="#">Información de Alérgenos</a></li>
             </ul> 
     </div>
     <div class="col-lg-3 pie-col-4">
@@ -191,10 +191,6 @@
         <a class="link_twitter_footer" href="#"><img src="img/twiter.png" ></a>
     </div> 
 </div>
-
-<!-- MODALS (POPUPS) -->
-
-<!-- MODAL COMENZAR PEDIDO -->
 <div id="Modal-Orden" class="modal fade">
 	<div class="modal-dialog">
         <div class="modal-content">
@@ -204,23 +200,22 @@
           	 <div class="modal-body">
 				<div class="row">
                 	<div class="col-lg-6 modal-delivery-left">
-                		<input type="radio" name="checkbox01" id="delivery" value="delivery" class="radio01" />
-	          			<label class="span_delivery" for="delivery">DELIVERY</label>
+                		<input id="occasion-delivery" name="occasion-group" data-ng-click="changeState(states.INITIAL,'D');" data-ng-model="localize.occasion" value="D" class="ng-pristine ng-valid radio01" type="radio">
+	          			<label class="span_delivery" for="occasion-delivery">DELIVERY</label>
                 	</div>
                     <div class="col-lg-6 modal-delivery-right">
-        				<input type="radio" name="checkbox01" id="delivery2" value="delivery2" class="radio01" />
-         				<label class="span_delivery2" for="delivery2">RETIRO</label>
+        				<input id="occasion-carryout" name="occasion-group" data-ng-click="changeState(states.INITIAL, 'C');autoLocalize();" data-ng-model="localize.occasion" value="C" class="ng-pristine ng-valid radio01" type="radio">
+
+         				<label class="span_delivery2" for="occasion-carryout">RETIRO</label>
                 	</div>
                 </div>
         		<h2>¿A DONDE QUIERES REALIZAR EL REPARTO?</h2>
 	 			<label>
-	   				<select name="direccionreparto" id="direccionreparto">
-	      				<option value="0">direccion ejemplo 1</option>
-	      				<option value="0">direccion ejemplo 2</option>
-        			</select>
+	   		                    <select id="direccionreparto" class="form-control ph-overflow ng-pristine ng-valid" data-ng-model="selectedAddress.index" data-ng-init="selectedAddress.index='saved_location'" data-ng-change="handleStoredAddressClick();"><option value="saved_location">Seleccionar una dirección guardada</option><!-- DO NOT add anything between the MP translate tags unless Spanish translation needs to be skipped --><!-- ngRepeat: savedLocation in modifySavedLocations --><!-- ngRepeat: savedLocation in modifySavedLocations --><!-- ngIf: localize.occasion=='C' --><!-- ngIf: localize.occasion=='D' --><option data-ng-if="localize.occasion=='D'" value="add_new_address" class="ng-scope">Usar una dirección diferente</option><!-- end ngIf: localize.occasion=='D' --></select>
       			</label><br />
-      			<a class="cambiar-ubicacion">CAMBIAR UBICACIÓN</a><BR />
-				<input type="submit" name="button_modal_delivery" id="button_modal_delivery" value="ENVIAR" />
+      			<a class="cambiar-ubicacion robot-fuente" >CAMBIAR UBICACIÓN</a><BR />
+				
+                <a class="btn btn-primary btn-block ph-find-store" data-ng-click="localizeByAddressOrZip()" id="button_modal_delivery" marked="1">Encontrar Pizza Hut</a>
 			</div>
 		</div>
 	</div>
@@ -238,7 +233,7 @@
                      	EMAIL
                      </div>
                      <div class="col-lg-9 modal-ingresar-right">
-                     	<input type="text" name="email" id="email" />
+                     	<input type="text" name="email_signIn" id="email_signIn" class="form-control ng-pristine ng-valid" data-ng-model="credentials.username" placeholder="Email" autocomplete="off" />
                      </div>
                 </div>  
                 <div class="row textboxs-ingreso">
@@ -246,13 +241,31 @@
                      	CONTRASEÑA
                      </div>
                      <div class="col-lg-9 modal-ingresar-right">
-                     	<input type="password" name="email" id="email" />
+                     	<input type="password" name="password_signIn" id="password_signIn" class="form-control ng-pristine ng-valid" data-ng-model="credentials.password" placeholder="Password" autocomplete="off"/>
                      </div>
                 </div>              
-      			<a class="cambiar-ubicacion">¿Olvidaste tu contraseña?</a><BR />
-                <label><input type="checkbox" name="recordarme" id="recordarme" /> Recordarme</label><br />
+      			<a class="cambiar-ubicacion" data-dismiss="modal"  data-toggle="modal" href="#Modal-Restablecer">¿Olvidaste tu contraseña?</a><BR />
+                <label><input type="checkbox" name="recordarme" id="recordarme" class="ng-pristine ng-valid" data-ng-model="credentials.remember"/> Recordarme</label><br />
                 <a class="cambiar-ubicacion">CREAR CUENTA</a><BR />
 				<input type="submit" name="button_modal_delivery" id="button_modal_delivery" value="INGRESAR" />
+			</div>
+		</div>
+	</div>
+</div>
+<!-- MODAL RECUPERAR CONTRASEÑA -->
+<div id="Modal-Restablecer" class="modal fade">
+	<div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+				<h3>RESTABLECER CONTRASEÑA</h3>
+            </div>
+          	 <div class="modal-body">
+				<div class="row textboxs-ingreso textbox-restablecer">
+					<input class="form-control ph-margin-top-10 ng-pristine ng-valid ng-valid-email campo-restablecer" data-ng-model="credentials.email" placeholder="usted@ejemplo.com" autocomplete="off" type="email">
+                    
+                   
+                </div>       
+				<input type="submit" name="button_modal_delivery" id="button_modal_delivery" value="RESTABLECER" />
 			</div>
 		</div>
 	</div>

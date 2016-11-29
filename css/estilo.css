@@ -127,6 +127,13 @@ a:hover{text-decoration:none !important;}
 img{border:0px;image-rendering:optimizeQuality !important;}
 .clear{clear:both;}
 body{font-size:16px}
+input::-webkit-input-placeholder {font-family: "Rlighti" !important;}
+input:-ms-input-placeholder { font-family: "Rlighti" !important;}
+input::-moz-placeholder {font-family: "Rlighti" !important;}
+select{font-family: "Rlighti" !important;}
+h1,h2,h4,h5,h6{font-family: "uconheavy";}
+.robot-fuente{font-family: "Rcondr";color:#D4A26F}
+#direccionreparto{font-family: "Rregular" !important;}
 
 html{background:rgb(0,0,0);font-family: "United Sans SemiCond";
   -ms-text-size-adjust: 100%;
@@ -141,6 +148,7 @@ html{background:rgb(0,0,0);font-family: "United Sans SemiCond";
 .link-salir{margin-left:30px;}
 .cliente-ingresado-top{font-size:1.3em;color:#FFF;}
 .slow .contenedor-menu-web { transition: down 0.7s; -webkit-transition: down 0.7s; }
+.pie-col-4{padding-top:2%}
 
 /* HOME */
 
@@ -197,10 +205,11 @@ list-style:none;}
 	.hamburger-menu .col-lg-12{padding-bottom:10px !important;}
 	.row.productos-promocion-home .col-lg-6{margin-bottom:20px}
 	.row.productos-promocion-home{padding-bottom:20px}
-	.pie-col-4{text-align:center;padding-bottom:10px;}
+	.pie-col-4{text-align:center;padding-bottom:10px;padding-top:0px !important;}
 	.icono-menu-retiro{padding-left:0px !important;}
 	.precio-menu-superior, .direccion-retiro-menu01{text-align:center;padding-top:0px;}
 	#bar{color:#FFF;}
+
 }
 
 @media only screen and (min-width:769px) and (max-width: 1024px) {
@@ -213,26 +222,26 @@ list-style:none;}
 /* MODALS */
 
 
-.modal-content{background-image:url(../img/bg.jpg);background-size:100%;border-radius:15px;text-align:center !important;}
+.modal-content{background-image:url(../img/bg.jpg);background-size:100%;border-radius:0px !important;text-align:center !important;}
 .modal-header{border:0px;}
 .modal-header h3{color:#D4A26F;font-size:2em;}
 .modal-dialog{margin:12% auto !important;}
 .modal-body h2{color:#FFF !important;font-size:1.5em;}
 .modal-body{color:#979797;}
-.modal-body #direccionreparto{padding:3% 30%;border:0px;border-radius:15px;width:100% !important}
+.modal-body #direccionreparto{padding:3% 20%;border:0px;border-radius:4px;width:100% !important}
 .modal-body #direccionreparto option{text-align:center !important;border:0px !important;}
 .modal-body .cambiar-ubicacion{color:#FED750;}
 .modal-body .cambiar-ubicacion:hover{color:#979797;}
-.span_delivery{background-image:url(../img/pizza_hut_pop_up.png);width:200px;height:100px;padding-right:100px;background-position:right;background-repeat:no-repeat;padding-top:40px}
-.modal-delivery-left input[type=radio]:checked + label{background-image:url(../img/pizza_hut_pop_up2.png);color:#FED750}
+.span_delivery{background-image:url(../img/delivery_pop_up.png);width:200px;height:100px;padding-right:100px;background-position:right;background-repeat:no-repeat;padding-top:40px}
+.modal-delivery-left input[type=radio]:checked + label{background-image:url(../img/delivery_pop_up2.png);color:#FED750}
 #delivery, #delivery2{display:none}
-.span_delivery2{background-image:url(../img/delivery_pop_up.png);width:200px;height:100px;padding-left:100px;background-position:left;background-repeat:no-repeat;padding-top:40px}
-.modal-delivery-right input[type=radio]:checked + label{background-image:url(../img/delivery_pop_up2.png);color:#FED750}
-#button_modal_delivery{padding:10px 50px; background-color:#ed1624;margin-top:10px;border-radius:15px;color:#FFF;border:0px;font-weight:bold;font-size:1.5em;}
+.span_delivery2{background-image:url(../img/pizza_hut_pop_up.png);width:200px;height:100px;padding-left:100px;background-position:left;background-repeat:no-repeat;padding-top:40px}
+.modal-delivery-right input[type=radio]:checked + label{background-image:url(../img/pizza_hut_pop_up2.png);color:#FED750}
+#button_modal_delivery{padding:5px 40px; background-color:#ed1624;margin-top:10px;border-radius:4px;color:#FFF;border:0px;font-weight:bold;font-size:1.5em;width:50%;margin-left:auto;margin-right:auto}
 #button_modal_delivery:hover{background-color:#fed750}
 .modal-ingresar-left{text-align:right;font-size:1.4em;color:#FED750;padding-top:0.3em;}
 .modal-ingresar-right{text-align:left;}
-.modal-ingresar-right input{padding:10px;width:90%;border-radius:15px;border:0px;color:#706F6F}
+.modal-ingresar-right input{padding:10px;width:90%;border-radius:4px;border:0px;color:#706F6F}
 .textboxs-ingreso{padding-bottom:15px;}
 .modal-producto-left{text-align:center;}
 .modal-producto-left h3{text-align:center;}
@@ -241,6 +250,8 @@ list-style:none;}
 .row.ingredientes-modal-producto .col-lg-2 img{margin-bottom:5px;}
 .ingrediente-first-modal{padding-left:15px !important;}
 .modal-producto-left h3{color:#FED750}
+.form-control{height:auto !important;}
+.radio01{visibility:hidden;position:absolute;}
 
 /* MODAL RESPONSIVE */
 
@@ -255,11 +266,13 @@ list-style:none;}
 .titulo01{margin-top:60px;margin-bottom:60px;}
 .row.botones-retiro{margin:0px auto;width:50%;}
 .boton-retirarlocal{padding:15px;border-radius:5px;text-align:center;display:block;}
-.botones-retiro-izq .boton-retirarlocal{color:#000;background-color:#FFF;}
-.botones-retiro-der .boton-retirarlocal{color:#FFF;background-color:#000;}
+.botones-retiro-izq{padding:0px}
+.botones-retiro-der{padding:0px}
+.botones-retiro-izq .boton-retirarlocal{color:#000;background-color:#FFF;font-family: "uconheavy";}
+.botones-retiro-der .boton-retirarlocal{color:#FFF;background-color:#000;font-family: "uconheavy";}
 .botones-retiro-izq{text-align:right;}
 .botones-retiro-der{text-align:left;}
-#boton-encontrar-pizza{padding:11% 50px; background-color:#ed1624;border-radius:5px;color:#FFF;border:0px;font-weight:bold;font-size:1.5em;}
+#boton-encontrar-pizza{padding:11% 50px; background-color:#ed1624;border-radius:5px;color:#FFF;border:0px;font-weight:bold;font-size:1.5em;text-transform:uppercase;}
 .seleccionar-ubicacion-pizza{width:75%;margin:0px auto;}
 .seleccion-pizza-cercano{text-align:center;display:block;padding:5% 35%;border-radius:5px;border:0px;}
 .ubicaciones-mapa{margin-top:40px;padding-bottom:60px;}
@@ -290,7 +303,7 @@ list-style:none;}
 .creatupizza-main{padding-bottom:60px;}
 .creatupizza-der h4{color:#FFF;}
 .creatupizza-der h4 .numero-paso-armar{background-color:#706F6F;padding:3px 10px;border-radius:20px;}
-.pasos-armar-pizza{border-radius:10px;width:97%;overflow:hidden;margin-bottom:30px;}
+.pasos-armar-pizza{border-radius:10px;width:97%;overflow:hidden;margin-bottom:32px;}
 .pasos-armar-pizza .col-lg-3{margin:0px;padding-left:10px;padding-right:10px;background-color:#000;padding-top:5px;padding-bottom:5px;border:#000}
 .pasos-armar-pizza .col-lg-9{margin:0px;background-color:#FFF;padding:0px;overflow:hidden;}
 .precio-pizza-arma{color:#FED750;}
@@ -300,7 +313,7 @@ list-style:none;}
 .seleccionar-tipo-maza{margin-bottom:0px;}
 .borde-top-selecciones3{border-top-left-radius:0px !important;border-top-right-radius:0px;margin-bottom:30px;}
 .tipo-maza-radio-button{width:30px !important;;height:30px !important;}
-.tipo-maza-label{width:100%;background-image:url(../img/seleccion-opcion-pizza-1.png);background-repeat:no-repeat;background-position:right center;padding-top:4%;padding-bottom:6.5%;}
+.tipo-maza-label{width:100%;background-image:url(../img/seleccion-opcion-pizza-1.png);background-repeat:no-repeat;background-position:right center;padding-top:10%;padding-bottom:7%;}
 .tipo-maza-pizza.col-lg-9{margin:0px;background-color:#FFF;padding:0px;overflow:hidden;padding-right:10px;padding-left:10px;}
 .radio02{visibility:hidden;display:none}
 .tipo-maza-pizza input[type=radio]:checked + label{background-image:url(../img/seleccion-opcion-pizza-2.png);color:#FED750}
@@ -339,25 +352,27 @@ list-style:none;}
 .imagen-producto h3{color:#FFF;margin-bottom:0px;}
 h3.nombre-single-producto{margin-top:0px;color:#D4A26F}
 .vermas-producto{color:#fff;font-size:0.6em;}
-p.descripcion-single-producto{color:#FFF;font-family:Rregular;font-size:0.7em;}
+p.descripcion-single-producto{color:#FFF;font-family:"Rregular";font-size:0.7em;}
 .ingreso-cupones-productos{padding-left:30px;margin-top:60px;}
 .ingreso-cupones-productos h3{color:#FFF;}
-.ingreso-cupones-productos input#codigo-cupon{border:0px;border-radius:10px;padding:5px 10px;width:30%}
-.ingreso-cupones-productos input#button-ingreso-cupon{background-color:#ED1624;color:#FFF;padding:5px 20px;border:0px;border-radius:10px;margin-left:15px;}
-.ingreso-cupones-productos input#button-ingreso-cupon:hover{background-color:#CD1624;}
-.single-producto-personalizar .col-lg-6 select{width:100% !important;text-align:center;padding:5px;border:0px;border-radius:10px;}
-.boton-personalizar-single-product{display:block;border-radius:10px;background-color:#D4A26F;color:#FFF;text-align:center;padding:5px;}
+.ingreso-cupones-productos input#coupon-code{border:0px;border-radius:4px;padding:5px 10px;width:30% !important}
+.ingreso-cupones-productos a#button-ingreso-cupon{background-color:#ED1624;color:#FFF;padding:5px 20px;border:0px;border-radius:4px;margin-left:15px;text-transform:uppercase}
+.ingreso-cupones-productos a#button-ingreso-cupon:hover{background-color:#CD1624;}
+.single-producto-personalizar .col-lg-6 select{width:100% !important;text-align:center;padding:5px;border:0px;border-radius:4px;}
+.boton-personalizar-single-product{display:block;border-radius:4px;background-color:#D4A26F;color:#FFF;text-align:center;padding:5px;}
 .boton-personalizar-single-product:hover{background-color:#FED750;color:#FFF;}
-.boton-anadir-single-product{display:block;border-radius:10px;background-color:#ED1624;color:#FFF;text-align:center;padding:5px;}
+.boton-anadir-single-product{display:block;border-radius:4px;background-color:#ED1624;color:#FFF;text-align:center;padding:5px;}
 .boton-anadir-single-product:hover{background-color:#CD1624;color:#FFF;}
 .add-margin-bottom-1{margin-bottom:10px;}
 
+
+
 /* CSS PRODUCTOS PIZZA RESPONSIVE */
 @media only screen and (max-width: 768px) {
-
+.row.ingreso-cupones-productos{margin:0px;}
 .single-product{width:100%;}
-.ingreso-cupones-productos input#codigo-cupon{width:90%;margin-bottom:15px;}
-.ingreso-cupones-productos input#button-ingreso-cupon{margin-left:0px;width:90% !important;display:block;}
+.ingreso-cupones-productos input#coupon-code{width:94% !important;margin-bottom:15px;float:none !important;}
+.ingreso-cupones-productos a#button-ingreso-cupon{margin-left:0px;width:94% !important;display:block;}
 .add-margin-bottom-2{margin-bottom:10px;}
 .single-product{margin-bottom:20px;}
 .menu-responsive-2 .col-lg-12{margin-top:10px;}
@@ -366,6 +381,7 @@ p.descripcion-single-producto{color:#FFF;font-family:Rregular;font-size:0.7em;}
 .ingrediente-first-modal{padding-left:0px !important;}
 .menu-web-pizzas{display:none;}
 .menu-web-pizzas li{width:100% !important;}
+.separacion-boton-codigo{display:block}
 }
 
 @media only screen and (min-width:769px) and (max-width: 1024px) {
@@ -374,12 +390,12 @@ p.descripcion-single-producto{color:#FFF;font-family:Rregular;font-size:0.7em;}
 }
 
 /* CSS REGISTRAR CUENTA */
-.contenedor-registro{padding-top:60px;padding-bottom:60px;}
+.row.contenedor-registro{padding-top:60px;padding-bottom:60px;}
 .contenedor-registro .single-producto-izq{margin-left:30px;margin-right:1%}
-.contenedor-registro .col-lg-6{background:rgba(0,0,0,0.5);padding:15px;border-radius:15px;width:47%;}
+.contenedor-registro .col-lg-6{background:rgba(0,0,0,0.5);padding:15px;width:47%;}
 .campos-form-reg{margin-bottom:25px;margin-top:25px;}
 .campos-form-reg .col-lg-4{color:#FFF;padding:5px;padding-left:25px;}
-.campo-text-form-reg{border:0px;border-radius:10px;width:80%;padding:5px;}
+.campo-text-form-reg{border:0px;border-radius:4px;width:80%;padding:5px;}
 .campo-form-especial{font-size:0.9em;color:#D4A26F !important}
 .opciones-inscripcion{font-size:0.7em;color:#FFF;}
 .opciones-inscripcion label{margin-right:15px;}
@@ -387,10 +403,10 @@ p.text-acuerdo-inscripcion{font-size:0.9em;color:#FFF;}
 a.link-bases-privacidad{color:#FED750;}
 a.link-bases-privacidad:hover{color:#979797}
 .contenedor-bottom-registro{text-align:center;}
-.contenedor-bottom-registro input{border-radius:10px;background-color:#ED1624;color:#FFF;text-align:center;padding:5px;border:0px;padding:10px 30px;}
-.contenedor-bottom-registro input:hover{background-color:#CD1624;color:#FFF;}
+.contenedor-bottom-registro button{border-radius:4px;background-color:#ED1624;color:#FFF;text-align:center;padding:5px;border:0px;padding:10px 30px;text-transform:uppercase;}
+.contenedor-bottom-registro button:hover{background-color:#CD1624;color:#FFF;}
 .beneficios-cuenta h3{color:#D4A26F !important;margin-bottom:40px;}
-.beneficios-cuenta h3 span{background-color:#D4A26F;padding:2px 10px;color:#FFF !important;border-radius:20px;}
+.beneficios-cuenta h3 span{background-color:#D4A26F;padding:2px 10px;color:#FFF !important;border-radius:20px;padding-top:4px;padding-bottom:1px;}
 .beneficios-cuenta{color:#FFF;padding-left:30px !important;}
 .beneficios-cuenta-detalles-1{margin-bottom:15px;}
 .segundo-titulo-beneficios{margin-top:100px;}
@@ -406,5 +422,107 @@ a.link-bases-privacidad:hover{color:#979797}
 .iconos-cuenta-beneficios br{display:none;}
 .iconos-cuenta-beneficios img{margin:5px 15px;}
 .beneficios-cuenta-detalles-1 .col-lg-9{text-align:center;}
+}
 
+
+/* nuevo css 28-11-2016 */
+
+/*Extras*/
+
+.links-sueltos{color:#FED750;}
+.links-sueltos:hover{color:#979797}
+textarea::-webkit-input-placeholder {font-family: "Rlighti" !important;}
+textarea:-ms-input-placeholder { font-family: "Rlighti" !important;}
+textarea::-moz-placeholder {font-family: "Rlighti" !important;}
+
+/* MODAL RESTABLECER CONTRASEÑA */
+.textbox-restablecer{text-align:center;}
+.campo-restablecer{max-width:90%;display:inline}
+
+/* REGISTRO OK */
+
+.mensajes-sistema{padding-top:200px;padding-bottom:200px;color:#D4A26F;text-align:center;}
+
+/* mi cuenta */
+.titulo-micuenta{margin-bottom:40px;}
+.contenedor-micuenta{padding:40px 30px}
+.opciones-configuracion ul li a{color:#FFF;padding-top:30px;padding-bottom:30px}
+.nav>li>a{padding-top:30px !important;padding-bottom:30px !important}
+.nav-tabs>li>a{border:none !important;}
+.opciones-configuracion ul li a:hover{color:#979797;background:none !important;border:none !important;}
+.opciones-configuracion ul li.active a{background:none !important;border:none !important;color:#D4A26F !important}
+.opciones-configuracion ul li{border-bottom:solid 5px #706F6F;}
+.ultima-opcion{border:none !important;}
+.nav-tabs{border:none;}
+.opciones-configuracion{background:rgba(0,0,0,0.5)}
+.paneles-cuenta h3, .paneles-cuenta p, .paneles-cuenta{color:#FFF;}
+.paneles-cuenta h4{color:#D4A26F}
+.campo-requerido{color:#FED750}
+.campos-form-micuenta{margin-bottom:30px;}
+.campos-form-micuenta2{margin-top:15px;}
+#contrasena-cambiar, #pregunta-seguridad, #forma-pago-tarjeta{color:#FFF;margin-top:20px;}
+.preguntas-seguridad, #agregar-direccion{padding-top:20px;}
+.contenedor-botones-micuenta{margin-top:30px;}
+.contenedor-botones-micuenta .col-lg-6{text-align:center;}
+.botones-micuenta-01{border-radius:4px;width:70%;background-color:#706F6F;color:#FFF;border:0px;text-transform:uppercase;font-size:1.1em}
+.botones-micuenta-02{border-radius:4px;width:70%;background-color:#ED1624;color:#FFF;border:0px;text-transform:uppercase;font-size:1.1em}
+.botones-micuenta-03{border-radius:4px;width:40%;background-color:#ED1624;color:#FFF;border:0px;text-transform:uppercase;font-size:1.1em}
+.botones-micuenta-02:hover, .botones-micuenta-03:hover{background-color:#CD1624 !important;}
+.campos-form-micuenta2{margin-bottom:20px;}
+.texto-establecer-principal{color:#FFF;font-family: "Rlighti" !important;font-size:0.9em}
+.listado-direcciones .col-lg-6, .listado-creaciones .col-lg-6{color:#FFF;}
+.listado-creaciones, .listado-direcciones{padding-top:5px;padding-bottom:5px;}
+
+/* MI ORDEN */
+
+.row.mi-orden-page{padding:40px 30px;color:#FFF;}
+.row.mi-orden-page h1{color:#FFF;text-align:center;}
+.texto-amarillo-aperlado{color:#D4A26F;}
+.select-checkout-01{color:#000}
+.botones-checkbox-01{margin-top:20px;}
+.boton-checkbox-01{width:100%;padding:10px 0px;background-color:#979797;display:block;text-align:center;border-radius:4px;color:#FFF;}
+.boton-checkbox-01:hover{background-color:#706F6F !important;color:#FFF !important;}
+.boton-checkbox-02{width:100%;padding:10px 0px;background-color:#ED1624;display:block;text-align:center;border-radius:4px;color:#FFF;margin-left:auto;}
+.boton-checkbox-02:hover{background-color:#CD1624 !important;color:#FFF !important;}
+.listado-checkbox{margin-top:30px;}
+.separacion-productos-checkbox{border-top:solid 5px #706F6F;}
+.botones-checkbox-01 .alinear-derecha{text-align:right !important;}
+.listado-checkbox h4{color:#D4A26F;margin-top:0px;}
+.listado-checkbox .col-lg-9{font-family: "Rregular" !important;font-size:0.8em}
+.listado-checkbox .col-lg-3{text-align:right;}
+.orden-lista-checkout{margin-top:40px;}
+.ph-margin-right-25{margin-right:25px;}
+.btn.btn-primary.ph-save-summary{text-transform:uppercase;background-color:#ED1624;color:#FFF;border:0px;}
+.btn.btn-primary.ph-save-summary:hover{background-color:#CD1624 !important;color:#FFF !important;}
+.alinar-boton-derecha{display:block;text-align:right;margin-bottom:30px}
+.orden-lista-checkout .text-center.btn-default.btn{margin:0px 0px 0px 5px !important;background-color:#ED1624;color:#FFF;border:0px;}
+.orden-lista-checkout .text-center.btn-default.btn:hover{background-color:#CD1624 !important;color:#FFF !important;}
+.separacion-productos-checkbox2{margin-top:30px;margin-bottom:30px;}
+.totales-izq{text-align:right;}
+.promociones-checkout .col-lg-12{padding:5%;border:solid 5px #D4A26F;width:92%;margin-left:1%}
+.promociones-checkout .col-lg-12 h3{margin-top:0px;color:#D4A26F}
+.boton-promocion-checkout{background-color:#ED1624;color:#FFF;border:0px;margin-top:20px;}
+.boton-promocion-checkout:hover{background-color:#CD1624 !important;color:#FFF !important;}
+.row.promociones-checkout .col-lg-12{text-align:center;}
+.visible-mobile{display:none;}
+.visible-web{display:block}
+.nombre-cupon{color:#D4A26F}
+.descripcion-cupon{font-family: "Rregular" !important;font-size:0.8em}
+
+@media only screen and (max-width: 768px) {
+	.row.botones-checkbox-01 .col-lg-6{margin-bottom:10px;}
+	.row.listado-checkbox .col-lg-3{text-align:left;margin-top:10px;}
+	.row.orden-lista-checkout .alinar-boton-derecha{text-align:center;}
+	.row.orden-lista-checkout .col-lg-5{margin-bottom:15px;}
+	.mi-orden-content-centro .izq-web{}
+	.mi-orden-content-centro .der-web{}
+	.row.promociones-checkout .col-lg-12{margin-left:auto;margin-right:auto;}
+	.visible-mobile{display:block;}
+	.visible-web{display:none}
+	
+	/* cuenta */
+	
+.nav > li > a{padding:4px 4px !important}
+	.contenedor-botones-micuenta .col-lg-6{margin-bottom:10px}
+	#menu3 .row .col-lg-6{margin-bottom:10px}
 }

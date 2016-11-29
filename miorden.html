@@ -1,0 +1,380 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <title>Pizza Hut</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+</head>
+
+<body class="container">
+<div class="row header-top"> 
+    <!-- TOP SIN INGRESAR -->
+    <div class="col-lg-6"><a href="index.html"><img src="img/logo.png" title="Pizza Hut" alt="Pizza Hut" /></a></div> 
+    <div class="col-lg-6 ingreso-top"><a href="#Modal-Ingreso" data-toggle="modal">INGRESAR</a> - <a href="reg.html">REGISTRARSE</a></div>
+    <!-- TOP INGRESADO -->
+    <!--
+    <div class="col-lg-6"><a href="index.html"><img src="img/logo.png" title="Pizza Hut" alt="Pizza Hut" /></a></div> 
+    <div class="col-lg-6 ingreso-top cliente-ingresado-top">Bienvenido NOMBRE DEL CLIENTE<a href="#" class="link-salir">SALIR</a> - <a href="#">MI CUENTA</a></div>
+    -->
+</div>
+<!-- MENÚ -->
+<div class="row hamburger-menu">    
+    <div class="col-lg-12">
+	    <a href="#mnu" id="bar" data-toggle="collapse"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
+    </div>
+</div>
+<div class="navbar navbar-inverse contenedor-menu-web" id="mnu"> 
+    <ul class="nav navbar-nav menu-web"> 
+        <li class="active"><a href="#">PIZZAS</a></li> 
+        <li class="dropdown"> 
+    		<a class="dropdown-toggle" href="#" data-toggle="dropdown" >MÁS <b class="caret"></b></a> 
+    		<ul class="dropdown-menu"> 
+        		<li><a href="productos.html?tipo=pasta">PASTA</a></li> 
+        		<li><a href="productos.html?tipo=palitos">PALITOS</a></li> 
+        		<li><a href="productos.html?tipo=bebidas">BEBIDAS</a></li>
+                <li><a href="productos.html?tipo=pollo">POLLO</a></li>
+                <li><a href="productos.html?tipo=postres">POSTRES</a></li> 
+    		</ul> 
+		</li>
+        <li class="opt-menu-destacado"><a href="#">OFERTAS</a></li>
+        <!-- BOTÓN COMENZAR ORDEN SIN INGRESAR -->
+        <li class="order-menu"><a data-toggle="modal" href="#Modal-Orden">COMENZAR ORDEN</a></li> 
+        <!-- BOTÓN MENÚ SUPERIOR DATOS ORDEN -->
+        <!--
+        <li class="contenedor-boton-orden-ingresado">
+        	<div class="row boton-orden-ingresado">
+            	<div class="col-lg-2 icono-menu-retiro"><img src="img/pizza_hut_37.png" /></div>
+                <div class="col-lg-4 direccion-retiro-menu01">Retirar Desde<br /><span class="direccion-retiro-menu02">Santiago 123, Santiago</span></div>
+                <div class="col-lg-2 icono-menu-retiro"><img src="img/carrito_37.png" /></div>
+                <div class="col-lg-4 precio-menu-superior">$88.888</div>
+            </div>
+        </li>       
+        -->
+    </ul> 
+    </div>
+<!-- FIN MENÚ -->    
+<div class="row mi-orden-page">
+	<h1>MI ORDEN</h1>
+	<span class="texto-amarillo-aperlado">Llevar de:</span> Dirección del local <a href="encuentratupizzahut.html">Cambiar</a><br />
+	<span class="texto-amarillo-aperlado">Llevar a:</span> Dirección delivery <a href="encuentratupizzahut.html">Cambiar</a>
+	<div class="row mi-orden-content-centro">
+    	<div class="col-md-3 der-web col-md-push-9">
+			<h3>¿PODEMOS TENTARLO?</h3>
+            <div class="row promociones-checkout">
+            	<div class="col-lg-12">
+                	<h3>NOMBRE PROMOCIÓN</h3>
+                     imagen
+                     <a href="" class="btn btn-primary btn-block boton-promocion-checkout" data-ng-click="addUpsell(upsell.parameters())" marked="1"><!-- ngIf: upsell.price --><span data-ng-if="upsell.price" class="ng-scope">Añadir&nbsp;<span data-ng-bind="upsell.price | currency" class="ng-binding">$99.999</span></span><!-- end ngIf: upsell.price --> <!-- ngIf: !upsell.price && upsell.selects[0].options[0].val !== 'default_text' --> <!-- ngIf: !upsell.price && upsell.selects[0].options[0].val === 'default_text' --></a>
+                </div>
+            </div>
+    	</div>
+		<div class="col-md-9 izq-web col-md-pull-3">
+			<div class="row botones-checkbox-01">
+        		<div class="col-lg-6"><a href="productos.html" class="boton-checkbox-01">AGREGAR MÁS COMIDA</a></div>
+            	<div class="col-lg-6 alinear-derecha"><a href="" class="boton-checkbox-02">PAGAR</a></div>
+       	 	</div>
+            <!-- producto -->
+          	<div class="row listado-checkbox">
+    			<div class="col-lg-9">
+        			<h4>NOMBRE DEL PRODUCTO</h4>
+            		Descripción del producto
+        
+       	 		</div>
+        		<div class="col-lg-3">
+       	  			Cant: <select class="ph-edit-qty ng-pristine ng-valid select-checkout-01" ng-model="quantity" ng-init="quantity = item.quantity" data-ng-disabled="item.isCoupon || item.isDeal" ng-options="quantity for quantity in quantities" ng-change="updateQuantity(item.id, quantity,'item')">
+                	<option value="0" selected="selected">1</option>
+                	<option value="1">2</option>
+                	<option value="2">3</option>
+                	<option value="3">4</option>
+                	<option value="4">5</option>
+                	<option value="5">6</option>
+               	 	<option value="6">7</option>
+                	<option value="7">8</option>
+         	       	<option value="8">9</option>
+                	<option value="9">10</option>
+                	<option value="10">11</option>
+                	<option value="11">12</option>
+                	<option value="12">13</option>
+                	<option value="13">14</option>
+                	<option value="14">15</option>
+                	<option value="15">16</option>
+                	<option value="16">17</option>
+	                <option value="17">18</option>
+    	            <option value="18">19</option>
+        	        <option value="19">20</option>
+            	    <option value="20">21</option>
+	                <option value="21">22</option>
+    	            <option value="22">23</option>
+        	        <option value="23">24</option>
+            	    <option value="24">25</option>
+	                <option value="25">26</option>
+    	            <option value="26">27</option>
+        	        <option value="27">28</option>
+            	    <option value="28">29</option>
+	               	<option value="29">30</option>
+    	            <option value="30">31</option>
+        	        <option value="31">32</option>
+            	    <option value="32">33</option>
+	                <option value="33">34</option>
+    	            <option value="34">35</option>
+        	        <option value="35">36</option>
+            	    <option value="36">37</option>
+	                <option value="37">38</option>
+    	            <option value="38">39</option>
+        	        <option value="39">40</option>
+            	    <option value="40">41</option>
+	                <option value="41">42</option>
+    	            <option value="42">43</option>
+        	        <option value="43">44</option>
+            	    <option value="44">45</option>
+	                <option value="45">46</option>
+    	            <option value="46">47</option>
+        	        <option value="47">48</option>
+            	    <option value="48">49</option>
+	                <option value="49">50</option>
+    	            </select><br />
+            		<a href="" data-ng-click="removeItem(item.id)" class="links-sueltos">Eliminar</a>
+    			</div>
+		</div>
+        <hr  class="separacion-productos-checkbox" />
+        <!-- fin producto -->
+        
+        <!-- producto -->
+          	<div class="row listado-checkbox">
+    			<div class="col-lg-9">
+        			<h4>NOMBRE DEL PRODUCTO</h4>
+            		Descripción del producto
+        
+       	 		</div>
+        		<div class="col-lg-3">
+       	  			Cant: <select class="ph-edit-qty ng-pristine ng-valid select-checkout-01" ng-model="quantity" ng-init="quantity = item.quantity" data-ng-disabled="item.isCoupon || item.isDeal" ng-options="quantity for quantity in quantities" ng-change="updateQuantity(item.id, quantity,'item')">
+                	<option value="0" selected="selected">1</option>
+                	<option value="1">2</option>
+                	<option value="2">3</option>
+                	<option value="3">4</option>
+                	<option value="4">5</option>
+                	<option value="5">6</option>
+               	 	<option value="6">7</option>
+                	<option value="7">8</option>
+         	       	<option value="8">9</option>
+                	<option value="9">10</option>
+                	<option value="10">11</option>
+                	<option value="11">12</option>
+                	<option value="12">13</option>
+                	<option value="13">14</option>
+                	<option value="14">15</option>
+                	<option value="15">16</option>
+                	<option value="16">17</option>
+	                <option value="17">18</option>
+    	            <option value="18">19</option>
+        	        <option value="19">20</option>
+            	    <option value="20">21</option>
+	                <option value="21">22</option>
+    	            <option value="22">23</option>
+        	        <option value="23">24</option>
+            	    <option value="24">25</option>
+	                <option value="25">26</option>
+    	            <option value="26">27</option>
+        	        <option value="27">28</option>
+            	    <option value="28">29</option>
+	               	<option value="29">30</option>
+    	            <option value="30">31</option>
+        	        <option value="31">32</option>
+            	    <option value="32">33</option>
+	                <option value="33">34</option>
+    	            <option value="34">35</option>
+        	        <option value="35">36</option>
+            	    <option value="36">37</option>
+	                <option value="37">38</option>
+    	            <option value="38">39</option>
+        	        <option value="39">40</option>
+            	    <option value="40">41</option>
+	                <option value="41">42</option>
+    	            <option value="42">43</option>
+        	        <option value="43">44</option>
+            	    <option value="44">45</option>
+	                <option value="45">46</option>
+    	            <option value="46">47</option>
+        	        <option value="47">48</option>
+            	    <option value="48">49</option>
+	                <option value="49">50</option>
+    	            </select><br />
+            		<a href="" data-ng-click="removeItem(item.id)" class="links-sueltos">Eliminar</a>
+    			</div>
+		</div>
+        <hr  class="separacion-productos-checkbox" />
+        <!-- fin producto -->
+        
+        	<div class="row orden-lista-checkout">
+        		<div class="col-lg-5">SU ORDEN ESTA LISTA PARA LLEVAR / SU ORDEN ESTARA LISTA EN X MINUTOS / SU ORDEN LLEGARA EN APROXIMADAMENTE X MINUTOS</div>
+        		<div class="col-lg-7">
+                	<span class="alinar-boton-derecha">
+                    <a class="btn btn-primary ph-save-summary" href="" data-ng-click="saveToMyFavourites()" marked="1"><span class="glyphicon glyphicon-star ph-margin-right-25"></span> <span>Crear favorito</span></a></span>
+                    Ingresar Cupón<br />
+                    <input id="coupon-code" name="couponCode" class="form-control pull-left ng-pristine ng-valid" style="width:71%" placeholder="Ingresar código" data-ng-model="couponCode" autocomplete="off" ng-keypress="updateBody();"> <a href="" class="text-center btn-default btn" style="margin: 10px 0 0 5px; width: 26%" data-ng-click="checkCouponCode()" marked="1">Aplicar</a>
+                                    
+                    <hr  class="separacion-productos-checkbox separacion-productos-checkbox2" />
+                                        <div>Cupón ingresado: <span class="nombre-cupon">NOMBRE DEL CUPÓN</span> <a href="" class="links-sueltos">Quitar</a><br/>
+                                        <span class="descripcion-cupon">Descripción del cupón</span></div>
+                    <hr  class="separacion-productos-checkbox separacion-productos-checkbox2" />                                        
+                    
+                    <div class="row suma-precios-totales">
+                    	<div class="col-lg-6">Subtotal</div>
+                    	<div class="col-lg-6 totales-izq">$99.999</div>
+                    </div>
+                    <div class="row suma-precios-totales">
+                    	<div class="col-lg-6">Descuentos (Cupón)</div>
+                    	<div class="col-lg-6 totales-izq">$99.999</div>
+                    </div>
+                    <div class="row suma-precios-totales">
+                    	<div class="col-lg-6">Impuestos</div>
+                    	<div class="col-lg-6 totales-izq">$99.999</div>
+                    </div>
+                    <div class="row suma-precios-totales">
+                    	<div class="col-lg-6">Total</div>
+                    	<div class="col-lg-6 totales-izq">$99.999</div>
+                    </div>
+                </div>
+        	</div>
+        <div class="row botones-checkbox-01">
+        		<div class="col-lg-6"><a href="productos.html" class="boton-checkbox-01">AGREGAR MÁS COMIDA</a></div>
+            	<div class="col-lg-6 alinear-derecha"><a href="" class="boton-checkbox-02">PAGAR</a></div>
+       	 	</div>
+		</div>
+    	
+        
+    </div>
+	
+</div>
+<!-- PIE DE PÁGINA -->
+<div class="row pie-pagina"> 
+    <div class="col-lg-3 pie-col-1">
+    	<p>MENÚ</p>
+        <ul class="footlist">
+        	<li><a href="#">Pizzas</a></li>
+            <li><a href="#">Mas</a></li>
+            <li><a href="#">Ofertas</a></li>
+        </ul>
+    </div> 
+    <div class="col-lg-3 pie-col-2">
+    	<p>NOSOTROS</p>
+        <ul class="footlist">
+        	<li><a href="#">Historia</a></li>
+        	<li><a href="#">Carrera</a></li>
+        	<li><a href="#">Conviertete en una franquicia</a></li>
+        </ul>
+    </div>
+    <div class="col-lg-3 pie-col-3">
+    	<p>ADICIONALES</p>
+        	<ul class="footlist">
+            	<li><a href="#">Politica de privacidad</a></li>
+                <li><a href="#">Condiciones de uso</a></li>
+<li><a href="#">Información de Alérgenos</a></li>
+            </ul> 
+    </div>
+    <div class="col-lg-3 pie-col-4">
+    	<a class="link_camer_footer" href="#"><img src="img/camer.png" ></a>
+        <a class="link_facebook_footer" href="#"><img src="img/facebook.png" ></a>
+        <a class="link_twitter_footer" href="#"><img src="img/twiter.png" ></a>
+    </div> 
+</div>
+
+<!-- MODALS (POPUPS) -->
+
+<!-- MODAL COMENZAR PEDIDO -->
+<div id="Modal-Orden" class="modal fade">
+	<div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+				<h3>COMENZAR PEDIDO</h3>
+            </div>
+          	 <div class="modal-body">
+				<div class="row">
+                	<div class="col-lg-6 modal-delivery-left">
+                		<input id="occasion-delivery" name="occasion-group" data-ng-click="changeState(states.INITIAL,'D');" data-ng-model="localize.occasion" value="D" class="ng-pristine ng-valid radio01" type="radio">
+	          			<label class="span_delivery" for="occasion-delivery">DELIVERY</label>
+                	</div>
+                    <div class="col-lg-6 modal-delivery-right">
+        				<input id="occasion-carryout" name="occasion-group" data-ng-click="changeState(states.INITIAL, 'C');autoLocalize();" data-ng-model="localize.occasion" value="C" class="ng-pristine ng-valid radio01" type="radio">
+
+         				<label class="span_delivery2" for="occasion-carryout">RETIRO</label>
+                	</div>
+                </div>
+        		<h2>¿A DONDE QUIERES REALIZAR EL REPARTO?</h2>
+	 			<label>
+	   		                    <select id="direccionreparto" class="form-control ph-overflow ng-pristine ng-valid" data-ng-model="selectedAddress.index" data-ng-init="selectedAddress.index='saved_location'" data-ng-change="handleStoredAddressClick();"><option value="saved_location">Seleccionar una dirección guardada</option><!-- DO NOT add anything between the MP translate tags unless Spanish translation needs to be skipped --><!-- ngRepeat: savedLocation in modifySavedLocations --><!-- ngRepeat: savedLocation in modifySavedLocations --><!-- ngIf: localize.occasion=='C' --><!-- ngIf: localize.occasion=='D' --><option data-ng-if="localize.occasion=='D'" value="add_new_address" class="ng-scope">Usar una dirección diferente</option><!-- end ngIf: localize.occasion=='D' --></select>
+      			</label><br />
+      			<a class="cambiar-ubicacion robot-fuente" >CAMBIAR UBICACIÓN</a><BR />
+				
+                <a class="btn btn-primary btn-block ph-find-store" data-ng-click="localizeByAddressOrZip()" id="button_modal_delivery" marked="1">Encontrar Pizza Hut</a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- MODAL LOGIN -->
+<div id="Modal-Ingreso" class="modal fade">
+	<div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+				<h3>INGRESA TU CUENTA</h3>
+            </div>
+          	 <div class="modal-body">
+				<div class="row textboxs-ingreso">
+                	 <div class="col-lg-3 modal-ingresar-left">
+                     	EMAIL
+                     </div>
+                     <div class="col-lg-9 modal-ingresar-right">
+                     	<input type="text" name="email_signIn" id="email_signIn" class="form-control ng-pristine ng-valid" data-ng-model="credentials.username" placeholder="Email" autocomplete="off" />
+                     </div>
+                </div>  
+                <div class="row textboxs-ingreso">
+                	 <div class="col-lg-3 modal-ingresar-left">
+                     	CONTRASEÑA
+                     </div>
+                     <div class="col-lg-9 modal-ingresar-right">
+                     	<input type="password" name="password_signIn" id="password_signIn" class="form-control ng-pristine ng-valid" data-ng-model="credentials.password" placeholder="Password" autocomplete="off"/>
+                     </div>
+                </div>              
+      			<a class="cambiar-ubicacion" data-dismiss="modal"  data-toggle="modal" href="#Modal-Restablecer">¿Olvidaste tu contraseña?</a><BR />
+                <label><input type="checkbox" name="recordarme" id="recordarme" class="ng-pristine ng-valid" data-ng-model="credentials.remember"/> Recordarme</label><br />
+                <a class="cambiar-ubicacion">CREAR CUENTA</a><BR />
+				<input type="submit" name="button_modal_delivery" id="button_modal_delivery" value="INGRESAR" />
+			</div>
+		</div>
+	</div>
+</div>
+<!-- MODAL RECUPERAR CONTRASEÑA -->
+<div id="Modal-Restablecer" class="modal fade">
+	<div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+				<h3>RESTABLECER CONTRASEÑA</h3>
+            </div>
+          	 <div class="modal-body">
+				<div class="row textboxs-ingreso textbox-restablecer">
+					<input class="form-control ph-margin-top-10 ng-pristine ng-valid ng-valid-email campo-restablecer" data-ng-model="credentials.email" placeholder="usted@ejemplo.com" autocomplete="off" type="email">
+                    
+                   
+                </div>       
+				<input type="submit" name="button_modal_delivery" id="button_modal_delivery" value="RESTABLECER" />
+			</div>
+		</div>
+	</div>
+</div>
+<!-- END MODALS -->
+<!-- SCRIPTS -->
+<script>
+$(document).ready(function(){
+    $("#bar").click(function(){
+        $("#mnu").slideToggle("slow");
+    });
+});
+</script>
+<!-- END SCRIPTS -->
+</body>
+</html>

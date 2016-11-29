@@ -1,0 +1,550 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <title>Pizza Hut</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+</head>
+
+<body class="container">
+<div class="row header-top"> 
+    <!-- TOP SIN INGRESAR -->
+    <div class="col-lg-6"><a href="index.html"><img src="img/logo.png" title="Pizza Hut" alt="Pizza Hut" /></a></div> 
+    <div class="col-lg-6 ingreso-top"><a href="#Modal-Ingreso" data-toggle="modal">INGRESAR</a> - <a href="reg.html">REGISTRARSE</a></div>
+    <!-- TOP INGRESADO -->
+    <!--
+    <div class="col-lg-6"><a href="index.html"><img src="img/logo.png" title="Pizza Hut" alt="Pizza Hut" /></a></div> 
+    <div class="col-lg-6 ingreso-top cliente-ingresado-top">Bienvenido NOMBRE DEL CLIENTE<a href="#" class="link-salir">SALIR</a> - <a href="#">MI CUENTA</a></div>
+    -->
+</div>
+<!-- MENÚ -->
+<div class="row hamburger-menu">    
+    <div class="col-lg-12">
+	    <a href="#mnu" id="bar" data-toggle="collapse"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
+    </div>
+</div>
+<div class="navbar navbar-inverse contenedor-menu-web" id="mnu"> 
+    <ul class="nav navbar-nav menu-web"> 
+        <li class="active"><a href="#">PIZZAS</a></li> 
+        <li class="dropdown"> 
+    		<a class="dropdown-toggle" href="#" data-toggle="dropdown" >MÁS <b class="caret"></b></a> 
+    		<ul class="dropdown-menu"> 
+        		<li><a href="productos.html?tipo=pasta">PASTA</a></li> 
+        		<li><a href="productos.html?tipo=palitos">PALITOS</a></li> 
+        		<li><a href="productos.html?tipo=bebidas">BEBIDAS</a></li>
+                <li><a href="productos.html?tipo=pollo">POLLO</a></li>
+                <li><a href="productos.html?tipo=postres">POSTRES</a></li> 
+    		</ul> 
+		</li>
+        <li class="opt-menu-destacado"><a href="#">OFERTAS</a></li>
+        <!-- BOTÓN COMENZAR ORDEN SIN INGRESAR -->
+        <li class="order-menu"><a data-toggle="modal" href="#Modal-Orden">COMENZAR ORDEN</a></li> 
+        <!-- BOTÓN MENÚ SUPERIOR DATOS ORDEN -->
+        <!--
+        <li class="contenedor-boton-orden-ingresado">
+        	<div class="row boton-orden-ingresado">
+            	<div class="col-lg-2 icono-menu-retiro"><img src="img/pizza_hut_37.png" /></div>
+                <div class="col-lg-4 direccion-retiro-menu01">Retirar Desde<br /><span class="direccion-retiro-menu02">Santiago 123, Santiago</span></div>
+                <div class="col-lg-2 icono-menu-retiro"><img src="img/carrito_37.png" /></div>
+                <div class="col-lg-4 precio-menu-superior">$88.888</div>
+            </div>
+        </li>       
+        -->
+    </ul> 
+    </div>
+<!-- FIN MENÚ --> 
+<div class="row contenedor-micuenta">
+<h1 class="titulo titulo-micuenta">MI CUENTA</h1>   
+	<div class="col-lg-4 opciones-configuracion">
+    	<ul class="nav nav-tabs nav-stacked">
+  			<li><a data-toggle="tab" href="#home">CONFIGURACIÓN DE CUENTA</a></li>
+			<li><a data-toggle="tab" href="#menu1">LIBRETA DE DIRECCIONES</a></li>
+  			<li><a data-toggle="tab" href="#menu2">FORMAS DE PAGO</a></li>
+  			<li><a data-toggle="tab" href="#menu3">PREFERENCIAS DE HUT LOVERS</a></li>            
+  			<li class="ultima-opcion"><a data-toggle="tab" href="#menu4">MIS CREACIONES</a></li>            
+		</ul>
+	</div>
+    <div class="col-lg-8">
+		<div class="tab-content">
+			<div id="home" class="tab-pane fade in active paneles-cuenta">
+		  		<h3>CONFIGURACIÓN DE CUENTA</h3>
+  		  		<p>
+		          Nombre Completo <span class="campo-requerido">*</span>
+          			<input maxlength="60" name="fullname" class="form-control ng-pristine ng-valid-pattern ng-valid ng-valid-required campos-form-micuenta" data-ng-model="userInfo.name" data-ng-pattern="namePattern2" required="" autocomplete="off" />
+                  Correo electrónico  <span class="campo-requerido">*</span>
+                  <input maxlength="60" name="email" class="form-control ng-valid-pattern ng-dirty ng-valid ng-valid-required campos-form-micuenta" data-ng-model="userInfo.email" data-ng-pattern="emailPattern" required="" autocomplete="off">  
+			    </p>
+                <!-- Collapse cambiar contraseña -->
+                <div>
+                <a href="#contrasena-cambiar" data-toggle="collapse" class="links-sueltos">Cambiar contraseña</a>
+				<div id="contrasena-cambiar" class="collapse">
+                	Contraseña Actual 
+					<input class="form-control ph-margin-top-10 ng-valid ng-dirty campos-form-micuenta" data-ng-disabled="btn_disable" data-ng-model="userInfo.current_password" placeholder="" autocomplete="off" type="password">
+                    Nueva Contraseña   
+                    <input class="form-control ph-margin-top-10 ng-pristine ng-valid campos-form-micuenta" data-ng-disabled="btn_disable" data-ng-model="userInfo.password" placeholder="" autocomplete="off" type="password">
+                    Confirmar Contraseña  
+                    <input class="form-control ph-margin-top-10 ng-pristine ng-valid" data-ng-disabled="btn_disable" data-ng-model="userInfo.confirm_password" placeholder="" autocomplete="off" type="password">
+                </div>
+                
+				</div>
+                <!-- Collapse pregunta seguridad -->
+                <div class="preguntas-seguridad">
+                <a href="#pregunta-seguridad" data-toggle="collapse" class="links-sueltos">Cambiar pregunta de seguridad</a>
+				<div id="pregunta-seguridad" class="collapse">
+                	Pregunta 
+					<select class="form-control ng-scope ng-pristine ng-valid campos-form-micuenta" name="singleSelect" ng-model="selectedQuestion" ng-options="opt.id as opt.question for opt in securityQuestions">
+                    	<option value="0" selected="selected">-- Seleccionar pregunta --</option>
+                        <option value="1">¿Cómo se llama su mejor amigo/a de la infancia?</option>
+                        <option value="2">¿Cómo se llama la primera escuela a la que asistió?</option>
+                        <option value="3">¿Quién fue su maestra de 3° grado?</option><option value="4">¿Cómo se llama su mascota?</option>
+                        <option value="5">¿Cuál es su equipo deportivo favorito?</option><option value="6">¿Cuál es el apellido de soltera de su madre?</option>
+                    </select>
+                    Respuesta
+                    <input maxlength="60" class="form-control ph-margin-top-10 ng-pristine ng-valid campos-form-micuenta" data-ng-disabled="btn_disable" data-ng-model="userInfo.sqa" placeholder="" autocomplete="off">
+               </div>
+               <div class="row contenedor-botones-micuenta">
+               	<div class="col-lg-6">
+                	<a class="btn btn-default ph-img-full-width botones-micuenta-01" data-ng-click="__cancel()" marked="1">cancelar</a>
+                </div>
+               	<div class="col-lg-6">
+                	<a class="btn btn-primary ph-img-full-width botones-micuenta-02" data-ng-click="__updateAccount(userInfo.name, userInfo.email, userInfo.current_password, userInfo.password, userInfo.confirm_password, selectedQuestion, userInfo.sqa)" marked="1">guardar</a>
+                </div>
+               </div>
+               </div>
+      		</div>
+	    	<div id="menu1" class="tab-pane fade paneles-cuenta">
+    			<h3>LIBRETA DE DIRECCIONES</h3>
+    			<div class="row listado-direcciones">
+                	<div class="col-lg-6">Dirección guardada 1</div>
+                    <div class="col-lg-3"><a href="" class="links-sueltos">MODIFICAR</a></div>
+                    <div class="col-lg-3"><a href="" class="links-sueltos">ELIMINAR</a></div>                
+                </div>
+                <div class="row listado-direcciones">
+                	<div class="col-lg-6">Dirección guardada 2</div>
+                    <div class="col-lg-3"><a href="" class="links-sueltos">MODIFICAR</a></div>
+                    <div class="col-lg-3"><a href="" class="links-sueltos">ELIMINAR</a></div>                
+                </div>
+                <div class="row listado-direcciones">
+                	<div class="col-lg-6">Dirección guardada 3</div>
+                    <div class="col-lg-3"><a href="" class="links-sueltos">MODIFICAR</a></div>
+                    <div class="col-lg-3"><a href="" class="links-sueltos">ELIMINAR</a></div>                
+                </div>
+                <div class="preguntas-seguridad">
+                <a href="#agregar-direccion" data-toggle="collapse" class="links-sueltos">Agregar dirección</a>
+				<div id="agregar-direccion" class="collapse">
+                	<select class="form-control ph-margin-bottom-0 ng-valid ng-dirty campos-form-micuenta2" name="singleSelect" data-ng-change="locationTypeChanged(editAddress.dwellCode)" ng-model="editAddress.dwellCode" ng-options="opt.id as opt.loc for opt in locType">
+                    	<option value="0" selected="selected">Ubicación</option>
+                    	<option value="1">Casa</option><option value="2">Apartamento</option>
+                    	<option value="3">Comercial</option><option value="4">Campus</option>
+                    	<option value="5">Hotel</option><option value="6">Hospital</option>
+                    	<option value="7">Escuela</option><option value="8">Centro comercial</option>
+                    	<option value="9">Base militar</option><option value="10">Casa rodante</option>
+                    	<option value="11">Otros</option>
+                    </select>
+                    <input class="form-control ph-margin-bottom-0 ng-pristine ng-valid campos-form-micuenta2" data-ng-disabled="btn_disable" maxlength="60" data-ng-model="editAddress.name" placeholder="Apodo" autocomplete="off">
+                    <input ng-model="inputValue" name="userPhone" class="form-control ph-margin-bottom-0 ng-pristine ng-valid-pattern ng-invalid ng-invalid-required campos-form-micuenta2" minlength="10" is-number="" ng-pattern="/[0-9]/" required="" placeholder="(XXX)-XXX-XXXX*" autocomplete="off" type="tel">
+                    <input class="form-control ph-margin-bottom-0 ng-pristine ng-invalid ng-invalid-required campos-form-micuenta2" data-ng-disabled="btn_disable" name="address" maxlength="60" data-ng-model="editAddress.address" placeholder="Calle *" required="" autocomplete="off">
+                    <input class="form-control ph-margin-bottom-0 ng-pristine ng-valid campos-form-micuenta2" data-ng-disabled="btn_disable" maxlength="24" data-ng-model="editAddress.address_two" placeholder=" Apto./Suite/Habitación" autocomplete="off">
+                    <input class="form-control ph-margin-bottom-0 ng-pristine ng-invalid ng-invalid-required campos-form-micuenta2" data-ng-disabled="btn_disable" required="" maxlength="30" data-ng-model="editAddress.city" placeholder="Ciudad *" autocomplete="off">
+                    <select class="form-control ph-margin-bottom-0 ng-pristine ng-invalid ng-invalid-required campos-form-micuenta2" data-ng-model="editAddress.state" required="" data-ng-options="state for state in statesList">
+                    <option value="" class="">Región *</option>
+                    <option value="0">XV - Arica y Parinacota</option>
+                    <option value="1">I - Tarapacá</option>
+                    <option value="2">II - Antofagasta</option>
+                    <option value="3">III - Atacama</option>
+                    <option value="4">IV - Coquimbo</option>
+                    <option value="5">V - Valparaíso</option>
+                    <option value="6">RM - Metropolitana</option>
+                    <option value="7">VI - O’Higgins</option>
+                    <option value="8">VII - Maule</option>
+                    <option value="9">VIII - Biobío</option>
+                    <option value="10">IX - Araucanía</option>
+                    <option value="11">XIV - Los Ríos</option>
+                    <option value="12">X - Los Lagos</option>
+                    <option value="13">XI - Aysén</option>
+                    <option value="14">XII - Magallanes</option>
+                    </select>
+                    <input class="form-control ph-margin-bottom-0 ng-pristine ng-invalid ng-invalid-required campos-form-micuenta2" data-ng-disabled="btn_disable" minlength="5" maxlength="5" is-number="" numberlength="" required="" data-ng-model="editAddress.zip" placeholder="Cód. postal *" autocomplete="off">
+                    <textarea class="form-control ng-pristine ng-valid campos-form-micuenta2 campos-form-micuenta3" data-ng-disabled="btn_disable" data-ng-model="editAddress.comment" maxlength="28" placeholder="Instrucciones para la entrega" autocomplete="off"></textarea>
+                    <input data-ng-checked="editAddress.default == 'Y' || editAddress.default == 1" data-ng-model="editAddress.default" class="ng-pristine ng-valid" type="checkbox"> <span class="texto-establecer-principal">Establecer como principal</span>
+                    <div class="row contenedor-botones-micuenta">
+               	<div class="col-lg-6">
+                	<a class="btn btn-default ph-img-full-width botones-micuenta-01" data-ng-click="__cancel()" marked="1">cancelar</a>
+                </div>
+               	<div class="col-lg-6">
+                	<a class="btn btn-primary ph-img-full-width botones-micuenta-02" data-ng-click="__updateAccount(userInfo.name, userInfo.email, userInfo.current_password, userInfo.password, userInfo.confirm_password, selectedQuestion, userInfo.sqa)" marked="1">guardar</a>
+                </div>
+               </div>
+               </div>
+               
+               </div>
+                
+	    	</div>
+  			<div id="menu2" class="tab-pane fade paneles-cuenta">
+    			<h3>FORMAS DE PAGO</h3>
+    			
+                <div>
+                <a href="#forma-pago-tarjeta" data-toggle="collapse" class="links-sueltos">Tarjetas de credito</a>
+				<div id="forma-pago-tarjeta" class="collapse">
+                	Número de tarjeta   <span class="campo-requerido">*</span>
+					<input class="form-control ng-pristine ng-valid-maxlength ng-valid-minlength ng-valid-pattern ng-invalid ng-invalid-required campos-form-micuenta" data-ng-disabled="btn_disable" data-ng-change="ccTypeChanged(addEditPO.last4)" data-ng-pattern="/^[0-9]+$/" minlength="4" data-ng-minlength="15" data-ng-maxlength="16" maxlength="16" placeholder="XXXXXXXXXXXXXXXXX" required="" name="ccNum" data-ng-model="addEditPO.last4" autocomplete="off">
+                    Nombre del titular <span class="campo-requerido">*</span>   
+                    <input class="form-control ph-margin-top-10 ng-pristine ng-valid campos-form-micuenta" data-ng-disabled="btn_disable" data-ng-model="userInfo.password" placeholder="" autocomplete="off" type="password">
+                    <div class="row">
+                    	<div class="col-lg-6">Mes de vencimiento <span class="campo-requerido">*</span> 
+                        	<select class="form-control ng-pristine ng-invalid ng-invalid-required campos-form-micuenta" data-ng-model="addEditPO.exp_month" ng-options="month for month in cc_months" required=""><option value="" class="">Mes</option>
+                            <option value="0">01 - enero</option>
+                            <option value="1">02 - febrero</option>
+                            <option value="2">03 - marzo</option>
+                            <option value="3">04 - abril</option>
+                            <option value="4">05 - mayo</option>
+                            <option value="5">06 - junio</option>
+                            <option value="6">07 - julio</option>
+                            <option value="7">08 - agosto</option>
+                            <option value="8">09 - septiembre</option>
+                            <option value="9">10 - octubre</option>
+                            <option value="10">11 - noviembre</option>
+                            <option value="11">12 - diciembre</option>
+                            </select>
+                        </div>
+                    	<div class="col-lg-6">Año de vencimiento <span class="campo-requerido">*</span> 
+                        	<select class="form-control ng-pristine ng-invalid ng-invalid-required" data-ng-model="addEditPO.exp_year" ng-options="year for year in cc_years" required=""><option value="" class="">Año</option>
+                            <option value="0">2016</option>
+                            <option value="1">2017</option>
+                            <option value="2">2018</option>
+                            <option value="3">2019</option>
+                            <option value="4">2020</option>
+                            <option value="5">2021</option>
+                            <option value="6">2022</option>
+                            <option value="7">2023</option>
+                            <option value="8">2024</option>
+                            <option value="9">2025</option>
+                            <option value="10">2026</option>
+                            <option value="11">2027</option>
+                            <option value="12">2028</option>
+                            <option value="13">2029</option>
+                            <option value="14">2030</option>
+                            <option value="15">2031</option>
+                            <option value="16">2032</option>
+                            <option value="17">2033</option>
+                            <option value="18">2034</option>
+                            <option value="19">2035</option>
+                            <option value="20">2036</option>
+                            <option value="21">2037</option>
+                            <option value="22">2038</option>
+                            <option value="23">2039</option>
+                            <option value="24">2040</option>
+                            <option value="25">2041</option>
+                            <option value="26">2042</option>
+                            <option value="27">2043</option>
+                            <option value="28">2044</option>
+                            <option value="29">2045</option>
+                            <option value="30">2046</option>
+                            <option value="31">2047</option>
+                            <option value="32">2048</option>
+                            <option value="33">2049</option>
+                            <option value="34">2050</option>
+                            </select>
+                        </div>
+                    </div>
+                    <input ng-checked="addEditPO.default == 'Y'" data-ng-model="addEditPO.default" class="ng-pristine ng-valid" type="checkbox"> <span class="texto-establecer-principal">Marcar como forma de pago predeterminada para pagar en línea</span>
+                    <div class="row contenedor-botones-micuenta">
+               	<div class="col-lg-6">
+                	<a class="btn btn-default ph-img-full-width botones-micuenta-01" data-ng-click="__cancel()" marked="1">cancelar</a>
+                </div>
+               	<div class="col-lg-6">
+                	<a class="btn btn-primary ph-img-full-width botones-micuenta-02" data-ng-click="__addUpdatePO(addEditPO, 'CC')" marked="1"><div data-ng-show="isNew" class="">guardar tarjeta</div></a>
+                </div>
+               </div>
+                </div>
+                
+				</div>
+                
+  			</div>
+            <div id="menu3" class="tab-pane fade paneles-cuenta">
+    			<h3>PREFERENCIAS DE HUT LOVERS</h3>
+    			<h4>MI INFORMACIÓN</h4>
+                Su cumpleaños (¡para que podamos enviarle un regalo!)*
+                <div class="row">
+                	<div class="col-lg-6">
+                    	<select class="form-control ng-pristine ng-valid ng-valid-required" data-ng-model="prefs.bd_selectedMonth" ng-options="month.value as month.name for month in bd_months" required="">
+                        <option value="" class="">Mes</option>
+                        <option value="0">Enero</option>
+                        <option value="1">Febrero</option>
+                        <option value="2">Marzo</option>
+                        <option value="3">Abril</option>
+                        <option value="4">Mayo</option>
+                        <option value="5">Junio</option>
+                        <option value="6">Julio</option>
+                        <option value="7">Agosto</option>
+                        <option value="8">Septiembre</option>
+                        <option value="9">Octubre</option>
+                        <option value="10">Noviembre</option>
+                        <option value="11">Diciembre</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-6">
+                    	<select class="form-control ng-pristine ng-valid ng-valid-required" data-ng-model="prefs.bd_selectedYear" ng-options="year for year in bd_years" required="">
+                        <option value="" class="">Año</option>
+                        <option value="0">2016</option>
+                        <option value="1">2015</option>
+                        <option value="2">2014</option>
+                        <option value="3">2013</option>
+                        <option value="4">2012</option>
+                        <option value="5">2011</option>
+                        <option value="6">2010</option>
+                        <option value="7">2009</option>
+                        <option value="8">2008</option>
+                        <option value="9">2007</option>
+                        <option value="10">2006</option>
+                        <option value="11">2005</option>
+                        <option value="12">2004</option>
+                        <option value="13">2003</option>
+                        <option value="14">2002</option>
+                        <option value="15">2001</option>
+                        <option value="16">2000</option>
+                        <option value="17">1999</option>
+                        <option value="18">1998</option>
+                        <option value="19">1997</option>
+                        <option value="20">1996</option>
+                        <option value="21">1995</option>
+                        <option value="22">1994</option>
+                        <option value="23">1993</option>
+                        <option value="24">1992</option>
+                        <option value="25">1991</option>
+                        <option value="26">1990</option>
+                        <option value="27">1989</option>
+                        <option value="28">1988</option>
+                        <option value="29">1987</option>
+                        <option value="30">1986</option>
+                        <option value="31">1985</option>
+                        <option value="32">1984</option>
+                        <option value="33">1983</option>
+                        <option value="34">1982</option>
+                        <option value="35">1981</option>
+                        <option value="36">1980</option>
+                        <option value="37">1979</option>
+                        <option value="38">1978</option>
+                        <option value="39">1977</option>
+                        <option value="40">1976</option>
+                        <option value="41">1975</option>
+                        <option value="42">1974</option>
+                        <option value="43">1973</option>
+                        <option value="44">1972</option>
+                        <option value="45">1971</option>
+                        <option value="46">1970</option>
+                        <option value="47">1969</option>
+                        <option value="48">1968</option>
+                        <option value="49">1967</option>
+                        <option value="50">1966</option>
+                        <option value="51">1965</option>
+                        <option value="52">1964</option>
+                        <option value="53">1963</option>
+                        <option value="54">1962</option>
+                        <option value="55">1961</option>
+                        <option value="56">1960</option>
+                        <option value="57">1959</option>
+                        <option value="58">1958</option>
+                        <option value="59">1957</option>
+                        <option value="60">1956</option>
+                        <option value="61">1955</option>
+                        <option value="62">1954</option>
+                        <option value="63">1953</option>
+                        <option value="64">1952</option>
+                        <option value="65">1951</option>
+                        <option value="66">1950</option>
+                        <option value="67">1949</option>
+                        <option value="68">1948</option>
+                        <option value="69">1947</option>
+                        <option value="70">1946</option>
+                        <option value="71">1945</option>
+                        <option value="72">1944</option>
+                        <option value="73">1943</option>
+                        <option value="74">1942</option>
+                        <option value="75">1941</option>
+                        <option value="76">1940</option>
+                        <option value="77">1939</option>
+                        <option value="78">1938</option>
+                        <option value="79">1937</option>
+                        <option value="80">1936</option>
+                        <option value="81">1935</option>
+                        <option value="82">1934</option>
+                        <option value="83">1933</option>
+                        <option value="84">1932</option>
+                        <option value="85">1931</option>
+                        <option value="86">1930</option>
+                        <option value="87">1929</option>
+                        <option value="88">1928</option>
+                        <option value="89">1927</option>
+                        <option value="90">1926</option>
+                        <option value="91">1925</option>
+                        <option value="92">1924</option>
+                        <option value="93">1923</option>
+                        <option value="94">1922</option>
+                        <option value="95">1921</option>
+                        <option value="96">1920</option>
+                        <option value="97">1919</option>
+                        <option value="98">1918</option>
+                        <option value="99">1917</option>
+                        </select>
+                    </div>
+                </div>
+                <h4>MIS SUSCRIPCIONES</h4>
+                <input ng-model="prefs.sendEmailDeals" ng-disabled="prefs.sendEmailDeals" ng-change="stateChanged()" name="sendEmailDeals" data-label="suffix" class="ng-pristine ng-valid" type="checkbox"> <span class="texto-establecer-principal">Envíenme ofertas especiales por email<span class="campo-requerido">*</span></span><br />
+                <input ng-model="prefs.sendTextDeals" data-label="suffix" ng-change="prefs.phone = null;stateChanged()" class="ng-pristine ng-valid" type="checkbox"> <span class="texto-establecer-principal">Envíenme ofertas por mensajes de texto</span><br/>
+                <input ng-model="prefs.UnsubscribeDeals" data-ng-change="prefs.sendTextDeals = false;prefs.sendEmailDeals = false;" data-label="suffix" class="ng-pristine ng-valid" type="checkbox"> <span class="texto-establecer-principal">Cancelar suscripción de todos</span><br /><br/>
+                	<a class="btn btn-primary ph-img-full-width botones-micuenta-03" data-ng-click="updateHLInfo()" marked="1">guardar</a>
+  			</div>
+            <div id="menu4" class="tab-pane fade paneles-cuenta">
+    			<h3>MIS CREACIONES</h3>
+    			<div class="row listado-creaciones">
+                	<div class="col-lg-6">Creación guardada 1</div>
+                    <div class="col-lg-3"><a href="" class="links-sueltos">ORDENAR</a></div>
+                    <div class="col-lg-3"><a href="" class="links-sueltos">ELIMINAR</a></div>                
+                </div>
+                <div class="row listado-creaciones">
+                	<div class="col-lg-6">Creación guardada 2</div>
+                    <div class="col-lg-3"><a href="" class="links-sueltos">ORDENAR</a></div>
+                    <div class="col-lg-3"><a href="" class="links-sueltos">ELIMINAR</a></div>                
+                </div>
+                <div class="row listado-creaciones">
+                	<div class="col-lg-6">Creación guardada 3</div>
+                    <div class="col-lg-3"><a href="" class="links-sueltos">ORDENAR</a></div>
+                    <div class="col-lg-3"><a href="" class="links-sueltos">ELIMINAR</a></div>                
+                </div>
+  			</div>
+		</div>
+	</div>
+</div>
+<!-- PIE DE PÁGINA -->
+<div class="row pie-pagina"> 
+    <div class="col-lg-3 pie-col-1">
+    	<p>MENÚ</p>
+        <ul class="footlist">
+        	<li><a href="#">Pizzas</a></li>
+            <li><a href="#">Mas</a></li>
+            <li><a href="#">Ofertas</a></li>
+        </ul>
+    </div> 
+    <div class="col-lg-3 pie-col-2">
+    	<p>NOSOTROS</p>
+        <ul class="footlist">
+        	<li><a href="#">Historia</a></li>
+        	<li><a href="#">Carrera</a></li>
+        	<li><a href="#">Conviertete en una franquicia</a></li>
+        </ul>
+    </div>
+    <div class="col-lg-3 pie-col-3">
+    	<p>ADICIONALES</p>
+        	<ul class="footlist">
+            	<li><a href="#">Politica de privacidad</a></li>
+                <li><a href="#">Condiciones de uso</a></li>
+<li><a href="#">Información de Alérgenos</a></li>
+            </ul> 
+    </div>
+    <div class="col-lg-3 pie-col-4">
+    	<a class="link_camer_footer" href="#"><img src="img/camer.png" ></a>
+        <a class="link_facebook_footer" href="#"><img src="img/facebook.png" ></a>
+        <a class="link_twitter_footer" href="#"><img src="img/twiter.png" ></a>
+    </div> 
+</div>
+
+<!-- MODALS (POPUPS) -->
+
+<!-- MODAL COMENZAR PEDIDO -->
+<div id="Modal-Orden" class="modal fade">
+	<div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+				<h3>COMENZAR PEDIDO</h3>
+            </div>
+          	 <div class="modal-body">
+				<div class="row">
+                	<div class="col-lg-6 modal-delivery-left">
+                		<input id="occasion-delivery" name="occasion-group" data-ng-click="changeState(states.INITIAL,'D');" data-ng-model="localize.occasion" value="D" class="ng-pristine ng-valid radio01" type="radio">
+	          			<label class="span_delivery" for="occasion-delivery">DELIVERY</label>
+                	</div>
+                    <div class="col-lg-6 modal-delivery-right">
+        				<input id="occasion-carryout" name="occasion-group" data-ng-click="changeState(states.INITIAL, 'C');autoLocalize();" data-ng-model="localize.occasion" value="C" class="ng-pristine ng-valid radio01" type="radio">
+
+         				<label class="span_delivery2" for="occasion-carryout">RETIRO</label>
+                	</div>
+                </div>
+        		<h2>¿A DONDE QUIERES REALIZAR EL REPARTO?</h2>
+	 			<label>
+	   		                    <select id="direccionreparto" class="form-control ph-overflow ng-pristine ng-valid" data-ng-model="selectedAddress.index" data-ng-init="selectedAddress.index='saved_location'" data-ng-change="handleStoredAddressClick();"><option value="saved_location">Seleccionar una dirección guardada</option><!-- DO NOT add anything between the MP translate tags unless Spanish translation needs to be skipped --><!-- ngRepeat: savedLocation in modifySavedLocations --><!-- ngRepeat: savedLocation in modifySavedLocations --><!-- ngIf: localize.occasion=='C' --><!-- ngIf: localize.occasion=='D' --><option data-ng-if="localize.occasion=='D'" value="add_new_address" class="ng-scope">Usar una dirección diferente</option><!-- end ngIf: localize.occasion=='D' --></select>
+      			</label><br />
+      			<a class="cambiar-ubicacion robot-fuente" >CAMBIAR UBICACIÓN</a><BR />
+				
+                <a class="btn btn-primary btn-block ph-find-store" data-ng-click="localizeByAddressOrZip()" id="button_modal_delivery" marked="1">Encontrar Pizza Hut</a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- MODAL LOGIN -->
+<div id="Modal-Ingreso" class="modal fade">
+	<div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+				<h3>INGRESA TU CUENTA</h3>
+            </div>
+          	 <div class="modal-body">
+				<div class="row textboxs-ingreso">
+                	 <div class="col-lg-3 modal-ingresar-left">
+                     	EMAIL
+                     </div>
+                     <div class="col-lg-9 modal-ingresar-right">
+                     	<input type="text" name="email_signIn" id="email_signIn" class="form-control ng-pristine ng-valid" data-ng-model="credentials.username" placeholder="Email" autocomplete="off" />
+                     </div>
+                </div>  
+                <div class="row textboxs-ingreso">
+                	 <div class="col-lg-3 modal-ingresar-left">
+                     	CONTRASEÑA
+                     </div>
+                     <div class="col-lg-9 modal-ingresar-right">
+                     	<input type="password" name="password_signIn" id="password_signIn" class="form-control ng-pristine ng-valid" data-ng-model="credentials.password" placeholder="Password" autocomplete="off"/>
+                     </div>
+                </div>              
+      			<a class="cambiar-ubicacion" data-dismiss="modal"  data-toggle="modal" href="#Modal-Restablecer">¿Olvidaste tu contraseña?</a><BR />
+                <label><input type="checkbox" name="recordarme" id="recordarme" class="ng-pristine ng-valid" data-ng-model="credentials.remember"/> Recordarme</label><br />
+                <a class="cambiar-ubicacion">CREAR CUENTA</a><BR />
+				<input type="submit" name="button_modal_delivery" id="button_modal_delivery" value="INGRESAR" />
+			</div>
+		</div>
+	</div>
+</div>
+<!-- MODAL RECUPERAR CONTRASEÑA -->
+<div id="Modal-Restablecer" class="modal fade">
+	<div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+				<h3>RESTABLECER CONTRASEÑA</h3>
+            </div>
+          	 <div class="modal-body">
+				<div class="row textboxs-ingreso textbox-restablecer">
+					<input class="form-control ph-margin-top-10 ng-pristine ng-valid ng-valid-email campo-restablecer" data-ng-model="credentials.email" placeholder="usted@ejemplo.com" autocomplete="off" type="email">
+                    
+                   
+                </div>       
+				<input type="submit" name="button_modal_delivery" id="button_modal_delivery" value="RESTABLECER" />
+			</div>
+		</div>
+	</div>
+</div>
+<!-- END MODALS -->
+<!-- SCRIPTS -->
+<script>
+$(document).ready(function(){
+    $("#bar").click(function(){
+        $("#mnu").slideToggle("slow");
+    });
+});
+</script>
+<!-- END SCRIPTS -->
+</body>
+</html>
