@@ -194,7 +194,7 @@ list-style:none;}
 .row.pie-pagina .col-lg-3 p{color:#FFF;}
 .row.pie-pagina .pie-col-4 a{margin-right:10px;}
 
-/* CSS HOME / MENÚ RESPONSIVE */
+/* CSS HOME / MENU RESPONSIVE */
 
 @media only screen and (max-width: 768px) {
 	.contenedor-menu-web{display:none;}
@@ -435,7 +435,7 @@ textarea::-webkit-input-placeholder {font-family: "Rlighti" !important;}
 textarea:-ms-input-placeholder { font-family: "Rlighti" !important;}
 textarea::-moz-placeholder {font-family: "Rlighti" !important;}
 
-/* MODAL RESTABLECER CONTRASEÑA */
+/* MODAL RESTABLECER CONTRASEï¿½A */
 .textbox-restablecer{text-align:center;}
 .campo-restablecer{max-width:90%;display:inline}
 

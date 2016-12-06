@@ -1,949 +1,1762 @@
-body{
-    background-color:$primary-color;
-    font-family:$base-font-family;
-}
-.padnul{
-    padding:0px;
-}
-section.main
-{
-	width:1170px;
-	margin:auto;
-	background-image:url(../img/bg.png);
-	background-size:cover;
-	background-repeat:repeat;
-		
-}
-/*bdg*/
-.btn-default.badge {
-  padding: 1px 9px 2px;
-  font-size: 12.025px;
-  font-weight: bold;
-  white-space: nowrap;
-  color: #ffffff;
-  background-color: #999999;
-  -webkit-border-radius: 9px;
-  -moz-border-radius: 9px;
-  border-radius: 9px;
-}
-.badge:hover {
-  color: #ffffff;
-  text-decoration: none;
-  cursor: pointer;
-}
-.btn-default .badge-error {
-  background-color:  #b94a48;
+/* Font face */
+@font-face {
+  font-family: "United Sans SemiCond";
+  src: url(../font/UnitedSansSemiCond-Bold.otf);
 }
 
-.badge-error {
-  background-color: #953b39;
-}
-.badge-gray {
-  background-color:gray;
-}
-.badge-graych {
-  background-color:#CCCCCC;
-}
-.btn-default .badge-warning {
-  background-color: #f89406;
-}
-.badge-warning:hover {
-  background-color: #c67605;
-}
-.btn-default .badge-success {
-  background-color: #468847;
-}
-.badge-success:hover {
-  background-color: #356635;
-}
-.btn-default .badge-info {
-  background-color: #3a87ad;
-}
-.badge-info:hover {
-  background-color: #2d6987;
-}
-.btn-default .badge-inverse {
-  background-color: #333333;
-}
-.badge-inverse:hover {
-  background-color: #1a1a1a;
-}
-/*bdg*/
- 
-
-#head
-{
-	height:97px;
-	
-	color:white;
-	padding:0px;
-}
-.slide
-{
-	height:370;
-	width:100%;
-	background-color:gray;
-	display:block;
-}
-.ad1
-{
-	width:570px;
-	height:205px;
-	float:left;
-	
-}
-.ad2
-{
-	width:570px;
-	height:205px;
-	float:left;
-	margin-left:30px;
-	
-}
-.article
-{
-	padding-top: 35px;
-    padding-bottom: 60px;
-}
-mainmenu
-{
-	
-}
-.mainmenu a
-{
-	height:48px;
-	font-size:19px;
-	color:#fff;
-	background-color:black;
-	border: 1px solid #979797;   
-}
-.mainmenu a.sep
-{
-	color:#fed750;
-}
-.mainmenu a.com:hover
-{
-	    background-color: #EAE7DF ;
-}
-.nav-pills>li>a
-{
-	border-radius: 0px;
-}
-.nav-pills > li > a:hover, .nav-pills > li.active > a:hover
-{
-	background-color:#eae7df;
-	color: black;
-	border-color:#979797;
-}
-.nav-pills > li >a
-{
-	border-radius: 4px;
-}
-.nav-pills > li.active >a
-{
-	color:white;
-	background-color:black;
-	border-color:#979797;
-	 
-}
-.ft
-{
-	width:100%;
-	height:100px;
-}
-a.cr
-{
-	color:white;
-	text-decoration: none;
+@font-face {
+  font-family: "Rblack";
+  src: url(../font/ROBOTO/Roboto-Black.ttf);
 }
 
-a  .cart
-{
-	background-repeat:no-repeat;
-	width: 33px;
-	height: 33px;
-	display: block;
-	padding: 5px;
-	text-align: center;
-	float:left;
-	display:inline;
-}
- a .amount
-{
-	color:#fed75f;
-	font-size:35px;
-	font-weight:bold;
-	
-}
-a.sign, .sign
-{
-	color:gray;
-	text-decoration: none;
-}
-a.sign:hover
-{
-	color:white;
-}
-.footlist
-{
-	list-style-type: none;
-        padding: 0px;
-}
-.footlist a, a.icon
-{
-	color:#999999;
-	text-decoration: none;
-}
-.carousel-indicators
-{
-	bottom:-10%;
-}
-.carousel-indicators li
-{
-	background-color:gray;
-}
-.carousel-indicators .active
-{
-	background-color: #ed1c24;
-}
-a.com
-{
-	color: #FFFFFF;
-	background-color: #ed1624;
-	border: 1px solid #979797;	
+@font-face {
+  font-family: "Rblacki";
+  src: url(../font/ROBOTO/Roboto-BlackItalic.ttf);
 }
 
-
-.nav > li:hover > ul
-{
-	display:block;
-	visibility:visible;
-	padding:0px;
-	width:100%;
-	margin:0px;
-}
-.dropdown-menu>li>a
-{
-	height: 48px;
-	padding: 10px 20px;
-	text-align:center;
-}
-.menubarbox
-{
-	border: 1px solid #979797;
-	background-color:black;
-	width:100%;
-	height: 48px;
-	margin:0px;
-	    border-radius: 4px;
-}
-.articledetails
-{
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#282627+0,000000+100&0.37+0,0.52+100 */
-background: -moz-linear-gradient(top,  rgba(40,38,39,0.37) 0%, rgba(0,0,0,0.52) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  rgba(40,38,39,0.37) 0%,rgba(0,0,0,0.52) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  rgba(40,38,39,0.37) 0%,rgba(0,0,0,0.52) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5e282627', endColorstr='#85000000',GradientType=0 ); /* IE6-9 */
-color:white;
-}
-.newad1
-{
-	width: 553px;
-	float: left;
-	padding-top: 23px;
-	padding-right: 20px;
-	padding-bottom: 15px;
-	padding-left: 36px;	
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#282627+0,000000+100&0.67+0,0.7+100 */
-background: rgba(0,0,0,0.7);
-background: -moz-linear-gradient(left, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.7) 100%);
-background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0,0,0,0.7)), color-stop(100%, rgba(0,0,0,0.7)));
-background: -webkit-linear-gradient(left, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.7) 100%);
-background: -o-linear-gradient(left, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.7) 100%);
-background: -ms-linear-gradient(left, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.7) 100%);
-background: linear-gradient(to right, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.7) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=1 );
-}
-.newad2
-{
-	width: 553px;
-	float: left;
-    margin-left: 30px;
-	padding-top: 23px;
-	padding-right: 20px;
-	padding-bottom: 15px;
-	padding-left: 36px;	
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#282627+0,000000+100&0.67+0,0.7+100 */
-background: rgba(0,0,0,0.7);
-background: -moz-linear-gradient(left, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.7) 100%);
-background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0,0,0,0.7)), color-stop(100%, rgba(0,0,0,0.7)));
-background: -webkit-linear-gradient(left, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.7) 100%);
-background: -o-linear-gradient(left, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.7) 100%);
-background: -ms-linear-gradient(left, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.7) 100%);
-background: linear-gradient(to right, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.7) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=1 );
-}
-.newad3
-{
-	width: 640px;
-	float: left;
-	/*padding-top: 23px;
-	padding-right: 20px;
-	padding-bottom: 15px;
-	padding-left: 36px;	*/
-
-
+@font-face {
+  font-family: "Rbold";
+  src: url(../font/ROBOTO/Roboto-Bold.ttf);
 }
 
-.newad4
-{
-	width: 475px;
-	float: left;
-  margin-left: 20px;
-	 /* padding-top: 23px;
-	padding-right: 20px;
-	padding-bottom: 15px;
-	padding-left: 36px;	
-*/
-	   
-}
-.newad5
-{
-	width: 475px;
-	float: left;
-    margin-left: 20px;
-	    margin-top: 10px;
-	/*padding-top: 23px;
-	padding-right: 20px;
-	padding-bottom: 15px;
-	padding-left: 36px;	
-*/
-
-}
-.en_ad
-{
-	width: 100%;
-		/*padding-top: 23px;
-	padding-right: 20px;
-	padding-bottom: 15px;
-	padding-left: 36px;	
-
-}
-.price
-{
-	color: white;
-    font-size: 35px;
-    font-weight: bold;
-}
-h1.arthead
-{
-	font-size:20px;
-	font-weight:bold;
-	color:#d4a26f;
-	margin:0px;
-	/*text-align:center;*/
-}
-a.button
-{
-	width: 100%;
-    height: 33px;
-    background-color: red;
-    display: block;
-    color: white;
-    text-decoration: none;
-    font-size: 22px;
-    margin-top: 49px;
-	text-align:center;
-	 border-radius: 4px;
-	 font-family:ucondbold;
-	 padding-top:2.5px;
-}
-.dropdown-menu>li>a
-{
-	color:white;
-	background-color:black;
-}
-.titletext
-{
-	width:100%;
-	height:113px;
-	color:white;
-	text-align:center;
-}
-.titletext2
-{
-	width:100%;
-	height:88px;
-	color:white;
-	text-align:center;
-	margin-top:38.5px;
-}
-.imgdiv
-{
-	height:582px;
-	width:508px;
-	margin-left:33px;		
-}
-.amountdeca
-{
-	width:100%;
-	height:91px;
-	text-align:center;
-}
-.dropmhead1
-{
-	width:100%;
-	width:21px;
-	margin-top:17.5px;
-	text-align:center;	
-}
-.dbad
-{
-	width:40px;
-	padding-left:17px;
-	float:left;
-	display:block;
-	padding-bottom:28px;	
-}
-.dtxt
-{
-	width:435px;
-	height:21px;
-	color:white;
-	padding-bottom:28px;
-}
-.dropmenudiv
-{
-	width:427.5px;
-	/*height:70px;*/
-	margin-left:21px;
-	margin-bottom:35px;
-}
-.dropdownmenudiv
-{
-	width:427.5px;
-	
-	margin-left:0px;
-	margin-bottom:35px;
+@font-face {
+  font-family: "Rboldi";
+  src: url(../font/ROBOTO/Roboto-BoldItalic.ttf);
 }
 
-.dropmenubtn
-{
-	width:100%;	
-	height:70px;
-	padding:0px;
-	text-align:justify;
-	font-size: 30px;
+@font-face {
+  font-family: "Rcondb";
+  src: url(../font/ROBOTO/RobotoCondensed-Bold.ttf);
 }
-.iconalign
-{
-	margin-left: 0;
-    margin-top: 26px;
-    margin-right: 26px;
-	width: 21px;
-    height: 21px;
-    border-radius: 50%;
-    padding-left: 5px;
-    padding-top: 5px;
-}
-.formdiv
-{
-	width:570px;
-	margin-left:50px;
-	margin-top:33px;
-}
-.formtxt
-{
-	width:196px;
-	float:left;
-	margin-bottom:33px;
-	}
-.formfeeld
-{
-	width:250px;
-	margin-left:10px;
-	padding-right:135px;
-	float:left;	
-	padding: 5px;
-	margin-bottom:33px;
-}
-input[type=text], input[type=password]
-{
-	height: 33px;
-    width: 250px;
-    font-size: 24px;
-    padding: 5px;
-	border-radius:4px;
-}
-.textbox
-{
-	width:460px;
-	height:47px;
-	margin-top:135px;
-	margin-bottom:76px;
-	margin-right:135px;
-	display:block;
-	color:white;
-}
-.textbox a
-{
-	color:#D4A26F;
-}
-.ch
-{
-	color: #d00f0f;
-    width: 107px;
-    right: -17px;
-    position: absolute;
-    margin-top: -42px;
-}
-.regbtn
-{
-	width:250px;
-	height:40px;
-	margin-left:155px;
-	margin-bottom:76px;
-	margin-right:235px;
-	margin-top:70px;	
-}
-.formsecboxhd
-{
-	width:212px;
-	height:21px;
-	margin-left:73px;
-	margin-top:60px;
-	
-}
-.txtcont
-{
-	width:290px;
-	margin-top:37px;
-	margin-left:73px;
-	color:white;
-	margin-bottom:80px;	
-	 float: left;
-}
-.txtco1
-{
-	width:100%;
-	height:13px;
-}
-.txtco2
-{
-	width:100%;
-	height:70px;
-	
-}
-.txtco3
-{
-	width:100%;
-	height:35px;
-}
-.spicon
-{
-	width:33px;
-	height:128px;
-	margin-left:22px;
-	float:left;
-	color:white;
-	margin-top: 35px;
-}
-img.s
-{
-	margin-top:7px;
-}
-.txta1
-{
-	width:290px;
-	height:40px;
-	margin-left:73px;
-	margin-bottom:28px;
-	color:white;
-}
-.txta2
-{
-	width: 290px;
-    height: 32px;
-    margin-left: 73px;
-    color: white;
-    margin-top: 92px;
-    float: left;
-}
-.icodol
-{
-	width:33px;
-	height:33px;
-	margin-left:22px;
-	float:left;
-	margin-top: 89px;
-}
-.en_title
-{
-	margin-top: 20px;
-	margin-right: 22.5px;
-	margin-left: 22.5px;
-	padding-top: 35px;
-	/*padding-bottom: 35px;*/
-}
-.en_titlein
-{
-	height: 107px;
-	width: 1125px;
-	color: #FFF;
-}
-.en_btndiv
-{
-	width:500px;
-	margin-right: 335px;
-	margin-bottom: 30px;
-	margin-left: 335px;
-}
-a.en_btn
-{
-	display: block;
-	float: left;
-	height: 46px;
-	width: 248px;
-	border-top-width: 1px;
-	border-right-width: 1px;
-	border-bottom-width: 1px;
-	border-left-width: 1px;	
-	text-align: center;
-    font-size: 33px;
-	text-decoration:none;
-	border-radius: 4px;
-	margin-bottom:27px;
-	padding-top: 2.5px;
-}
-a.en_btnsp
-{
-	display: block;
-	float: left;
-	height: 48px;
-	width: 100px;
-	border-radius: 4px;
-	text-align: center;
-    font-size: 33px;
-	text-decoration:none;
-	float:left;
-	margin-bottom:27px;
-	background-color:red;
-	padding-top: 2.5px;
-	
-}
-a.en_btn1
-{
-	color: #000;
-	background-color: #FFF;
-	border-top-color: #666;
-	border-right-color: #666;
-	border-bottom-color: #666;
-	border-left-color: #666;
-	 
-}
-a.en_btn2
-{
-	color: #FFF;
-	background-color: #000;
-	border-top-color: #CCC;
-	border-right-color: #CCC;
-	border-bottom-color: #CCC;
-	border-left-color: #CCC;	
-}
-.en_article
-{
-	margin-top: 30px;
-	margin-right: 15px;
-	margin-bottom: 60px;
-	margin-left: 15px;
-	padding: 0px;
-	width: 1140px;
-	top: 30px;
-    position: relative;
-}
-.en_artbtndiv
-{
-	padding: 0px;
-	height: 48px;
-	width: 637px;
-	margin-right: 270px;
-	margin-left: 263px;	
-}
-a.en_btnmar
-{
-	margin-right:18.5px;
-}
-.en_leftbox
-{
-	width: 50%;
-	padding-right: 4.5px;
-	padding-left: 4.5px;
-	float:left;	
-}
-.en_rightbox
-{
-	width: 50%;
-	padding-right: 4.5px;
-	padding-left: 4.5px;
-	float:left;	
-}
-.en_1box
-{
-	width:525px;
-	
-	
-}
-.en_3box
-{
-	width: 172px;
-	float:left;
-	padding-top: 23px;
-	padding-bottom: 23px;
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#333333+0,9b9b9b+100&0.71+0,0.6+100 */
-background: -moz-linear-gradient(top,  rgba(51,51,51,0.71) 0%, rgba(155,155,155,0.6) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  rgba(51,51,51,0.71) 0%,rgba(155,155,155,0.6) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  rgba(51,51,51,0.71) 0%,rgba(155,155,155,0.6) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5333333', endColorstr='#999b9b9b',GradientType=0 ); /* IE6-9 */
 
+@font-face {
+  font-family: "Rcondbi";
+  src: url(../font/ROBOTO/RobotoCondensed-BoldItalic.ttf);
 }
-.i2_text
-{
-	color: #FFF;
-	
-	width: 200px;
-	
+
+@font-face {
+  font-family: "Rcondi";
+  src: url(../font/ROBOTO/RobotoCondensed-Italic.ttf);
 }
-.i2_textb
-{
-	width: 555px;
+
+@font-face {
+  font-family: "Rcondl";
+  src: url(../font/ROBOTO/RobotoCondensed-Light.ttf);
 }
-input[type=text].i2bo
-{
-	width:370px;
-	height:34px;
-	border-radius:4px;
-	margin-right:10px;
-	float:left;
+
+@font-face {
+  font-family: "Rcondli";
+  src: url(../font/ROBOTO/RobotoCondensed-LightItalic.ttf);
 }
-a.i2btn
-{
-	height: 34px;
-	width: 175px;
-	border-radius:4px;
-	float:left;
-	background-color:red;
-	font-size: 22px;
-	    text-align: center;
-		text-decoration:none;
-		padding-top: 2.5px;
+
+@font-face {
+  font-family: "Rcondr";
+  src: url(../font/ROBOTO/RobotoCondensed-Regular.ttf);
 }
-.modelround
-{
-	height: 100px;
-    width: 100px;
-    border: solid;
-    border-radius: 50%;
+
+@font-face {
+  font-family: "Ritalc";
+  src: url(../font/ROBOTO/Roboto-Italic.ttf);
+}
+
+@font-face {
+  font-family: "Rlight";
+  src: url(../font/ROBOTO/Roboto-Light.ttf);
+}
+
+@font-face {
+  font-family: "Rlighti";
+  src: url(../font/ROBOTO/Roboto-LightItalic.ttf);
+}
+
+@font-face {
+  font-family: "Rmedium";
+  src: url(../font/ROBOTO/Roboto-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Rmediumi";
+  src: url(../font/ROBOTO/Roboto-MediumItalic.ttf);
+}
+
+@font-face {
+  font-family: "Rregular";
+  src: url(../font/ROBOTO/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Rthin";
+  src: url(../font/ROBOTO/Roboto-Thin.ttf);
+}
+
+@font-face {
+  font-family: "Rthini";
+  src: url(../font/ROBOTO/Roboto-ThinItalic.ttf);
+}
+
+/*uni*/
+@font-face {
+  font-family: "ucondblack";
+  src: url(../font/UNITEDSANS/UnitedSansSemiCond-Black.otf);
+}
+
+@font-face {
+  font-family: "ucondbold";
+  src: url(../font/UNITEDSANS/UnitedSansSemiCond-Bold.otf);
+}
+
+@font-face {
+  font-family: "uconheavy";
+  src: url(../font/UNITEDSANS/UnitedSansSemiCond-Heavy.otf);
+}
+
+@font-face {
+  font-family: "uconlight";
+  src: url(../font/UNITEDSANS/UnitedSansSemiCond-Light.otf);
+}
+
+@font-face {
+  font-family: "uconmedium";
+  src: url(../font/UNITEDSANS/UnitedSansSemiCond-Medium.otf);
+}
+
+/*general*/
+
+a {
+  text-decoration: none !important;
+
+  &:hover {
+    text-decoration: none !important;
+  }
+}
+
+img {
+  border: 0px;
+  image-rendering: optimizeQuality !important;
+}
+
+.clear {
+  clear: both;
+}
+
+body {
+  font-size: 16px;
+}
+
+input {
+  &::-webkit-input-placeholder, &:-ms-input-placeholder, &::-moz-placeholder {
+    font-family: "Rlighti" !important;
+  }
+}
+
+select {
+  font-family: "Rlighti" !important;
+}
+
+h1, h2, h4, h5, h6 {
+  font-family: "uconheavy";
+}
+
+.robot-fuente {
+  font-family: "Rcondr";
+  color: #D4A26F;
+}
+
+#direccionreparto {
+  font-family: "Rregular" !important;
+}
+
+html {
+  background: rgb(0, 0, 0);
+  font-family: "United Sans SemiCond";
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+.container {
+  background-image: url(../img/bg.jpg);
+  background-size: 100%;
+  font-family: "United Sans SemiCond";
+  padding-left: 0px;
+  padding-right: 0px;
+  background-repeat: repeat;
+}
+
+/*top*/
+
+.header-top {
+  padding: 30px;
+}
+
+.ingreso-top {
+  padding-top: 20px;
+  text-align: right;
+  color: #979797;
+
+  a {
+    color: #FFF;
+    font-size: 1.4em;
+
+    &:hover {
+      color: #706F6F;
+    }
+  }
+}
+
+.modal-open {
+  padding-right: 0px !important;
+}
+
+.link-salir {
+  margin-left: 30px;
+}
+
+.cliente-ingresado-top {
+  font-size: 1.3em;
+  color: #FFF;
+}
+
+.slow .contenedor-menu-web {
+  transition: down 0.7s;
+  -webkit-transition: down 0.7s;
+}
+
+.pie-col-4 {
+  padding-top: 2%;
+}
+
+/* HOME */
+
+/* menu */
+
+.navbar.navbar-inverse {
+  width: 100%;
+  margin-bottom: 0px !important;
+  background: transparent;
+}
+
+.nav.navbar-nav {
+  width: 100%;
+
+  li {
+    width: 25%;
     text-align: center;
-	margin: auto;
+    border: 1px solid #CCC !important;
+
+    a {
+      background-color: #000;
+      color: #FFF;
+      font-size: 1.4em;
+
+      &:hover {
+        background-color: #CCC !important;
+        color: #000 !important;
+      }
+    }
+
+    &.opt-menu-destacado a {
+      color: #D4A26F !important;
+
+      &:hover {
+        background-color: #CCC !important;
+        color: #000 !important;
+      }
+    }
+  }
+}
+
+.dropdown-menu {
+  width: 100%;
+  padding: 0px;
+  border: 2px solid #CCC !important;
+
+  li {
+    width: 100% !important;
+
+    a {
+      padding-top: 13px;
+      padding-bottom: 13px;
+    }
+  }
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+
+.nav.navbar-nav li.order-menu a {
+  background-color: #ED1624 !important;
+
+  &:hover {
+    background-color: #CD1624 !important;
+    color: #FFF !important;
+  }
+}
+
+.menu-mobil, .hamburger-menu {
+  display: none;
+}
+
+.icono-menu-retiro {
+  text-align: center;
+  vertical-align: middle !important;
+  padding-top: 10px;
+  padding-left: 20px !important;
+  padding-bottom: 8px;
+}
+
+.boton-orden-ingresado div {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.direccion-retiro-menu01 {
+  font-size: 1em;
+  color: #FFF !important;
+  line-height: 0.9em;
+  padding-top: 13px;
+  text-align: left;
+}
+
+.direccion-retiro-menu02 {
+  font-size: 0.7em;
+  color: #979797;
+}
+
+.precio-menu-superior {
+  color: #FED750;
+  font-size: 1.6em;
+  text-align: left;
+  padding-top: 0.4em;
+}
+
+.contenedor-boton-orden-ingresado {
+  background-color: #000 !important;
+}
+
+/* slider grande */
+
+/* fotos promociones home */
+
+.row {
+  &.productos-promocion-home {
+    padding-top: 35px;
+
+    .col-lg-6 {
+      margin-bottom: 60px;
+    }
+  }
+
+  &.pie-pagina {
+    background-color: #000;
+    padding-top: 20px;
+    padding-bottom: 10px;
+
+    .col-lg-3 {
+      padding-left: 50px;
+
+      ul li {
+        text-decoration: none;
+        list-style: none;
+      }
+    }
+  }
+}
+
+/* footer */
+
+.footlist {
+  padding: 0px;
+}
+
+.row.pie-pagina {
+  .col-lg-3 {
+    ul li a {
+      color: #979797 !important;
+
+      &:hover {
+        color: #706F6F !important;
+      }
+    }
+
+    p {
+      color: #FFF;
+    }
+  }
+
+  .pie-col-4 a {
+    margin-right: 10px;
+  }
+}
+
+/* CSS HOME / MENU RESPONSIVE */
+
+@media only screen and (max-width: 768px) {
+  .contenedor-menu-web {
+    display: none;
+  }
+
+  .row.header-top .col-lg-6 {
+    text-align: center;
+  }
+
+  .hamburger-menu {
+    display: inline;
+    text-align: center;
+    margin: 0px;
+  }
+
+  .nav.navbar-nav {
+    li {
+      width: 100%;
+      text-align: center;
+      border: 1px solid #CCC !important;
+    }
+
+    margin: 0px;
+  }
+
+  .hamburger-menu .col-lg-12 {
+    padding-bottom: 10px !important;
+  }
+
+  .row.productos-promocion-home {
+    .col-lg-6 {
+      margin-bottom: 20px;
+    }
+
+    padding-bottom: 20px;
+  }
+
+  .pie-col-4 {
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 0px !important;
+  }
+
+  .icono-menu-retiro {
+    padding-left: 0px !important;
+  }
+
+  .precio-menu-superior, .direccion-retiro-menu01 {
+    text-align: center;
+    padding-top: 0px;
+  }
+
+  #bar {
+    color: #FFF;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .row.header-top, .col-lg-6.ingreso-top {
+    text-align: center;
+  }
+}
+
+/* FIN HOME */
+
+/* MODALS */
+
+.modal-content {
+  background-image: url(../img/bg.jpg);
+  background-size: 100%;
+  border-radius: 0px !important;
+  text-align: center !important;
+}
+
+.modal-header {
+  border: 0px;
+
+  h3 {
+    color: #D4A26F;
+    font-size: 2em;
+  }
+}
+
+.modal-dialog {
+  margin: 12% auto !important;
+}
+
+.modal-body {
+  h2 {
+    color: #FFF !important;
+    font-size: 1.5em;
+  }
+
+  color: #979797;
+
+  #direccionreparto {
+    padding: 3% 20%;
+    border: 0px;
+    border-radius: 4px;
+    width: 100% !important;
+
+    option {
+      text-align: center !important;
+      border: 0px !important;
+    }
+  }
+
+  .cambiar-ubicacion {
+    color: #FED750;
+
+    &:hover {
+      color: #979797;
+    }
+  }
+}
+
+.span_delivery {
+  background-image: url(../img/delivery_pop_up.png);
+  width: 200px;
+  height: 100px;
+  padding-right: 100px;
+  background-position: right;
+  background-repeat: no-repeat;
+  padding-top: 40px;
+}
+
+.modal-delivery-left input[type=radio]:checked + label {
+  background-image: url(../img/delivery_pop_up2.png);
+  color: #FED750;
+}
+
+#delivery, #delivery2 {
+  display: none;
+}
+
+.span_delivery2 {
+  background-image: url(../img/pizza_hut_pop_up.png);
+  width: 200px;
+  height: 100px;
+  padding-left: 100px;
+  background-position: left;
+  background-repeat: no-repeat;
+  padding-top: 40px;
+}
+
+.modal-delivery-right input[type=radio]:checked + label {
+  background-image: url(../img/pizza_hut_pop_up2.png);
+  color: #FED750;
+}
+
+#button_modal_delivery {
+  padding: 5px 40px;
+  background-color: #ed1624;
+  margin-top: 10px;
+  border-radius: 4px;
+  color: #FFF;
+  border: 0px;
+  font-weight: bold;
+  font-size: 1.5em;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+
+  &:hover {
+    background-color: #fed750;
+  }
+}
+
+.modal-ingresar-left {
+  text-align: right;
+  font-size: 1.4em;
+  color: #FED750;
+  padding-top: 0.3em;
+}
+
+.modal-ingresar-right {
+  text-align: left;
+
+  input {
+    padding: 10px;
+    width: 90%;
+    border-radius: 4px;
+    border: 0px;
+    color: #706F6F;
+  }
+}
+
+.textboxs-ingreso {
+  padding-bottom: 15px;
+}
+
+.modal-producto-left {
+  text-align: center;
+
+  h3 {
+    text-align: center;
+  }
+}
+
+.modal-producto {
+  text-align: left;
+}
+
+.row.ingredientes-modal-producto .col-lg-2 {
+  padding: 0px 2px;
+  font-size: 0.7em !important;
+  text-align: center;
+
+  img {
+    margin-bottom: 5px;
+  }
+}
+
+.ingrediente-first-modal {
+  padding-left: 15px !important;
+}
+
+.modal-producto-left h3 {
+  color: #FED750;
+}
+
+.form-control {
+  height: auto !important;
+}
+
+.radio01 {
+  visibility: hidden;
+  position: absolute;
+}
+
+/* MODAL RESPONSIVE */
+
+@media only screen and (max-width: 768px) {
+  .span_delivery2 {
+    padding-right: 100px;
+    background-position: right;
+    padding-left: 0px;
+  }
+
+  .modal-delivery-right {
+    padding-top: 20px;
+  }
+
+  .modal-ingresar-left, .modal-ingresar-right {
+    text-align: center;
+  }
+}
+
+/* CSS ENCUENTRA TU PIZZA HUT */
+
+.titulo {
+  color: #FFF;
+  text-align: center;
+}
+
+.titulo01 {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.row.botones-retiro {
+  margin: 0px auto;
+  width: 50%;
+}
+
+.boton-retirarlocal {
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+  display: block;
+}
+
+.botones-retiro-izq, .botones-retiro-der {
+  padding: 0px;
+}
+
+.botones-retiro-izq .boton-retirarlocal {
+  color: #000;
+  background-color: #FFF;
+  font-family: "uconheavy";
+}
+
+.botones-retiro-der .boton-retirarlocal {
+  color: #FFF;
+  background-color: #000;
+  font-family: "uconheavy";
+}
+
+.botones-retiro-izq {
+  text-align: right;
+}
+
+.botones-retiro-der {
+  text-align: left;
+}
+
+#boton-encontrar-pizza {
+  padding: 11% 50px;
+  background-color: #ed1624;
+  border-radius: 5px;
+  color: #FFF;
+  border: 0px;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+.seleccionar-ubicacion-pizza {
+  width: 75%;
+  margin: 0px auto;
+}
+
+.seleccion-pizza-cercano {
+  text-align: center;
+  display: block;
+  padding: 5% 35%;
+  border-radius: 5px;
+  border: 0px;
+}
+
+.ubicaciones-mapa {
+  margin-top: 40px;
+  padding-bottom: 60px;
+}
+
+.locales .col-lg-1 {
+  text-align: center;
+  padding: 0px;
+  padding-top: 1.5%;
+}
+
+.numeracion-local {
+  background-color: #CD1624 !important;
+  border-radius: 20px;
+  padding: 4px 11px;
+  text-align: center;
+  color: #FFF;
+  font-size: 1.2em;
+}
+
+.locales {
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  margin-left: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  vertical-align: middle;
+  margin-bottom: 15px;
+}
+
+.direccion-local-1, .horario-local-1, .telefono-local-1, .horario-local-2, .telefono-local-2 {
+  color: #FFF;
+  font-family: Rregular;
+  font-size: 0.8em;
+}
+
+.direccion-local-2, .horario-local-2, .telefono-local-2 {
+  color: #FED750;
+}
+
+.siguientes .col-lg-2 {
+  text-align: right;
+}
+
+.link-siguentes-ubicacion {
+  color: #FED750;
+
+  &:hover {
+    color: #979797;
+  }
+}
+
+/* CSS ENCUENTRA TU PIZZA HUT RESPONSIVE */
+@media only screen and (max-width: 768px) {
+  .row.botones-retiro {
+    width: 100%;
+  }
+
+  .botones-retiro-izq {
+    margin-bottom: 15px;
+  }
+
+  .titulo01 {
     margin-top: 20px;
     margin-bottom: 20px;
-}
-div.carb
-{
-	background-position: 1px -47px;
-	width: 136px;
-	height: 149px;
-	zoom: .5;
-	background-attachment: scroll;
-	background-color: rgba(0,0,0,0);
-	background-image: url(../img/sprites.png);
-	background-repeat: no-repeat;
-	margin:auto;
-}
-div.pizzab
-{
-	background-position: -270px -47px;
-	width: 136px;
-	height: 149px;
-	zoom: .5;
-	background-attachment: scroll;
-	background-color: rgba(0,0,0,0);
-	background-image: url(../img/sprites.png);
-	background-repeat: no-repeat;
-	margin:auto;
-}
-.loghr
-{
-	margin-top: 40px;
-	border-top-width: thin;
-	border-top-style: solid;
-	border-top-color: #999;
+  }
+
+  .row.seleccionar-ubicacion-pizza {
+    width: 100%;
+  }
+
+  .seleccion-pizza-cercano {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  #boton-encontrar-pizza {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .row.siguientes {
+    .col-lg-10 {
+      display: none;
+    }
+
+    .col-lg-2 {
+      text-align: left;
+      margin-left: 15px;
+      margin-bottom: 15px;
+    }
+  }
 }
 
-.w3-modal input[type=text], .w3-modal input[type=password]
-{
-	color:#666666;
-}
-.mobileview
-{
-	background-image:url(../img/bg.png);
-	background-size:contain;
-	background-repeat:repeat;
-	display:block;
+/* FIN CSS ENCUENTRA TU PIZZA HUT RESPONSIVE */
+
+/* CSS ARMA TU PROPIA PIZZA */
+
+.creatupizza-izq {
+  text-align: center;
 }
 
-@media screen and (max-width: 1170px) {
-    .slide
-	{
-		height:auto;
-	}
-	a.en_btn
-	{
-		height: 41px;
-		width: 50%;
-		font-size: 23px;
-	}
-	a.en_btn2
-	{
-		width:50%;
-		height: 41px;
-		font-size: 23px;
-	}
-	
-	.newad3
-	{
-		width:100%;
-		margin:3px;
-	}
-       input[type=text], input[type=password]
-	{
-		width:90%;
-		margin-top:5px;
-	}
-
-}
-@media screen and (max-width: 768px) {
-	.en_3boxm
-	{
-		float: left;
-    padding-top: 23px;
-    padding-bottom: 23px;
-	    height: 100px;
-		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#333333+0,9b9b9b+100&0.71+0,0.6+100 */
-background: -moz-linear-gradient(top,  rgba(51,51,51,0.71) 0%, rgba(155,155,155,0.6) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  rgba(51,51,51,0.71) 0%,rgba(155,155,155,0.6) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  rgba(51,51,51,0.71) 0%,rgba(155,155,155,0.6) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5333333', endColorstr='#999b9b9b',GradientType=0 ); /* IE6-9 */
-	}
-    .mainmenu
-	{
-		min-height:0px;
-	}
-	#mnu, #mnu1
-	{
-		display:none;
-	}
-	input[type=text], input[type=password]
-	{
-		width:90%;
-		margin-top:5px;
-	}
-}
-@media screen and (max-width: 576px) {
-   .nav > li:hover > ul
-   {
-	   width:80%;
-	   margin-left:20px;
-   }
-   
-   
+.creatupizza-main {
+  padding-bottom: 60px;
 }
 
+.creatupizza-der h4 {
+  color: #FFF;
 
-.nav-pills li a{border-radius:0px !important;}
-.container-fluid.padnul.article{border-bottom:solid 1px #666;}
-.link_camer_footer, .link_facebook_footer{margin-right:15px !important;}
-.registrado-top{width:400px;padding-top:30px;}
-.bienvenido-msj, .opciones-cuenta{font-size:19px !important;}
-.opciones-cuenta a{color:#FFFFFF;text-decoration:none;}
-a.en_btn, .en_btnsp{font-size:16px !important;text-align:center}
-a.en_btn, .en_btnsp{padding-top:14px !important;}
-.en_3box{background:rgba(51,51,51,0.6) !important;}
-.en_1box{border-radius:15px !important;}
-.en_3box .badge{padding:10px 14px !important;border-radius:20px}
-.dropmhead1{text-align:left;}
-.dtxt{padding-left:50px;}
-.dbad .badge{padding:6px 10px;border-radius:15px}
-.dropdownmenudiv .iconalign{margin-top:-40px}
-section.main, section.mobileview{background-size:100%;background-repeat:repeat;}
-.mainmenu a.com:hover{background-color:#CD1C24;color:#FFFFFF;}
-a.sign, .sign{color:#FFFFFF;font-size:19px;line-height:75px;}
-.col-xs-6 .amount{font-size:28px;line-height:1.8em}
-.txt-retirar-xs-1{font-size:10px;font-weight:normal;line-height:3em}
-.txt-retirar-xs-2{font-size:10px;font-weight:normal;line-height:0.2em}
-.col-xs-6{padding-left:10px;padding-right:10px}
-.col-xs-6-txt-right{text-align:right;width:46%}
-.col-xs-6-txt-left{width:54%}
-.newad3{margin:0px;}
-.navbar-inverse{border:none;}
-.col-xs-10{margin-left:auto;margin-right:auto;float:none;}
-.clear{clear:both;}
-.price{font-size:28px;color:#FFFFFF;}
-.arthead{color:#C5A171;margin-top:0px;font-size:21px}
-.txt-pizza-product{font-size:12px}
-.button.btn-danger{margin-top:15px}
-.anadir-orden{width:49% !important;float:left;}
-.personalizar-orden{width:49% !important;float:left;margin-right:1%;background-color:#C5A171 !important;}
-.personalizar-orden:hover{opacity:0.8}
-.personalizar-tamano{width:49% !important;float:left;background-color:#FFF !important;color:#000 !important;font-size:14px !important;height:auto !important}
-.personalizar-masa-tipo{width:49% !important;float:left;background-color:#FFF !important;color:#000 !important;margin-right:1%;font-size:14px !important;height:auto !important;}
-.newad2-izq{margin-left:0px !important}
+  .numero-paso-armar {
+    background-color: #706F6F;
+    padding: 3px 10px;
+    border-radius: 20px;
+  }
+}
 
-.personalizar-orden-xs{background-color:#C5A171 !important;}
-.personalizar-orden-xs:hover{opacity:0.8}
-.personalizar-tamano-xs{background-color:#FFF !important;color:#000 !important;font-size:14px !important;height:auto !important}
-.personalizar-masa-tipo-xs{background-color:#FFF !important;color:#000 !important;font-size:14px !important;height:auto !important}
-.menubarbox{border-radius:0px !important;}
-.boton-ingresar-cupon{margin-bottom:20px !important;}
-.registro-background{background: rgba(0,0,0,0.7);
-background: -moz-linear-gradient(left, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.7) 100%);
-background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0,0,0,0.7)), color-stop(100%, rgba(0,0,0,0.7)));
-background: -webkit-linear-gradient(left, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.7) 100%);
-background: -o-linear-gradient(left, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.7) 100%);
-background: -ms-linear-gradient(left, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.7) 100%);
-background: linear-gradient(to right, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.7) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=1 );
-padding-top:50px;}
-.formfeeld{width:220px !important;}
-.formfeeld input{width:220px !important;}
-.ch{right:0px !important;}
-.col-md-12 .formtxt span{font-size:18px !important;}
-.col-md-12 .formtxt{line-height:44px !important;}
-.recibir-ofertas-txt span{line-height:24px !important;}
-.radio-inline span{font-size:10px !important;}
-.radio-inline{padding:0px !important;}
-.radio-buttom-ofertas{width:12px !important;}
-.radio-inline input[type="radio"]{position:relative !important;margin-left:0px !important;width:13px !important;margin-right:2px;}
-.copyright-font-size{font-size:12px !important;}
-.w3-text-white{padding:5%}
-.texto_cuenta_podras{width:80% !important;float:right;padding-right:5%}
-.iconos-cuenta-podras img{margin-bottom:5px !important;}
-.iconos-cuenta-podras{padding-left:0px !important;padding-right:0px !important;}
-.contenedor-iconos-cuenta{padding-top:5% !important}
-.col-xs-12 input.radio-botm1{margin-left:0px !important;margin-right:3% !important}
-.col-xs-12 input.radio-botm{margin-left:3% !important;margin-right:3% !important;}
+.pasos-armar-pizza {
+  border-radius: 10px;
+  width: 97%;
+  overflow: hidden;
+  margin-bottom: 32px;
 
-@media only screen and (max-width: 768px){
-	
-.col-xs-4 p{font-size:14px !important;}
-ul.footlist li a{font-size:14px !important;}
-.newad3{float:none !important;}
-.col-xs-12{float:none;}
-.prueba02{min-height:40px !important;padding-bottom:20px;}
-.padnul{margin-bottom:0px !important;}
-.border-left-location{border-top-left-radius:5px;border-bottom-left-radius:5px}
-.margin-bottom-location{margin-bottom:15px}
-.border-right-location{border-top-right-radius:5px;border-bottom-right-radius:5px}
-.menubarbox{border-radius:4px !important;}
-.newad3 form input{margin-left:5%;margin-right:5%;}
+  .col-lg-3 {
+    margin: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #000;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: #000;
+  }
+
+  .col-lg-9 {
+    margin: 0px;
+    background-color: #FFF;
+    padding: 0px;
+    overflow: hidden;
+  }
+}
+
+.precio-pizza-arma {
+  color: #FED750;
+}
+
+.col-lg-9 #tamano-pizza {
+  padding-right: 10px;
+  width: 100%;
+  padding-left: 10px;
+  padding-top: 9%;
+  padding-bottom: 10%;
+}
+
+.borde-top-selecciones {
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px;
+}
+
+.borde-top-selecciones2 {
+  border-radius: 0px !important;
+}
+
+.seleccionar-tipo-maza {
+  margin-bottom: 0px;
+}
+
+.borde-top-selecciones3 {
+  border-top-left-radius: 0px !important;
+  border-top-right-radius: 0px;
+  margin-bottom: 30px;
+}
+
+.tipo-maza-radio-button {
+  width: 30px !important;
+  height: 30px !important;
+}
+
+.tipo-maza-label {
+  width: 100%;
+  background-image: url(../img/seleccion-opcion-pizza-1.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding-top: 10%;
+  padding-bottom: 7%;
+}
+
+.tipo-maza-pizza.col-lg-9 {
+  margin: 0px;
+  background-color: #FFF;
+  padding: 0px;
+  overflow: hidden;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.radio02 {
+  visibility: hidden;
+  display: none;
+}
+
+.tipo-maza-pizza input[type=radio]:checked + label {
+  background-image: url(../img/seleccion-opcion-pizza-2.png);
+  color: #FED750;
+}
+
+.contenedor-bottom-siguiente {
+  text-align: center;
+}
+
+/* CSS ARMA TU PIZZA RESPONSIVE */
+
+@media only screen and (max-width: 768px) {
+  .col-lg-8.creatupizza-izq img {
+    width: 100%;
+  }
+
+  .pasos-armar-pizza {
+    margin-left: 15px;
+    margin-right: 0px;
+    width: 92%;
+
+    .col-lg-3 {
+      img {
+        max-height: 50px;
+        width: auto;
+        text-align: center;
+      }
+
+      text-align: center;
+    }
+  }
+
+  .creatupizza-der h4 {
+    padding-left: 15px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .pasos-armar-pizza {
+    .col-lg-3 {
+      img {
+        max-height: 50px;
+        width: auto;
+        text-align: center;
+      }
+
+      text-align: center;
+    }
+
+    margin-left: 15px;
+    margin-right: 0px;
+    width: 92%;
+  }
+
+  .col-lg-9 #tamano-pizza {
+    padding-right: 10px;
+    width: 100%;
+    padding-left: 10px;
+    padding-top: 4%;
+    padding-bottom: 3%;
+  }
+
+  .tipo-maza-label {
+    width: 100%;
+    background-image: url(../img/seleccion-opcion-pizza-1.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+
+  .modal-delivery-left, .modal-delivery-right {
+    width: 50% !important;
+    float: left;
+  }
+
+  .modal-ingresar-left, .modal-ingresar-right {
+    text-align: center;
+  }
+
+  .boton-personalizar-single-product {
+    margin-bottom: 9px;
+  }
+
+  .row.ingredientes-modal-producto .col-lg-2 {
+    width: 33.3%;
+    float: left;
+  }
+
+  .ingrediente-first-modal {
+    padding: 0px !important;
+  }
+}
+
+/* CSS PRODUCTOS PIZZAS */
+
+.listado-productos {
+  padding: 30px;
+}
+
+.menu-web-pizzas li {
+  width: 20% !important;
+}
+
+.single-product {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  border-radius: 15px;
+  width: 49%;
+  margin-bottom: 15px;
+}
+
+.single-producto-izq {
+  margin-right: 2%;
+}
+
+.imagen-producto {
+  text-align: center;
+
+  h3 {
+    color: #FFF;
+    margin-bottom: 0px;
+  }
+}
+
+h3.nombre-single-producto {
+  margin-top: 0px;
+  color: #D4A26F;
+}
+
+.vermas-producto {
+  color: #fff;
+  font-size: 0.6em;
+}
+
+p.descripcion-single-producto {
+  color: #FFF;
+  font-family: "Rregular";
+  font-size: 0.7em;
+}
+
+.ingreso-cupones-productos {
+  padding-left: 30px;
+  margin-top: 60px;
+
+  h3 {
+    color: #FFF;
+  }
+
+  input#coupon-code {
+    border: 0px;
+    border-radius: 4px;
+    padding: 5px 10px;
+    width: 30% !important;
+  }
+
+  a#button-ingreso-cupon {
+    background-color: #ED1624;
+    color: #FFF;
+    padding: 5px 20px;
+    border: 0px;
+    border-radius: 4px;
+    margin-left: 15px;
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: #CD1624;
+    }
+  }
+}
+
+.single-producto-personalizar .col-lg-6 select {
+  width: 100% !important;
+  text-align: center;
+  padding: 5px;
+  border: 0px;
+  border-radius: 4px;
+}
+
+.boton-personalizar-single-product {
+  display: block;
+  border-radius: 4px;
+  background-color: #D4A26F;
+  color: #FFF;
+  text-align: center;
+  padding: 5px;
+
+  &:hover {
+    background-color: #FED750;
+    color: #FFF;
+  }
+}
+
+.boton-anadir-single-product {
+  display: block;
+  border-radius: 4px;
+  background-color: #ED1624;
+  color: #FFF;
+  text-align: center;
+  padding: 5px;
+
+  &:hover {
+    background-color: #CD1624;
+    color: #FFF;
+  }
+}
+
+.add-margin-bottom-1 {
+  margin-bottom: 10px;
+}
+
+/* CSS PRODUCTOS PIZZA RESPONSIVE */
+@media only screen and (max-width: 768px) {
+  .row.ingreso-cupones-productos {
+    margin: 0px;
+  }
+
+  .single-product {
+    width: 100%;
+  }
+
+  .ingreso-cupones-productos {
+    input#coupon-code {
+      width: 94% !important;
+      margin-bottom: 15px;
+      float: none !important;
+    }
+
+    a#button-ingreso-cupon {
+      margin-left: 0px;
+      width: 94% !important;
+      display: block;
+    }
+  }
+
+  .add-margin-bottom-2 {
+    margin-bottom: 10px;
+  }
+
+  .single-product {
+    margin-bottom: 20px;
+  }
+
+  .menu-responsive-2 .col-lg-12 {
+    margin-top: 10px;
+  }
+
+  .row.ingreso-cupones-productos {
+    margin-top: 0px;
+  }
+
+  .ingredientes-modal-producto .col-lg-2 {
+    width: 33.3%;
+    float: left;
+  }
+
+  .ingrediente-first-modal {
+    padding-left: 0px !important;
+  }
+
+  .menu-web-pizzas {
+    display: none;
+
+    li {
+      width: 100% !important;
+    }
+  }
+
+  .separacion-boton-codigo {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .single-product, .single-producto-izq {
+    float: left;
+  }
+
+  .beneficios-cuenta {
+    float: left;
+    width: 44% !important;
+  }
+}
+
+/* CSS REGISTRAR CUENTA */
+
+.row.contenedor-registro {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.contenedor-registro {
+  .single-producto-izq {
+    margin-left: 30px;
+    margin-right: 1%;
+  }
+
+  .col-lg-6 {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    width: 47%;
+  }
+}
+
+.campos-form-reg {
+  margin-bottom: 25px;
+  margin-top: 25px;
+
+  .col-lg-4 {
+    color: #FFF;
+    padding: 5px;
+    padding-left: 25px;
+  }
+}
+
+.campo-text-form-reg {
+  border: 0px;
+  border-radius: 4px;
+  width: 80%;
+  padding: 5px;
+}
+
+.campo-form-especial {
+  font-size: 0.9em;
+  color: #D4A26F !important;
+}
+
+.opciones-inscripcion {
+  font-size: 0.7em;
+  color: #FFF;
+
+  label {
+    margin-right: 15px;
+  }
+}
+
+p.text-acuerdo-inscripcion {
+  font-size: 0.9em;
+  color: #FFF;
+}
+
+a.link-bases-privacidad {
+  color: #FED750;
+
+  &:hover {
+    color: #979797;
+  }
+}
+
+.contenedor-bottom-registro {
+  text-align: center;
+
+  button {
+    border-radius: 4px;
+    background-color: #ED1624;
+    color: #FFF;
+    text-align: center;
+    padding: 5px;
+    border: 0px;
+    padding: 10px 30px;
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: #CD1624;
+      color: #FFF;
+    }
+  }
+}
+
+.beneficios-cuenta {
+  h3 {
+    color: #D4A26F !important;
+    margin-bottom: 40px;
+
+    span {
+      background-color: #D4A26F;
+      padding: 2px 10px;
+      color: #FFF !important;
+      border-radius: 20px;
+      padding-top: 4px;
+      padding-bottom: 1px;
+    }
+  }
+
+  color: #FFF;
+  padding-left: 30px !important;
+}
+
+.beneficios-cuenta-detalles-1 {
+  margin-bottom: 15px;
+}
+
+.segundo-titulo-beneficios {
+  margin-top: 100px;
+}
+
+/* CSS REGISTRAR CUENTA RESPONSIVE */
+
+@media only screen and (max-width: 768px) {
+  .contenedor-registro .col-lg-6 {
+    width: 83%;
+    margin-left: 9%;
+  }
+
+  .campos-form-reg .col-lg-8 input {
+    width: 100%;
+  }
+
+  .col-lg-6.beneficios-cuenta {
+    width: 83%;
+    margin-left: 9%;
+    margin-top: 30px;
+  }
+
+  .iconos-cuenta-beneficios {
+    text-align: center;
+
+    br {
+      display: none;
+    }
+
+    img {
+      margin: 5px 15px;
+    }
+  }
+
+  .beneficios-cuenta-detalles-1 .col-lg-9 {
+    text-align: center;
+  }
+}
+
+/* nuevo css 28-11-2016 */
+
+/*Extras*/
+
+.links-sueltos {
+  color: #FED750;
+
+  &:hover {
+    color: #979797;
+  }
+}
+
+textarea {
+  &::-webkit-input-placeholder, &:-ms-input-placeholder, &::-moz-placeholder {
+    font-family: "Rlighti" !important;
+  }
+}
+
+/* MODAL RESTABLECER CONTRASE�A */
+
+.textbox-restablecer {
+  text-align: center;
+}
+
+.campo-restablecer {
+  max-width: 90%;
+  display: inline;
+}
+
+/* REGISTRO OK */
+
+.mensajes-sistema {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  color: #D4A26F;
+  text-align: center;
+}
+
+/* mi cuenta */
+
+.titulo-micuenta {
+  margin-bottom: 40px;
+}
+
+.contenedor-micuenta {
+  padding: 40px 30px;
+}
+
+.opciones-configuracion ul li a {
+  color: #FFF;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.nav > li > a {
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
+}
+
+.nav-tabs > li > a {
+  border: none !important;
+}
+
+.opciones-configuracion ul li {
+  a:hover {
+    color: #979797;
+    background: none !important;
+    border: none !important;
+  }
+
+  &.active a {
+    background: none !important;
+    border: none !important;
+    color: #D4A26F !important;
+  }
+
+  border-bottom: solid 5px #706F6F;
+}
+
+.ultima-opcion {
+  border: none !important;
+}
+
+.nav-tabs {
+  border: none;
+}
+
+.opciones-configuracion {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.paneles-cuenta {
+  h3, p {
+    color: #FFF;
+  }
+
+  color: #FFF;
+
+  h4 {
+    color: #D4A26F;
+  }
+}
+
+.campo-requerido {
+  color: #FED750;
+}
+
+.campos-form-micuenta {
+  margin-bottom: 30px;
+}
+
+.campos-form-micuenta2 {
+  margin-top: 15px;
+}
+
+#contrasena-cambiar, #pregunta-seguridad, #forma-pago-tarjeta {
+  color: #FFF;
+  margin-top: 20px;
+}
+
+.preguntas-seguridad, #agregar-direccion {
+  padding-top: 20px;
+}
+
+.contenedor-botones-micuenta {
+  margin-top: 30px;
+
+  .col-lg-6 {
+    text-align: center;
+  }
+}
+
+.botones-micuenta-01 {
+  border-radius: 4px;
+  width: 70%;
+  background-color: #706F6F;
+  color: #FFF;
+  border: 0px;
+  text-transform: uppercase;
+  font-size: 1.1em;
+}
+
+.botones-micuenta-02 {
+  border-radius: 4px;
+  width: 70%;
+  background-color: #ED1624;
+  color: #FFF;
+  border: 0px;
+  text-transform: uppercase;
+  font-size: 1.1em;
+}
+
+.botones-micuenta-03 {
+  border-radius: 4px;
+  width: 40%;
+  background-color: #ED1624;
+  color: #FFF;
+  border: 0px;
+  text-transform: uppercase;
+  font-size: 1.1em;
+}
+
+.botones-micuenta-02:hover, .botones-micuenta-03:hover {
+  background-color: #CD1624 !important;
+}
+
+.campos-form-micuenta2 {
+  margin-bottom: 20px;
+}
+
+.texto-establecer-principal {
+  color: #FFF;
+  font-family: "Rlighti" !important;
+  font-size: 0.9em;
+}
+
+.listado-direcciones .col-lg-6 {
+  color: #FFF;
+}
+
+.listado-creaciones {
+  .col-lg-6 {
+    color: #FFF;
+  }
+
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.listado-direcciones {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/* MI ORDEN */
+
+.row.mi-orden-page {
+  padding: 40px 30px;
+  color: #FFF;
+
+  h1 {
+    color: #FFF;
+    text-align: center;
+  }
+}
+
+.texto-amarillo-aperlado {
+  color: #D4A26F;
+}
+
+.select-checkout-01 {
+  color: #000;
+}
+
+.botones-checkbox-01 {
+  margin-top: 20px;
+}
+
+.boton-checkbox-01 {
+  width: 100%;
+  padding: 10px 0px;
+  background-color: #979797;
+  display: block;
+  text-align: center;
+  border-radius: 4px;
+  color: #FFF;
+
+  &:hover {
+    background-color: #706F6F !important;
+    color: #FFF !important;
+  }
+}
+
+.boton-checkbox-02 {
+  width: 100%;
+  padding: 10px 0px;
+  background-color: #ED1624;
+  display: block;
+  text-align: center;
+  border-radius: 4px;
+  color: #FFF;
+  margin-left: auto;
+
+  &:hover {
+    background-color: #CD1624 !important;
+    color: #FFF !important;
+  }
+}
+
+.listado-checkbox {
+  margin-top: 30px;
+}
+
+.separacion-productos-checkbox {
+  border-top: solid 5px #706F6F;
+}
+
+.botones-checkbox-01 .alinear-derecha {
+  text-align: right !important;
+}
+
+.listado-checkbox {
+  h4 {
+    color: #D4A26F;
+    margin-top: 0px;
+  }
+
+  .col-lg-9 {
+    font-family: "Rregular" !important;
+    font-size: 0.8em;
+  }
+
+  .col-lg-3 {
+    text-align: right;
+  }
+}
+
+.orden-lista-checkout {
+  margin-top: 40px;
+}
+
+.ph-margin-right-25 {
+  margin-right: 25px;
+}
+
+.btn.btn-primary.ph-save-summary {
+  text-transform: uppercase;
+  background-color: #ED1624;
+  color: #FFF;
+  border: 0px;
+
+  &:hover {
+    background-color: #CD1624 !important;
+    color: #FFF !important;
+  }
+}
+
+.alinar-boton-derecha {
+  display: block;
+  text-align: right;
+  margin-bottom: 30px;
+}
+
+.orden-lista-checkout .text-center.btn-default.btn {
+  margin: 0px 0px 0px 5px !important;
+  background-color: #ED1624;
+  color: #FFF;
+  border: 0px;
+
+  &:hover {
+    background-color: #CD1624 !important;
+    color: #FFF !important;
+  }
+}
+
+.separacion-productos-checkbox2 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.totales-izq {
+  text-align: right;
+}
+
+.promociones-checkout .col-lg-12 {
+  padding: 5%;
+  border: solid 5px #D4A26F;
+  width: 92%;
+  margin-left: 1%;
+
+  h3 {
+    margin-top: 0px;
+    color: #D4A26F;
+  }
+}
+
+.boton-promocion-checkout {
+  background-color: #ED1624;
+  color: #FFF;
+  border: 0px;
+  margin-top: 20px;
+
+  &:hover {
+    background-color: #CD1624 !important;
+    color: #FFF !important;
+  }
+}
+
+.row.promociones-checkout .col-lg-12 {
+  text-align: center;
+}
+
+.visible-mobile {
+  display: none;
+}
+
+.visible-web {
+  display: block;
+}
+
+.nombre-cupon {
+  color: #D4A26F;
+}
+
+.descripcion-cupon {
+  font-family: "Rregular" !important;
+  font-size: 0.8em;
+}
+
+@media only screen and (max-width: 768px) {
+  .row {
+    &.botones-checkbox-01 .col-lg-6 {
+      margin-bottom: 10px;
+    }
+
+    &.listado-checkbox .col-lg-3 {
+      text-align: left;
+      margin-top: 10px;
+    }
+
+    &.orden-lista-checkout {
+      .alinar-boton-derecha {
+        text-align: center;
+      }
+
+      .col-lg-5 {
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  .mi-orden-content-centro {
+    .izq-web, .der-web {}
+  }
+
+  .row.promociones-checkout .col-lg-12 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .visible-mobile {
+    display: block;
+  }
+
+  .visible-web {
+    display: none;
+  }
+
+  /* cuenta */
+
+  .nav > li > a {
+    padding: 4px 4px !important;
+  }
+
+  .contenedor-botones-micuenta .col-lg-6, #menu3 .row .col-lg-6 {
+    margin-bottom: 10px;
+  }
 }
